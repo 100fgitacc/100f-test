@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  outline: 0 !important;
+  -webkit-appearance: none;
+}
+
+body {
+  font-family: 'Geologica', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 100;
+  background-color: #0C0C2A;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Wadik', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+a {
+  display: block;
+  background-color: transparent;
+  text-decoration: none;
+  transition: 0.3s ease;
+  opacity: 1;
+}
+
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  line-height: 1.15;
+  margin: 0;
+  padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  display: block;
+  cursor: pointer;
+  transition: 0.3s ease;
+  opacity: 1;
+}
+section, footer {
+  max-width: 950px;
+  width: 100%;
+  margin: 35px auto;
+  border-radius: 15px;
+}
+section:first-child{
+  margin-top: 0;
+}
+input[type="text"], input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: rgb(60, 56, 145);
+  color: #fff;
+  font-family: inherit;
+  font-size: 15px;
+}
+input::placeholder {
+  color: #fff;
+}
+.content {
+  flex: 1;
+  margin-left: 230px;
+  padding: 10px 25px;
+  background-color: #0C0C2A;
+  color: #fff;
+  transition: all .3s ease;
+}
+.main-title{
+  margin-top: 110px;
+  font-size: 30px;
+}
+.title-span{
+  color: #05E9F0;
+}
+.secondary-title{
+  position: relative;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 991px) {
+  .content {
+      margin-left: 170px;
+  }
+  .main-title {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 768px) {
+
+  .content {
+      margin-top: 90px;
+      margin-left: 0px;
+      flex: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main-title{
+    margin-top: 80px;
+    font-size: 22px;
+  }
+  .content {
+    padding: 15px;
+  }
+  
+}
