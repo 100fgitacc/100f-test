@@ -29,7 +29,7 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
   useEffect(() => {
     const updatePostViews = async () => {
       try {
-        const response = await fetch(`https://lunarent.com.ua/test/wp-json/post-views-counter/view-post/${id}`, {
+        const response = await fetch(`https://blog.100f.com/wp-json/post-views-counter/view-post/${id}`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -196,7 +196,7 @@ export async function getStaticProps({ params }) {
   const token = await getValidToken();
   let allPages;
   try {
-    const response = await axios.get('https://lunarent.com.ua/test/wp-json/wp/v2/all_posts', {
+    const response = await axios.get('https://blog.100f.com/wp-json/wp/v2/all_posts', {
       headers: {
         Authorization: `Bearer ${token}`
       }

@@ -1,113 +1,41 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import styles from './index.module.css';
 import Image from 'next/image';
 import  '../../globals.css';
 const CoinsPlugin = () => {
 
-  const currCoins = [
-    {
-        "name": "ChainGPT",
-        "logo": null,
-        "symbol": "CGPT",
-        "price": 0.20635893581041126,
-        "percent_change_1h": -0.07251823
-    },
-    {
-        "name": "The Root Network",
-        "logo": null,
-        "symbol": "ROOT",
-        "price": 0.04023629864808752,
-        "percent_change_1h": 1.57441504
-    },
-    {
-        "name": "DeFi",
-        "logo": null,
-        "symbol": "DEFI",
-        "price": 0.09664395462043526,
-        "percent_change_1h": -2.29699127
-    },
-    {
-        "name": "Virtual Versions",
-        "logo": null,
-        "symbol": "VV",
-        "price": 0.0039014053552470173,
-        "percent_change_1h": -5.02830822
-    },
-    {
-        "name": "BRC20.com",
-        "logo": null,
-        "symbol": ".COM",
-        "price": 0.4778221386429034,
-        "percent_change_1h": -0.0177836
-    },
-    {
-        "name": "TENET",
-        "logo": null,
-        "symbol": "TENET",
-        "price": 0.06033730079532325,
-        "percent_change_1h": -3.67844867
-    },
-    {
-        "name": "Degen Zoo",
-        "logo": null,
-        "symbol": "DZOO",
-        "price": 0.00856761657110033,
-        "percent_change_1h": -0.3570561
-    },
-    {
-        "name": "Patex",
-        "logo": null,
-        "symbol": "PATEX",
-        "price": 3.120454658449023,
-        "percent_change_1h": 0.7570272
-    },
-    {
-        "name": "ivendPay",
-        "logo": null,
-        "symbol": "IVPAY",
-        "price": 0.03832726112610543,
-        "percent_change_1h": 0.96241459
-    },
-    {
-        "name": "Kryptonite",
-        "logo": null,
-        "symbol": "SEILOR",
-        "price": 0.02300976529578157,
-        "percent_change_1h": 11.29421986
-    },
-    {
-        "name": "CryptoGPT",
-        "logo": null,
-        "symbol": "CRGPT",
-        "price": 0.6434948108459795,
-        "percent_change_1h": -0.23910969
-    },
-    {
-        "name": "SophiaVerse",
-        "logo": null,
-        "symbol": "SOPH",
-        "price": 0.05910649092639204,
-        "percent_change_1h": -0.8598198
-    }
-] ;
+const [currCoins, setCurrCoins] = useState([]);
+
 
 useEffect(() => {
-  const getCoins = async () => {
+  const fetchCoins = async () => {
     try {
-      const response = await axios.get('/api/get-coins');
-      const result = response.data;
-      if (result.success) {
-        setCryptoData(result.data);
+      let cachedCoins = localStorage.getItem('cachedCoins');
+      let lastFetchedAt = localStorage.getItem('lastFetchedAt');
+
+      if (cachedCoins && lastFetchedAt && Date.now() - parseInt(lastFetchedAt) < 3600000) {
+        setCurrCoins(JSON.parse(cachedCoins));
       } else {
-        setError(`Failed to fetch coins: ${result.error}`);
+        const response = await axios.get('/api/get-coins');
+        const result = response.data;
+        if (result) {
+          setCurrCoins(result);
+          localStorage.setItem('cachedCoins', JSON.stringify(result));
+          localStorage.setItem('lastFetchedAt', Date.now().toString());
+        } else {
+          console.log(result.error);
+        }
       }
     } catch (error) {
-      setError(`Failed to fetch coins: ${error.message}`);
       console.error('Error fetching coins:', error);
     }
   };
 
-  getCoins();
+  fetchCoins();
+
+  const interval = setInterval(fetchCoins, 3600000);
+  return () => clearInterval(interval);
 }, []);
 
 

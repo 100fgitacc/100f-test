@@ -1,25 +1,45 @@
-const axios = require('axios');
+
+import axios from 'axios';
 
 const getLatestCryptoListings = async () => {
+  const url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest';
+  const params = {
+    start: '1',
+    limit: '5000',
+    convert: 'USD'
+  };
+  const cryptosToFilter = ['CRGPT', 'DEFI', 'DZOO', 'PATEX', 'CGPT', 'VV', 'TENET', 'ROOT', 'SOPH', 'IVPAY', '.COM', 'SEILOR'];
   try {
-    const response = await axios.get('https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest', {
+    const response = await axios.get(url, {
       headers: {
-        'X-CMC_PRO_API_KEY': 'b54bcf4d-1bca-4e8e-9a24-22ff2c3d462c',
+        'X-CMC_PRO_API_KEY': 'a308e787-9639-4868-8a9e-ecd7c33694a6',
       },
+      params: params 
     });
-    // Успешный ответ
-    return response.data;
+    if(response.data){
+      const filteredCryptos = response.data.data.filter(crypto => cryptosToFilter.includes(crypto.symbol));
+    
+      const cryptos = filteredCryptos.map(crypto => ({
+        name: crypto.name,
+        logo: crypto.logo,
+        symbol: crypto.symbol,
+        price: crypto.quote.USD.price,
+        percent_change_1h: crypto.quote.USD.percent_change_1h
+      }));
+      return cryptos;
+    }
   } catch (error) {
-    // Обработка ошибок
-    console.error(error);
+    console.error('Ошибка при запросе данных:', error);
     throw error;
   }
 };
 
-getLatestCryptoListings()
-  .then(data => {
-    console.log(data);
-  })
-  .catch(error => {
+export default async function handler(req, res) {
+  try {
+    const data = await getLatestCryptoListings();
+    res.status(200).json(data);
+  } catch (error) {
     console.error('Ошибка при запросе данных:', error);
-  });
+    res.status(500).json({ error: 'Ошибка при запросе данных' });
+  }
+}
