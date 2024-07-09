@@ -5,16 +5,18 @@ export default async function handler(req, res) {
     const { name, company, email, tel, telegram, request } = req.body;
 
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: 'mail.adm.tools',
+      port: 465,
+      secure: true, 
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: 'info@100f.com',
+        pass: 'pJT9X67ag9',
       },
     });
 
     const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER, 
+      from: 'info@100f.com',
+      to: 'info@100f.com',
       subject: `New Consultation Request from ${name}`,
       text: `
         Name: ${name}
