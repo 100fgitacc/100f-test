@@ -5,6 +5,7 @@ import Layout from "/app/layout";
 import AnimatedPage from '/app/components/AnimatePage';
 import Head from "next/head";
 import Header from "/app/components/header";
+import Script from 'next/script';
 
 const HomePage = () => {
 
@@ -15,7 +16,11 @@ const HomePage = () => {
         <meta name="description" content="100F is the ultimate platform where crypto projects and educated investors meet. Join our public and private audiences, and explore our educational platform and marketing expertise." />
         <meta name="keywords" content="crypto, investors, education, marketing, audience, projects, cryptocurrency, 100F" />
         <meta name="author" content="100F" />
-        <Script
+      </Head>
+      <Header/>
+      <Sidebar/>
+      <AnimatedPage>
+      <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-M4EMMRL0TY"
         />
@@ -31,10 +36,6 @@ const HomePage = () => {
             `,
           }}
         />
-      </Head>
-      <Header/>
-      <Sidebar/>
-      <AnimatedPage>
         <Home/>
       </AnimatedPage>
     </Layout>

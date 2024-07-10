@@ -7,7 +7,7 @@ import AnimatedPage from '/app/components/AnimatePage';
 const readingTime = require('reading-time');
 import Head from "next/head";
 import Header from "/app/components/header";
-
+import Script from 'next/script';
 const BlogPage = ({ blogData }) => {
   
   return(
@@ -17,7 +17,12 @@ const BlogPage = ({ blogData }) => {
           <meta name="description" content="Stay updated with the latest product updates, partnerships, and announcements from CoinMarketCap and our contributors. Explore a variety of articles on crypto and investment topics." />
           <meta name="keywords" content="crypto blog, CoinMarketCap, product updates, partnerships, announcements, cryptocurrency news, investment articles" />
           <meta name="author" content="100F" />
-          <Script
+         
+      </Head>
+      <Header/>
+      <Sidebar/>
+      <AnimatedPage>
+      <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-M4EMMRL0TY"
         />
@@ -33,10 +38,6 @@ const BlogPage = ({ blogData }) => {
             `,
           }}
         />
-      </Head>
-      <Header/>
-      <Sidebar/>
-      <AnimatedPage>
         <Blog data={blogData}/>
       </AnimatedPage>
     </Layout>

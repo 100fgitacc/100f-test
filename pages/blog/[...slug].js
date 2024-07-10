@@ -13,6 +13,7 @@ import Sidebar from '/app/components/sidebar';
 import BlogCard from '/app/components/blogCard';
 import cheerio from 'cheerio';
 import Image from 'next/image';
+import Script from 'next/script';
 const readingTime = require('reading-time');
 
 const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => {
@@ -89,6 +90,10 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
         <meta name="keywords" content={acf.keywords} />
         <meta name="robots" content={acf.robots} />
         <meta property="og:image" content={acf.img_prew} />
+       
+      </Head>
+        <Header/>
+        <Sidebar />
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-M4EMMRL0TY"
@@ -105,9 +110,6 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
             `,
           }}
         />
-      </Head>
-        <Header/>
-        <Sidebar />
         <div className='content'>
           <section className={styles['first-screen-card']}>
             <div className={styles['first-screen-card-container']}>

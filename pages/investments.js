@@ -5,6 +5,7 @@ import AnimatedPage from '/app/components/AnimatePage';
 import Layout from "/app/layout";
 import Head from "next/head";
 import Header from "/app/components/header";
+import Script from 'next/script';
 
 const InvestmentsPage = ({coins}) => {
   return(
@@ -14,7 +15,12 @@ const InvestmentsPage = ({coins}) => {
           <meta name="description" content="100F is a platform where crypto projects and educated investors meet. By collaborating with crypto projects, we provide them with powerful promotion based on strong marketing and native traffic from KOLs." />
           <meta name="keywords" content="crypto, investors, education, marketing, audience, projects, cryptocurrency, 100F, investment influencers, private investors, audience coverage" />
           <meta name="author" content="100F" />
-          <Script
+         
+      </Head>
+      <Header/>
+      <Sidebar/>
+      <AnimatedPage>
+      <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-M4EMMRL0TY"
           />
@@ -30,10 +36,6 @@ const InvestmentsPage = ({coins}) => {
               `,
             }}
           />
-      </Head>
-      <Header/>
-      <Sidebar/>
-      <AnimatedPage>
         <Investments/>
       </AnimatedPage>
     </Layout>
