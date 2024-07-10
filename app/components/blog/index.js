@@ -54,7 +54,7 @@ const Blog = ({data}) => {
               <CoinsPlugin/>
               <div className={styles.inner}>
                   <h1 className="main-title">BLOG</h1>
-                  <p className={styles.subtitle}>Product updates, partnerships, and announcements from CoinMarketCap and our contributors.</p>
+                  <p className={styles.subtitle}>Product updates, partnerships, and announcements from CoinMarketCap and our contributors</p>
               </div>
           </div>
       </section>
@@ -77,7 +77,7 @@ const Blog = ({data}) => {
             ))}
             </>
           ) : (
-            <p>Не найдено ниодного поста!</p>
+            <p>Posts was not found in data base!</p>
           )}
           
         </div>

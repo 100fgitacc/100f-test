@@ -89,6 +89,22 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
         <meta name="keywords" content={acf.keywords} />
         <meta name="robots" content={acf.robots} />
         <meta property="og:image" content={acf.img_prew} />
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-M4EMMRL0TY"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-M4EMMRL0TY');
+            `,
+          }}
+        />
       </Head>
         <Header/>
         <Sidebar />
