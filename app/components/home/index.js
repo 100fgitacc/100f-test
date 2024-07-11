@@ -5,7 +5,7 @@ import Footer from '../footer';
 import CoinsPlugin from '../coinsPlugin';
 import Image from 'next/image';
 
-const Home = ({coins}) => {
+const Home = () => {
 
     // const [currCoins, setCurrCoins] = useState(coins);
     // console.log(currCoins);
