@@ -77,7 +77,7 @@ const Blog = ({data}) => {
             ))}
             </>
           ) : (
-            <p>Posts was not found in data base!</p>
+            <p>No posts yet.</p>
           )}
           
         </div>
