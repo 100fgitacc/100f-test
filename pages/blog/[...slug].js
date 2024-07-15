@@ -139,7 +139,7 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
               </div>
             )}
 
-            {imageUrl && <Image width={950} height={370} src={imageUrl} alt={title.rendered} className={styles.image} />}
+            {imageUrl && <img src={imageUrl} alt={title.rendered} className={styles.image} />}
             {toc.length > 0 && (
               <div className={styles['blog-nav']}>
                 <h3 className={styles['blog-heading']}>TABLE OF CONTENTS</h3>
