@@ -73,13 +73,66 @@ section, footer {
   margin: 35px auto;
   border-radius: 15px;
 }
-.error-page{
+.error-page-section{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 97vh;
   margin-bottom: 0;
-  text-align: center;
+}
+.error-page{
+  display: flex;
+  position: relative;
+  border-radius: 15px;
+  background-image: url('/assets/img/404-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+.error-page-content{
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 65px;
+  padding: 0 25px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+}
+.error-page-content div:nth-child(1){
+  margin-bottom: 125px;
+  max-width: 376px;
 }
 .error-page h1{
-  margin-top: 350px;
-  margin-bottom: 15px;
+  font-size: 30px;
+}
+.error-page p{
+  margin: 15px 0;
+}
+.error-page-btn {
+  position: relative;
+  max-width: 170px;
+  z-index: 5;
+  padding: 10px 20px;
+  padding-left: 35px;
+  border-radius: 5px;
+  background: rgb(5, 233, 240);
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+}
+.error-page-btn::after {
+  content: '';
+  position: absolute;
+  z-index: 3;
+  top: 10px;
+  left: 10px;
+  background-image: url('/assets/img/icons/finger.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 17px;
+  height: 17px;
 }
 section:first-child{
   margin-top: 0;
@@ -132,6 +185,24 @@ input::placeholder {
       margin-left: 0px;
       flex: none;
   }
+  .error-page-content{
+    margin-top: 105px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .error-page-content div:nth-child(1){
+    margin-bottom: 50px;
+  }
+  .error-page-content div:nth-child(2){
+    width: 275px;
+    height: 291px;
+  }
+  .error-page h1{
+    font-size: 22px;
+  }
+  .error-page p{
+    margin: 10px 0;
+  }
 }
 @media screen and (max-width: 576px) {
   .main-title{
@@ -141,5 +212,12 @@ input::placeholder {
   .content {
     padding: 15px;
   }
+  .error-page{
+    background-image: url('/assets/img/404-bg-m.png');
+  }
+  .error-page-content div:nth-child(2) {
+    width: 192px;
+    height: 290px;
+}
   
 }

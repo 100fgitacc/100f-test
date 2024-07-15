@@ -18,16 +18,12 @@ const Contacts = ({ contacts }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted');
 
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
-    console.log('Form data:', data);
-
     const newErrors = validateForm(data);
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
-      console.log('Validation errors:', newErrors);
       return;
     } else {
       setErrors({});
