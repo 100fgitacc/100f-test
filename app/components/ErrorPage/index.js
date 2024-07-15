@@ -11,7 +11,7 @@ const ErrorPage = () => {
             <CoinsPlugin/>
             <div className='error-page-content'>
               <div>
-                <h1>Oops, the page doesn't exist</h1>
+                <h1>Oops, the page doesn&apos;t exist</h1>
                 <p>Return to main page</p>
                 <Link href="/" className='error-page-btn'>Go to Main page</Link>
               </div>
