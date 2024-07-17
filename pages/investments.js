@@ -15,7 +15,7 @@ const InvestmentsPage = ({coins}) => {
           <meta name="description" content="100F is a platform where crypto projects and educated investors meet. By collaborating with crypto projects, we provide them with powerful promotion based on strong marketing and native traffic from KOLs." />
           <meta name="keywords" content="crypto, investors, education, marketing, audience, projects, cryptocurrency, 100F, investment influencers, private investors, audience coverage" />
           <meta name="author" content="100F" />
-         
+          <link rel="icon" href="/assets/img/favicon.ico" />
       </Head>
       <Header/>
       <Sidebar/>

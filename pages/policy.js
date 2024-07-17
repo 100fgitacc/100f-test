@@ -11,6 +11,7 @@ const PolicyPage = () => {
     <Layout>
        <Head>
         <title>Policy</title>
+        <link rel="icon" href="/assets/img/favicon.ico" />
       </Head>
       <Header/>
       <Sidebar/>

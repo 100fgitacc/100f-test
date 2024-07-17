@@ -11,6 +11,7 @@ const DisclamerPage = () => {
     <Layout>
        <Head>
         <title>Disclamer</title>
+        <link rel="icon" href="/assets/img/favicon.ico" />
       </Head>
       <Header/>
       <Sidebar/>

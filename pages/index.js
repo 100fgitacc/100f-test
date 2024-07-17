@@ -16,6 +16,7 @@ const HomePage = () => {
         <meta name="description" content="100F is the ultimate platform where crypto projects and educated investors meet. Join our public and private audiences, and explore our educational platform and marketing expertise." />
         <meta name="keywords" content="crypto, investors, education, marketing, audience, projects, cryptocurrency, 100F" />
         <meta name="author" content="100F" />
+        <link rel="icon" href="/assets/img/favicon.ico" />
       </Head>
       <Header/>
       <Sidebar/>

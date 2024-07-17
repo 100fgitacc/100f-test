@@ -90,7 +90,7 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
         <meta name="keywords" content={acf.keywords} />
         <meta name="robots" content={acf.robots} />
         <meta property="og:image" content={acf.img_prew} />
-       
+        <link rel="icon" href="/assets/img/favicon.ico" />
       </Head>
         <Header/>
         <Sidebar />

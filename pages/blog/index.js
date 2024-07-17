@@ -17,7 +17,7 @@ const BlogPage = ({ blogData }) => {
           <meta name="description" content="Stay updated with the latest product updates, partnerships, and announcements from CoinMarketCap and our contributors. Explore a variety of articles on crypto and investment topics." />
           <meta name="keywords" content="crypto blog, CoinMarketCap, product updates, partnerships, announcements, cryptocurrency news, investment articles" />
           <meta name="author" content="100F" />
-         
+          <link rel="icon" href="/assets/img/favicon.ico" />
       </Head>
       <Header/>
       <Sidebar/>

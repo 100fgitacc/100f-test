@@ -15,6 +15,7 @@ const ContactsPage = () => {
       <meta name="description" content="Are you interested in submitting a project or investing in one? Let's talk! We select projects with potential for market development and opportunities for joint returns. Complete the form to request a consultation with our crypto experts." />
       <meta name="keywords" content="crypto projects, investing, submit a project, market development, joint returns, crypto consultation, 100F" />
       <meta name="author" content="100F" />
+      <link rel="icon" href="/assets/img/favicon.ico" />
     </Head>
       <Header/>
       <Sidebar/>
