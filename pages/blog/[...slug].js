@@ -180,13 +180,13 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
               </>
             )}
 
-            <div className={styles['subscribe']}>
+            {/* <div className={styles['subscribe']}>
               <p>Join the thousands already learning crypto!</p>
               <h3>Join our free newsletter for daily crypto updates!</h3>
               <a href="mailto:info@100f.com" className={styles['subscribe-btn']}>
                 Subscribe
               </a>
-            </div>
+            </div> */}
           </section>
           <Footer />
         </div>
