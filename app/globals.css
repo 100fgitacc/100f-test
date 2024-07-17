@@ -77,7 +77,8 @@ section, footer {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: 97vh;
+  height: 100%;
+  min-height: 100vh;
   margin-bottom: 0;
 }
 .error-page{
