@@ -1,14 +1,13 @@
 import React from 'react';
-import '/public/docs.css';
 import Footer from '../footer';
-
+import styles from "./index.module.css";
 
 const Disclaimer = () => {
   return (
     <>
-      <section id='disclamer' className="disclamer">
-          <h1 className="main-title">DISCLAIMER</h1>
-          <h2 className="secondary-title">DO NOT MAKE ANY INVESTMENT DECISION UPON ANY MATERIALS FOUND ON THIS WEBSITE</h2>
+      <section id='disclamer' classNameName={styles.disclamer}>
+          <h1 className={styles['main-title']}>DISCLAIMER</h1>
+          <h2 classNameName={styles["secondary-title"]}>DO NOT MAKE ANY INVESTMENT DECISION UPON ANY MATERIALS FOUND ON THIS WEBSITE</h2>
           <p>
               Neither 100 FRANKLINS nor any of its affiliates (collectively, “We”) are registered as a securities broker-dealer or an investment adviser in any jurisdiction or country. We are neither licensed nor qualified to provide investment advice. Information provided on this website is general in nature and does not constitute financial advice. We do not accept any liability for any error or omission on this website or for any resulting loss or damage suffered by the recipient or any other person.
 
@@ -27,7 +26,7 @@ const Disclaimer = () => {
               but are not limited to, those factors that are discussed in each company’s most recent reports or registration statements. You should consider these factors in evaluating the forward-looking statements included on the website and not place undue reliance upon such statements.
 
           </p>
-          <h2 className="secondary-title">Legal Statement
+          <h2 classNameName={styles["secondary-title"]}>Legal Statement
           </h2>
           <p>While all reasonable care has been taken in providing information, it should not be construed as being specific to your investment objectives, financial situation or particular needs. However, We do not provide any assurance as to the accuracy or completeness of the information provided, including information regarding a company’s plans or ability to effect any planned or proposed actions. We have no first-hand knowledge of any company’s operating and therefore cannot comment on their capabilities, intent, resources, nor experience and we make no attempt to do so. Statistical information, currency amounts, and market size data was provided by the subject company and related sources which We believe to be reliable.
 
@@ -37,7 +36,7 @@ const Disclaimer = () => {
           </p>
           <p>Unless otherwise specified, copyright of information provided on this website is owned by 100 FRANKLINS. You may not alter or modify this information in any way, including removing this copyright notice. 
           </p>
-          <h2 className="secondary-title">IF YOU DO NOT AGREE WITH THE TERMS OF THIS DISCLAIMER, PLEASE EXIT THIS SITE IMMEDIATELY. PLEASE BE ADVISED THAT YOUR CONTINUED USE OF THIS SITE OR THE INFORMATION PROVIDED HEREIN SHALL INDICATE YOUR CONSENT AND AGREEMENT TO THESE TERMS
+          <h2 classNameName={styles["secondary-title"]}>IF YOU DO NOT AGREE WITH THE TERMS OF THIS DISCLAIMER, PLEASE EXIT THIS SITE IMMEDIATELY. PLEASE BE ADVISED THAT YOUR CONTINUED USE OF THIS SITE OR THE INFORMATION PROVIDED HEREIN SHALL INDICATE YOUR CONSENT AND AGREEMENT TO THESE TERMS
           </h2>
       </section>
       <Footer/>
