@@ -3,14 +3,13 @@ import { formatDistanceToNow } from 'date-fns';
 import { getAllPosts, getRelatedPosts, getPostViews, getAuthorInfo, getValidToken } from '../../lib/api';
 import axios from 'axios';
 import Head from 'next/head';
-import Header from "/app/components/header";
+import Header from "/components/header";
 import Link from 'next/link';
-import Layout from "/app/layout";
 import styles from './index.module.css';
-import Footer from '/app/components/footer';
-import CoinsPlugin from '/app/components/coinsPlugin';
-import Sidebar from '/app/components/sidebar';
-import BlogCard from '/app/components/blogCard';
+import Footer from '/components/footer';
+import CoinsPlugin from '/components/coinsPlugin';
+import Sidebar from '/components/sidebar';
+import BlogCard from '/components/blogCard';
 import cheerio from 'cheerio';
 import Image from 'next/image';
 import Script from 'next/script';
@@ -80,10 +79,11 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
     setCleanedContent(tempDiv.innerHTML);
   }, [content]);
 
+  console.log(authorInfo.avatar_urls['96']);
+
   return (
     <>
     
-    <Layout>
       <Head>
         <title>{acf.title || title.rendered}</title>
         <meta name="description" content={acf.description} />
@@ -171,7 +171,7 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
                 <h3 className={styles['blog-heading']}>Related Articles</h3>
                 <div className={`${styles['card-inner']} ${styles['related-cards-inner']}`}>
                   {relatedPosts.map((post) => (
-                    <BlogCard key={post.id} post={post} gridView={true} relatedPosts={true} />
+                    <BlogCard key={post.id} post={post} gridView={true} relatedPosts={false} />
                   ))}
                 </div>
                 <Link href="/blog" className={`${styles['blog-button']} ${styles['all-articles-button']}`}>
@@ -190,7 +190,6 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
           </section>
           <Footer />
         </div>
-      </Layout>
     </>
   );
 };

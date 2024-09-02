@@ -1,17 +1,16 @@
 import React from 'react';
-import Sidebar from "/app/components/sidebar";
-import Layout from "/app/layout";
+import Sidebar from "/components/sidebar";
 import { getAllPosts, getValidToken } from '/lib/api';
-import Blog from '/app/components/blog';
-import AnimatedPage from '/app/components/AnimatePage';
+import Blog from '/components/blog';
+import AnimatedPage from '/components/AnimatePage';
 const readingTime = require('reading-time');
 import Head from "next/head";
-import Header from "/app/components/header";
+import Header from "/components/header";
 import Script from 'next/script';
 const BlogPage = ({ blogData }) => {
   
   return(
-    <Layout>
+    <>
       <Head>
           <title>100F Blog | Product Updates, Partnerships, and Announcements</title>
           <meta name="description" content="Stay updated with the latest product updates, partnerships, and announcements from CoinMarketCap and our contributors. Explore a variety of articles on crypto and investment topics." />
@@ -40,7 +39,7 @@ const BlogPage = ({ blogData }) => {
         />
         <Blog data={blogData}/>
       </AnimatedPage>
-    </Layout>
+    </>
   )
 };
 
