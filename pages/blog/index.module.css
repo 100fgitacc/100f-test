@@ -53,6 +53,7 @@
   color: #05E9F0;
 }
 .title{
+  font-family: 'Wadik', sans-serif;
   margin-top: 0;
   margin-bottom: 15px;
   font-size: 18px;
@@ -110,7 +111,7 @@
   background-color: #fff;
 }
 .image, .blog-img{
-  max-width: 950px;
+  /* max-width: 950px;  */
   /* width: 100%; */
   border-radius: 15px;
   overflow: hidden;
@@ -132,6 +133,8 @@
 .blog-nav-item{
   position: relative;
   color: #05E9F0;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .blog-nav-item::before{
   content: '•';
@@ -253,7 +256,42 @@
   margin: 0 auto;
   margin-bottom: 15px;
 }
-
+.heading1 {
+  margin-left: 0;
+}
+.heading2 {
+  margin-left: 10px;
+}
+.heading3 {
+  margin-left: 25px;
+}
+.heading4 {
+  margin-left: 35px;
+}
+.heading5 {
+  margin-left: 50px;
+}
+.heading6 {
+  margin-left: 60px;
+}
+.blog-inner h1{
+  font-size: 24px;
+}
+.blog-inner h2{
+  font-size: 21px;
+}
+.blog-inner h3{
+  font-size: 18px;
+}
+.blog-inner h4{
+  font-size: 16px;
+}
+.blog-inner h5{
+  font-size: 14px;
+}
+.blog-inner h5{
+  font-size: 12px;
+}
 @media screen and (max-width: 991px) {
   
 }

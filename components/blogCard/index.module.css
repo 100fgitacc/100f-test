@@ -1,6 +1,7 @@
 .card {
   flex: 1 1 calc(33.333% - 20px);
   max-width: 294px;
+  margin: 5px;
   margin-bottom: 40px;
   width: 100%;
   border-radius: 15px;

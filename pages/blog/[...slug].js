@@ -79,8 +79,8 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
     setCleanedContent(tempDiv.innerHTML);
   }, [content]);
 
-  console.log(authorInfo.avatar_urls['96']);
-
+    
+  
   return (
     <>
     
@@ -118,13 +118,13 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
                 <Link href="/blog" className={styles.subtitle}>
                   Blog
                 </Link>
-                <h1 className={`main-title ${styles.title}`}>{title.rendered}</h1>
+                <p className={`main-title ${styles.title}`}>{title.rendered}</p>
               </div>
             </div>
           </section>
           <section className={styles['blog-sections']}>
             <div className={styles['blog-info']}>
-              <p className={styles.author}>By {author_name}</p>
+              <p className={styles.author}>By {authorInfo.name}</p>
               <div className={styles.date}>
                 <p>{publishedTimeAgo}</p>
                 <div>
@@ -145,9 +145,10 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
                 <h3 className={styles['blog-heading']}>TABLE OF CONTENTS</h3>
                 <ul>
                   {toc.map(item => (
-                    <li key={item.id}>
-                      <a className={styles['blog-nav-item']} href={`#${item.id}`}>{item.text}</a>
-                    </li>
+                  <li key={item.id}>
+                    {console.log(item.headingClass)} {/* Временно выводим в консоль */}
+                    <a className={`${styles['blog-nav-item']} ${styles[item.headingClass]}`} href={`#${item.id}`}>{item.text}</a>
+                  </li>
                   ))}
                 </ul>
               </div>
@@ -251,9 +252,37 @@ export async function getStaticProps({ params }) {
   const toc = [];
   $('h1, h2, h3, h4, h5, h6').each((index, element) => {
     const id = `heading-${index}`;
-    $(element).attr('id', id);
-    toc.push({ id, text: $(element).text() });
+    $(element).attr('id', id); 
+    
+    let headingClass = '';
+    switch (element.tagName.toLowerCase()) {
+      case 'h1':
+        headingClass = 'heading1';
+        break;
+      case 'h2':
+        headingClass = 'heading2';
+        break;
+      case 'h3':
+        headingClass = 'heading3';
+        break;
+      case 'h4':
+        headingClass = 'heading4';
+        break;
+      case 'h5':
+        headingClass = 'heading5';
+        break;
+      case 'h6':
+        headingClass = 'heading6';
+        break;
+    }
+    
+    $(element).addClass(headingClass);
+    toc.push({ id, text: $(element).text(), headingClass });
   });
+
+  console.log(toc);
+  
+  
   postData.content.rendered = $.html();
 
   let relatedPosts = [];

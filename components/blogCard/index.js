@@ -49,7 +49,7 @@ const BlogCard = ({ post, gridView, relatedPosts }) => {
   const firstOrSecondParagraph = extractSecondParagraphIfFirstContainsImage(htmlContent);
 
   const publishedTimeAgo = formatDistanceToNow(new Date(date), { addSuffix: true });  
-  
+ 
   return (
     <Link 
     className={`${styles.card} ${!gridView && styles['list-view']} ${relatedPosts && styles['related-view']} `} 
