@@ -132,7 +132,7 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
-.banner-item:nth-child(1) {
+/* .banner-item:nth-child(1) {
     max-width: 265px;
     width: 100%;
     height: 220px;
@@ -141,7 +141,7 @@
     background-image: url('/assets/img/banner2.png');
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .banner-item__private, .banner-item__investround {
     max-width: 200px;

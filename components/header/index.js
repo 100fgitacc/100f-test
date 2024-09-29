@@ -88,8 +88,8 @@ const BurgerMenu = () => {
             </Link>
           </li>
           <li className={styles['sidebar-menu__item']}>
-            <Link href="/investments">
-              <p className={`${styles['page-button']} ${isActive('/investments') ? styles.active : ''} ${styles['investments-btn']}`}>Investments</p>
+            <Link href="/early-stage">
+              <p className={`${styles['page-button']} ${isActive('/early-stage') ? styles.active : ''} ${styles['investments-btn']}`}>Early-Stage</p>
             </Link>
           </li>
           <li className={styles['sidebar-menu__item']}>

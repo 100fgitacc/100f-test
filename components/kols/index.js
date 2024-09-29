@@ -13,7 +13,7 @@ const Kols = () => {
         <div className={styles['first-screen-card__container']}>
             <CoinsPlugin/>
           <div className={styles.inner}>
-              <h1 className="main-title"><span className='title-span'>One space</span> where crypto projects <br/>and educated investors meet</h1>
+              <h1 className="main-title"><span className='title-span'>One crypto space</span>where qualified projects <br/>and educated audience meet</h1>
               <p className={styles.subtitle}>By collaborating with crypto projects, we provide them with powerful promotion based on strong marketing and native traffic from KOLs</p>
               <div className={styles.advantages} >
                   <div className={styles['advantages-list']}>
@@ -26,7 +26,7 @@ const Kols = () => {
                       <strong className={styles['asset-list-title']}>Investment Influencers</strong>
                       <strong className={styles['asset-list-value']}>104</strong>
                       <strong className={styles['asset-list-title']}>Private Investors</strong>
-                      <strong className={styles['asset-list-value']}>100M+</strong>
+                      <strong className={styles['asset-list-value']}>10M+</strong>
                       <strong className={styles['asset-list-title']}>Audience Coverage</strong>
                     </div>  
                   </div>  

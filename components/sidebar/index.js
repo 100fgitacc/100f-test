@@ -32,8 +32,8 @@ const Sidebar = () => {
           </Link>
         </li>
         <li className={styles['sidebar-menu__item']}>
-          <Link href="/investments">
-            <p className={`${styles['page-button']} ${isActive('/investments') ? styles.active : ''} ${styles['investments-btn']}`}>Investments</p>
+          <Link href="/early-stage">
+            <p className={`${styles['page-button']} ${isActive('/early-stage') ? styles.active : ''} ${styles['investments-btn']}`}>Early-Stage</p>
           </Link>
         </li>
         <li className={styles['sidebar-menu__item']}>
@@ -48,7 +48,7 @@ const Sidebar = () => {
         </li>
       </ul>
       <div className={styles.banner}>
-        <a href="https://invest.100f.com/zimabank" target="_blank" className={`${styles['banner-item']} ${styles['banner-item__private']}`}></a>
+        {/* <a href="https://invest.100f.com/zimabank" target="_blank" className={`${styles['banner-item']} ${styles['banner-item__private']}`}></a> */}
         <div className={`${styles['banner-item']} ${styles['banner-item__educational']}`}>
             <p className={styles['banner-note']}>Updates coming soon</p>
             <p className={styles['banner-title']}>Educational platform</p>

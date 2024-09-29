@@ -109,7 +109,7 @@ const Investments = () => {
                                 </h3>
                                 <span className={styles['goal-line']}></span>
                                 <p className={styles['advantages-item-desc']}>
-                                    To form a diverse pool of investors with ratings and corresponding knowledge to invest in high-quality and profitable crypto projects worldwide
+                                To form a diverse pool of investors with ratings and corresponding knowledge to participate in early stage rounds in thoroughly selected crypto projects worldwide
                                 </p>
                             </div>  
                             <div className={styles['advantages-goal-list-item']}>
@@ -172,7 +172,7 @@ const Investments = () => {
                                     </div> 
                                 </div>
                                 <p className={styles['advantages-item-desc']}>
-                                    Additionally, we have attracted over 20 crypto projects whose objectives align with those of 100F and our investors
+                                Additionally, we have onboarded over 20 crypto projects whose objectives align with those of 100F and our community
                                 </p>
                                 </div>
                             </div>  
@@ -189,7 +189,7 @@ const Investments = () => {
                                     <p className={styles['asset-list-title']}>Private Investors</p>
                                 </div>
                                 <div className={styles['advantages-asset-list-item']}>
-                                    <p className={styles['asset-list-value']}>100M+</p>
+                                    <p className={styles['asset-list-value']}>10M+</p>
                                     <p className={styles['asset-list-title']}>Audience Coverage</p>
                                 </div>
                             </div>

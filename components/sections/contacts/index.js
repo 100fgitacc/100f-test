@@ -58,9 +58,9 @@ const Contacts = ({ contacts }) => {
     <section className={styles.contacts}>
       {!contacts && (
         <>
-          <h2 className={styles['main-title']}>Have a crypto project or want to invest?<br /></h2>
+          <h2 className={styles['main-title']}>Have a crypto project or want to get early-stage access?<br /></h2>
           <p className={styles.subtitle}>
-            Whether you&#39;re interested in submitting your own project or investing in a crypto project that just speaks to you, we have a solution for you. Fill out the form, and let&#39;s talk!
+            Whether you&#39;re interested in submitting your own project or participating in a crypto project early stages, we have a solution for you. Fill out the form, and let&#39;s talk!
           </p>
         </>
       )}

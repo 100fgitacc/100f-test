@@ -62,7 +62,7 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
-.banner-item:nth-child(1) {
+/* .banner-item:nth-child(1) {
     width: 200px;
     height: 160px;
     padding-left: 0;
@@ -70,7 +70,7 @@
     background-image: url('/assets/img/banner2.png');
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .banner-item__private, .banner-item__investround {
     max-width: 200px;
@@ -241,11 +241,11 @@
         width: 140px;
         height: 28px;
     }
-    .banner-item:nth-child(1) {
+    /* .banner-item:nth-child(1) {
         padding: 0;
         max-width: 150px;
         height: 125px;
-    }
+    } */
     
 }
 @media screen and (max-width: 768px) {
