@@ -28,7 +28,6 @@ const Blog = ({data}) => {
   const [showFilter, setShowFilter] = useState(false);
   const [gridView, setGridView] = useState(true);
   const [filters, setFilters] = useState({ difficulty: [], readingTime: [] });
-  // const [filters, setFilters] = useState({ difficulty: [], readingTime: [] });
   
   const filterParams = (filters) => {
     let updatedPosts = [...allPosts];
