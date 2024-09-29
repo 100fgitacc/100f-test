@@ -161,7 +161,7 @@
   max-width: 275px;
 }
 .phone-title {
-  font-family: 'Wadik', sans-serif;
+  font-family: Wadik_New, sans-serif;
   text-transform: uppercase;
   font-size: 30px;
   margin-bottom: 15px;
@@ -199,7 +199,7 @@
   height: 550px;
 }
 .crypto-button {
-  font-family: 'Wadik', sans-serif;
+  font-family: Wadik_New, sans-serif;
   font-size: 13px;
   -webkit-text-stroke: 0.3px #85FBFF;
   display: flex;

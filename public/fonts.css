@@ -14,7 +14,7 @@
     url('/assets/fonts/Inter-Thin.otf') format('otf'),
 }
 @font-face {
-    font-family: 'Wadik';
+    font-family: 'Wadik_New';
     src: url('/assets/fonts/Wadik.otf') format('truetype'),
          url('/assets/fonts/Wadik.woff') format('woff'),
          url('/assets/fonts/Wadik.ttf') format('truetype');
