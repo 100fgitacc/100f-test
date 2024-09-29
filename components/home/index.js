@@ -14,7 +14,7 @@ const Home = () => {
         
             <CoinsPlugin/>
             <div className={styles.inner}>
-                <h1 className="main-title"><span className='title-span'>One space</span> where crypto projects and educated investors meet</h1>
+                <h1 className="main-title"><span className='title-span'>One crypto space </span> where qualified projects and educated audience meet</h1>
                 
                 <div className={styles.advantages}>
                     <div className={styles['advantages-list']}>
@@ -98,7 +98,7 @@ const Home = () => {
                               Private audience
                           </h3>
                           <small className={styles['item-title-small']}>
-                              100M+ audience coverage
+                              10M+ audience coverage
                           </small>
                           <small className={styles['item-title-small']}>
                               100+ investment influencers
