@@ -10,6 +10,7 @@ import Image from 'next/image';
 const Blog = ({data}) => {
 
   const {blogPages, allPosts, popularPosts} = data;
+  // const {blogPages, allPosts, popularPosts} = data;
   const [originalPosts, setOriginalPosts] = useState(allPosts);
   
   // Отображаемые посты
