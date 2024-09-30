@@ -12,9 +12,8 @@ const Contacts = () => {
           <div className={styles['first-screen-card-container']}>
               <CoinsPlugin/>
               <div className={styles.inner}>
-                  <h1 className="main-title">Interested in submitting a project or investing in one?<br/><span className={`title-span ${styles['contacts-span']}`}>Let&#39;s talk!</span></h1>
-                  <p className={styles.subtitle}>We select projects with potential for market development and opportunities for joint returns</p>
-                  <p className={styles.subtitle}>Projects on our platform go through a vigorous vetting process. Rest assured, only those meeting our exacting standards and primed for growth are accepted</p>
+                  <h1 className="main-title">Have a crypto project or want to get early-stage access?<br/><span className={`title-span ${styles['contacts-span']}`}>Let&#39;s talk!</span></h1>
+                  <p className={styles.subtitle}>Whether you're interested in submitting your own project or participating in a crypto project early stages, we have a solution for you. Fill out the form, and let's talk!</p>
               </div>
           </div>
       </section>

@@ -1,12 +1,12 @@
-.policy, .disclamer {
+.policy, .disclaimer {
     margin-top: 50px !important;
     margin-bottom: 50px;
 }
-.policy .main-title, .disclamer .main-title{
+.policy .main-title, .disclaimer .main-title{
  font-size: 24px;
 }
 #policy p,
-#disclamer p{
+#disclaimer p{
     margin: 25px 0;
     line-height: 135%;
 }
@@ -29,12 +29,12 @@
 }
 
 .policy .main-title,
-.disclamer .main-title{
+.disclaimer .main-title{
     margin-top: 25px !important; 
     margin-bottom: 25px;
 }
 .policy .secondary-title,
-.disclamer .secondary-title{
+.disclaimer .secondary-title{
     margin-top: 25px !important; 
     margin-bottom: 25px;
 }
@@ -42,13 +42,13 @@
     margin-top: 0 !important;
 }
 #policy.secondary-title,
-#disclamer.secondary-title{
+#disclaimer.secondary-title{
     font-size: 24px;
     margin-bottom: 25px;
     margin-top: 40px;
 }
 @media screen and (max-width: 576px){
-    .policy, .disclamer{
+    .policy, .disclaimer{
         padding-right: 15px;
         padding-left: 15px;
     }

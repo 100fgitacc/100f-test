@@ -1,3 +1,4 @@
+import './docs.css'; 
 import './fonts.css'; 
 import './globals.css'; 
 

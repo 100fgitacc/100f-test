@@ -16,7 +16,7 @@ const Footer = () => {
       <div>
           <a className={`${styles['footer-button']} ${styles['footer-button-adaptive']}`} href="mailto:info@100f.com">Email us</a>
           <Link href="/policy" className={`${styles['docs']} ${styles['docs-policy']}`}>Terms and Privacy Policy</Link>
-          <Link href="/disclamer"className={`${styles['docs']} ${styles['docs-disclamer']}`}>Disclaimer </Link>
+          <Link href="/disclaimer"className={`${styles['docs']} ${styles['docs-disclaimer']}`}>Disclaimer </Link>
         
       </div>
       <div>

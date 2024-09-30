@@ -77,7 +77,7 @@
     width: 18px;
     height: 18px;
 }
-.docs-disclamer::after {
+.docs-disclaimer::after {
     content: '';
     position: absolute;
     top: 0px;

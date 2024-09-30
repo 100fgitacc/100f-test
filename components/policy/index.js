@@ -1,13 +1,12 @@
 import React from 'react';
 import Footer from '../footer';
-import styles from "./index.module.css";
 const Policy = () => {
 
 
   return (
     <>
-      <section id="policy" classNameName={styles.policy}>
-          <h1 classNameName={styles['main-title']}>SERVICE AND PRIVACY POLICY AGREEMENT</h1>
+      <section id="policy" className='policy'>
+          <h1 className='main-title'>SERVICE AND PRIVACY POLICY AGREEMENT</h1>
           <p>
             100 Franklins (hereinafter referred to as the Administrator), addresses this Agreement to any individual (hereinafter referred to as the Subscriber) who enters into the Agreement by fully and unconditionally agreeing to all terms and conditions specified herein.
           </p>
@@ -16,8 +15,8 @@ const Policy = () => {
           <p><span>
               If the Subscriber disagrees with any terms of the Agreement, the Agreement is not concluded and the Subscriber has no right to use the Service.
           </span></p>
-          <div className={styles['important-block']}>
-              <h2 className={styles["secondary-title"]}>IMPORTANT!</h2>
+          <div className='important-block'>
+              <h2 className="secondary-title">IMPORTANT!</h2>
               <p>
                   The Content of the Service does not constitute an individual investment recommendation and all instruments 
                   (cryptocurrencies or other) or operations mentioned in the Service may not correspond to the Subscriber&apos;s 
@@ -31,7 +30,7 @@ const Policy = () => {
           <p>
               Given the above, should Subscribers choose on their own behalf to involve in any Stock Market or Cryptocurrency Market activities, Subscribers are advised to carefully consider whether the risks involved in the relevant transactions are acceptable in light of their investment objectives and financial capabilities.
           </p>
-          <h2 className={styles["secondary-title"]}>1. TERMS AND DEFINITIONS</h2>
+          <h2 className="secondary-title">1. TERMS AND DEFINITIONS</h2>
           <p>1.1.1. Administration is a person authorized to manage the Service, interact with Subscribers (including purchasing Content), provide information support to Subscribers, as well as perform other actions related to the use of the Service.
           </p>
           <p>1.1.2. Acceptance - full and unconditional acceptance of the Offer by performing the actions specified in clause 3.1 of the Agreement.
@@ -69,7 +68,7 @@ const Policy = () => {
           <p>
               1.1.12. Telegram is a social network known as “Telegram”, available on the Internet at: <a className="link" href="https://telegram.org">https://telegram.org</a>
           </p>
-          <h2 className={styles["secondary-title"]}>2. SUBJECT OF THE AGREEMENT</h2>
+          <h2 className="secondary-title">2. SUBJECT OF THE AGREEMENT</h2>
           <p>2.1. The Agreement defines the procedure and conditions for using the Service. The subject of the Agreement includes the Content and all functions of the Service, as well as any development thereof or the addition of new ones, which are explicitly available.
           </p>
           <p>2.2. The Administrator grants the Subscriber the right to use the Service to view, get acquainted with the Content, including Content on a paid basis, contained in the Community and implement other functionality of the Service by displaying the corresponding technical means of the Subscriber on the monitor (screen).
@@ -92,7 +91,7 @@ const Policy = () => {
           <p>
               2.8. The Administrator guarantees that he/she is the Administrator of the exclusive rights to the Service specified in clause 2.1 of the Agreement and Community. All exclusive rights to the Service and Content, including paid Content, belong to the Administrator.
           </p>
-          <h2 className={styles["secondary-title"]}>
+          <h2 className="secondary-title">
               3. ACCEPTANCE OF THE AGREEMENT
           </h2>
           <p>
@@ -110,7 +109,7 @@ const Policy = () => {
           </p>
           <p>3.3. This Offer does not have a specifically established period for its acceptance. The Offer comes into force from the moment of its publication (or brought to the attention of the Administrator in another form) and extends its effect to the relations of the Parties arising from April 1, 2024, and in terms of changes - from the date of publication of the relevant changes - until the day following the day publication by the Administrator of a notice of termination of the offer.</p>
           <p>3.4. The terms of the Agreement can be changed by the Administrator at any time unilaterally out of court by publishing changes or a new version of the Agreement in the Service. Changes come into force for the Subscriber from the date following the date of their publication, provided that the Subscriber continues to use the Service after the publication of the changes or acceptance of the updated version of the Agreement. <span>If the Subscriber does not agree with the changes made, (s)he must refuse to use the Service.</span></p>
-          <h2 className={styles["secondary-title"]}>
+          <h2 className="secondary-title">
               4. ADMINISTRATOR RIGHTS
           </h2>
           <p>4.1. The administrator has the right:
@@ -119,7 +118,7 @@ const Policy = () => {
           </p>
           <p>4.1.2. At any time, stop providing access to the Service, deleting or editing Content, including Content on a paid basis in the Community, as well as partially limit or stop the operation of certain functions, including the Chatbot, for the purpose of carrying out technical work in the Service.
           </p>
-          <h2 className={styles["secondary-title"]}>
+          <h2 className="secondary-title">
               5. RESPONSIBILITY OF THE PARTIES
           </h2>
           <p>5.1. The parties are responsible for failure to fulfill or improper fulfillment of their obligations in accordance with the terms of the Agreement and the legislation of Hong Kong.</p>
@@ -139,14 +138,14 @@ const Policy = () => {
           </p>
           <p>5.13. Subscriber acknowledges and agrees that all content on the Service is protected by copyright, trademark and other intellectual property rights, and that such rights are valid and protected in all forms, media and technologies as they exist. currently, and those developed or created subsequently. No rights to any content of the Service, including, but not limited to, audiovisual works, text and graphic materials, trademarks, are transferred to the Subscriber as a result of the conclusion of this Agreement.
           </p>
-          <h2 className={styles["secondary-title"]}>
+          <h2 className="secondary-title">
               6. THIRD PARTY SITES AND CONTENT
           </h2>
           <p>6.1. The Service may contain links to other sites on the Internet (third party sites). These third parties and their content are not checked by the Administrator for compliance with any requirements (reliability, completeness, legality, etc.). The Administrator is not responsible for any information, materials posted on third party sites that the Subscriber accesses using the Service, including any opinions or statements expressed on third party sites, advertising, etc., as well as for the availability of such sites or content and the consequences of their use by the Subscriber.
           </p>
           <p>6.2. A link (in any form) to any site, product, service, or any information of a commercial or non-commercial nature posted in the Service does not constitute an approval or recommendation of these products (services, activities) by the Administrator, unless this is expressly indicated.
           </p>
-          <h2 className={styles["secondary-title"]}>
+          <h2 className="secondary-title">
               7. DISPUTE RESOLUTION
           </h2>
           <p>7.1. The claim procedure for pre-trial settlement of disputes under the Agreement is mandatory.
@@ -159,7 +158,7 @@ const Policy = () => {
           </p>
           <p>7.5. If agreement is not reached in the manner provided for in clause 7 of this Agreement, the dispute is referred to the court at the location of the Administrator.
           </p>
-          <h2 className={styles["secondary-title"]}>
+          <h2 className="secondary-title">
               8. PROCESSING OF PERSONAL DATA
           </h2>
         
@@ -171,7 +170,7 @@ const Policy = () => {
           <p>8.5. The Subscriber may at any time withdraw consent to the processing of personal data by sending the Administrator a corresponding notification to the email address: <a href="mailto:support@100f.com">support@100f.com</a>
           </p>
           <p>8.6. The Subscriber agrees to receive newsletters and promotional materials from the Administrator, or from other persons on behalf of the Administrator to the phone number or Telegram account of the Subscriber specified upon acceptance of the Offer. Consent to receive newsletters and promotional materials may be revoked by the Subscriber at any time by sending a corresponding notification to the Administrator at the email address: <a href="mailto:support@100f.com">support@100f.com</a></p>
-          <h2 className={styles["secondary-title"]}>
+          <h2 className="secondary-title">
               9. FINAL PROVISIONS
           </h2>
           <p>9.1. The laws of Hong Kong apply to the relations of the Parties under the Agreement. The parties do not have any related oral agreements. The content of the text of the Agreement fully corresponds to the actual expression of the will of the Parties.
@@ -182,7 +181,7 @@ const Policy = () => {
           <p>9.4. The Parties hereby confirm that when executing (amending, supplementing, terminating) the Agreement, as well as when conducting correspondence on these issues, the use of analogues of the Parties’ handwritten signature is allowed. The Parties confirm that all notices, messages, agreements and documents within the framework of the Parties’ performance of obligations arising from the Agreement, signed by analogues of the Parties’ handwritten signature, are legally binding and binding on the Parties. Analogues of a handwritten signature are understood to mean the Telegram Subscriber ID, phone number or email address specified when accepting the Offer.
           </p>
           <p>9.5. Subscriber hereby represents to the Administrator that he has read and understands all provisions listed in this Agreement.</p>
-          <h2 className={styles["secondary-title"]}>
+          <h2 className="secondary-title">
               9. FINAL PROVISIONS
           </h2>
           <p>10. ADMINISTRATOR DETAILS

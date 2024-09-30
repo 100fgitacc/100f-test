@@ -1,24 +1,24 @@
 import React from "react"
 import Sidebar from "/components/sidebar";
-import Disclamer from "/components/disclamer";
+import Disclaimer from "/components/disclaimer";
 import AnimatedPage from '/components/AnimatePage';
 import Head from "next/head";
 import Header from "/components/header";
 
-const DisclamerPage = () => {
+const DisclaimerPage = () => {
   return(
     <>
        <Head>
-        <title>Disclamer</title>
+        <title>disclaimer</title>
         <link rel="icon" href="/assets/img/favicon.ico" />
       </Head>
       <Header/>
       <Sidebar/>
       <AnimatedPage >
-        <Disclamer/>
+        <Disclaimer/>
       </AnimatedPage>
     </>
   )
 }
 
-export default DisclamerPage;
+export default DisclaimerPage;

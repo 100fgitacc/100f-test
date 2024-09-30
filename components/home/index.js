@@ -11,7 +11,6 @@ const Home = () => {
     <div>
       <section className={styles['first-screen-card']}>
         <div className={styles['first-screen-card-container']}>
-        
             <CoinsPlugin/>
             <div className={styles.inner}>
                 <h1 className="main-title"><span className='title-span'>One crypto space </span> where qualified projects and educated audience meet</h1>

@@ -100,7 +100,7 @@ const Investments = () => {
                 <div className={styles['first-screen-card-container']}>
                     <CoinsPlugin/>
                     <div className={styles.inner}>
-                        <h1 className="main-title"><span className='title-span'>One space</span> where crypto projects and educated investors meet</h1>
+                    <h1 className="main-title"><span className='title-span'>One crypto space </span> where qualified projects and educated audience meet</h1>
                         <div className={styles.advantages}>
                             <div className={styles['advantages-goal-list']}>
                             <div className={styles['advantages-goal-list-item']}>
@@ -200,8 +200,8 @@ const Investments = () => {
             </section>
             <section className={styles['advantages-card']}>
                 <div className={styles['advantages-card-item']} >
-                    <p className={styles['card-desc']}>To make the best decision for ourselves and our community, we meticulously analyze the crypto projects we invest in. We only invest in those that meet our standards and have sufficient growth potential. </p>
-                    <p className={styles['card-desc']}>As of today, the average growth rate of the projects we have invested in is X38 from the listing price, demonstrating our effectiveness and authority in selecting promising projects</p>
+                    <p className={styles['card-desc']}>To make the best decision for our community, we meticulously analyze the crypto projects to get pure gems. We only choose those that meet our standards and have sufficient growth potential</p>
+                    <p className={styles['card-desc']}>As of today, the average growth rate of our selected projects is X38 from the listing price, demonstrating our expertise</p>
                 </div>
                 <div className={styles['advantages-card-item']} >
                     <p className={styles['card-desc']}>Thanks to our growing reputation, we continue to attract not only beginners but also high-level investors and influencers from around the world who provide support to crypto projects</p>
