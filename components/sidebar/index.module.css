@@ -1,7 +1,7 @@
 .sidebar {
     background-color: #181A40;
     position: fixed;
-    z-index: 999999999;
+    z-index: 99;
     top: 0;
     left: 0;
     bottom: 0;
@@ -14,7 +14,7 @@
     width: 180px;
     height: 36px;
     margin: 20px 15px;
-    background-image: url('/assets/img/logo.png');
+    background-image: url('/assets/img/logo-new.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -50,39 +50,48 @@
     padding: 15px;
 }
 .banner-item {
+    width: 200px;
+    height: 63px;
     margin-bottom: 10px;
     border-radius: 10px;
     font-size: 16px;
     color: #fff;
     position: relative;
-    padding: 15px;
-    padding-top: 5px;
-    padding-right: 5px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    transition: transform 0.3s ease;
 }
-/* .banner-item:nth-child(1) {
-    width: 200px;
-    height: 160px;
-    padding-left: 0;
-    margin-bottom: 25px;
-    background-image: url('/assets/img/banner2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
-.banner-item__private, .banner-item__investround {
-    max-width: 200px;
-    height: 160px;
+.banner-item:nth-child(1) {
+    background-image: url('/assets/img/btn1.png');
 }
-.banner-item__investround:hover, .banner-item__private:hover {
+.banner-item:nth-child(2) {
+    background-image: url('/assets/img/btn2.png');
+}
+.banner-item:nth-child(3) {
+    background-image: url('/assets/img/btn3.png');
+}
+.banner-item:nth-child(4) {
+    background-image: url('/assets/img/btn4.png');
+}
+.banner-item:nth-child(5) {
+    background-image: url('/assets/img/btn5.png');
+}
+.banner-item:hover {
     transform: scale(1.05);
     opacity: 1;
 }
-.banner-item__private {
+/* .banner-item__private, .banner-item__investround {
+    max-width: 200px;
+    height: 160px;
+} */
+/* .banner-item__investround:hover, .banner-item__private:hover {
+    transform: scale(1.05);
+    opacity: 1;
+} */
+/* .banner-item__private {
     transition: transform 0.3s ease;
-}
+} */
 
 .banner-item__educational {
     background-image: url('/assets/img/Frame19.png');
@@ -246,6 +255,11 @@
         max-width: 150px;
         height: 125px;
     } */
+    .banner-item{
+        object-fit: cover;
+        width: 150px;
+        height: 47px;
+     }
     
 }
 @media screen and (max-width: 768px) {

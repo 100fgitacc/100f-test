@@ -18,7 +18,7 @@ const Sidebar = () => {
   return (
     <nav className={styles.sidebar}>
       <Link href="/" className={styles['main-logo']}>
-        <Image src="/assets/img/logo.png" alt="logo" width={180} height={35}/>
+        <Image src="/assets/img/logo-new.png" alt="logo" width={180} height={35}/>
       </Link>
       <ul className={styles['sidebar-menu']}>
         <li className={styles['sidebar-menu__item']}>
@@ -26,7 +26,7 @@ const Sidebar = () => {
             Home
           </Link>
         </li>
-        <li className={styles['sidebar-menu__item']}>
+        {/* <li className={styles['sidebar-menu__item']}>
           <Link href="/kols">
             <p className={`${styles['page-button']} ${isActive('/kols') ? styles.active : ''} ${styles['promotion-btn']}`}>KOLs Promotion</p>
           </Link>
@@ -35,28 +35,29 @@ const Sidebar = () => {
           <Link href="/early-stage">
             <p className={`${styles['page-button']} ${isActive('/early-stage') ? styles.active : ''} ${styles['investments-btn']}`}>Early-Stage</p>
           </Link>
-        </li>
+        </li> */}
         <li className={styles['sidebar-menu__item']}>
           <Link href="/blog">
             <p className={`${styles['page-button']} ${isActive('/blog') ? styles.active : ''} ${styles['blog-btn']}`}>Blog</p>
           </Link>
         </li>
-        <li className={styles['sidebar-menu__item']}>
+        {/* <li className={styles['sidebar-menu__item']}>
           <Link href="/contacts">
             <p className={`${styles['page-button']} ${isActive('/contacts') ? styles.active : ''} ${styles['contact-btn']}`}>Contact Us</p>
           </Link>
-        </li>
+        </li> */}
       </ul>
       <div className={styles.banner}>
         {/* <a href="https://invest.100f.com/zimabank" target="_blank" className={`${styles['banner-item']} ${styles['banner-item__private']}`}></a> */}
-        <div className={`${styles['banner-item']} ${styles['banner-item__educational']}`}>
+        {/* <div className={`${styles['banner-item']} ${styles['banner-item__educational']}`}>
             <p className={styles['banner-note']}>Updates coming soon</p>
             <p className={styles['banner-title']}>Educational platform</p>
-        </div>
-        <div className={`${styles['banner-item']} ${styles['banner-item__sales']}`}>
-            <p className={styles['banner-note']}>Release coming soon</p>
-            <p className={styles['banner-title']}>Sales funnel building platform</p>
-        </div>
+        </div> */}
+        <a href="https://100f.com/kols" target="_blank" className={`${styles['banner-item']}`}></a>
+        <a href="https://100f.com/early-stage" target="_blank" className={`${styles['banner-item']}`}></a>
+        <a href="https://100f.com/crypto-nodes" target="_blank" className={`${styles['banner-item']}`}></a>
+        <a className={`${styles['banner-item']}`}></a>
+        <a className={`${styles['banner-item']}`}></a>
       </div>
     </nav>
   );

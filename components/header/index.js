@@ -64,7 +64,7 @@ const BurgerMenu = () => {
   return (
     <div className={`${styles['header-adaptive']} ${isScrolled ? styles.scrolled : ''} ${isOpen ? styles.open : ''} ${isMobile ? styles.mobile : ''}`}>
       <Link href="/" className={styles['main-logo']}>
-        <Image src="/assets/img/logo.png" alt="logo" width={180} height={35}/>
+        <Image src="/assets/img/footer-logo.png" alt="logo" width={60} height={17}/>
       </Link>
       <button onClick={toggleMenu} className={`${styles['hamburger-menu']} ${isOpen ? styles.open : ''}`}>
         <span></span>
@@ -82,29 +82,29 @@ const BurgerMenu = () => {
               Home
             </Link>
           </li>
-          <li className={styles['sidebar-menu__item']}>
+          {/* <li className={styles['sidebar-menu__item']}>
             <Link href="/kols">
               <p className={`${styles['page-button']} ${isActive('/kols') ? styles.active : ''} ${styles['promotion-btn']}`}>KOLs Promotion</p>
             </Link>
-          </li>
-          <li className={styles['sidebar-menu__item']}>
+          </li> */}
+          {/* <li className={styles['sidebar-menu__item']}>
             <Link href="/early-stage">
               <p className={`${styles['page-button']} ${isActive('/early-stage') ? styles.active : ''} ${styles['investments-btn']}`}>Early-Stage</p>
             </Link>
-          </li>
+          </li> */}
           <li className={styles['sidebar-menu__item']}>
             <Link href="/blog">
               <p className={`${styles['page-button']} ${isActive('/blog') ? styles.active : ''} ${styles['blog-btn']}`}>Blog</p>
             </Link>
           </li>
-          <li className={styles['sidebar-menu__item']}>
+          {/* <li className={styles['sidebar-menu__item']}>
             <Link href="/contacts">
               <p className={`${styles['page-button']} ${isActive('/contacts') ? styles.active : ''} ${styles['contact-btn']}`}>Contact Us</p>
             </Link>
-          </li>
+          </li> */}
         </ul>
         <div className={styles.banner}>
-          <a href="https://invest.100f.com/zimabank" target="_blank" className={`${styles['banner-item']} ${styles['banner-item__private']}`} alt="Private Sale - ZimaBank" ></a>
+          {/* <a href="https://invest.100f.com/zimabank" target="_blank" className={`${styles['banner-item']} ${styles['banner-item__private']}`} alt="Private Sale - ZimaBank" ></a>
           <div className={`${styles['banner-item']} ${styles['banner-item__educational']}`}>
               <p className={styles['banner-note']}>Updates coming soon</p>
               <p className={styles['banner-title']}>Educational platform</p>
@@ -112,7 +112,12 @@ const BurgerMenu = () => {
           <div className={`${styles['banner-item']} ${styles['banner-item__sales']}`}>
               <p className={styles['banner-note']}>Release coming soon</p>
               <p className={styles['banner-title']}>Sales funnel building platform</p>
-          </div>
+          </div> */}
+          <a href="https://100f.com/kols" target="_blank" className={`${styles['banner-item']}`}></a>
+          <a href="https://100f.com/early-stage" target="_blank" className={`${styles['banner-item']}`}></a>
+          <a href="https://100f.com/crypto-nodes" target="_blank" className={`${styles['banner-item']}`}></a>
+          <a className={`${styles['banner-item']}`}></a>
+          <a className={`${styles['banner-item']}`}></a>
         </div>
       </motion.nav>
     </div>

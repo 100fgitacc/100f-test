@@ -161,6 +161,25 @@
 .banner-item__sales{
     background-image: url('/assets/img/Frame20.png');
 }
+.banner-item {
+  width: 270px;
+  height: 84px;
+}
+.banner-item:nth-child(1) {
+  background-image: url('/assets/img/btn1.png');
+}
+.banner-item:nth-child(2) {
+  background-image: url('/assets/img/btn2.png');
+}
+.banner-item:nth-child(3) {
+  background-image: url('/assets/img/btn3.png');
+}
+.banner-item:nth-child(4) {
+  background-image: url('/assets/img/btn4.png');
+}
+.banner-item:nth-child(5) {
+  background-image: url('/assets/img/btn5.png');
+}
 .banner-note {
     max-width: 125px;
     margin-right: 0;
