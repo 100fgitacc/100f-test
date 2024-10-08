@@ -9,7 +9,11 @@ const Contacts = ({ contacts }) => {
   const validateForm = (formData) => {
     const newErrors = {};
     if (!formData.name) newErrors.name = 'This field is empty';
-    if (!formData.email) newErrors.email = 'This field is empty';
+    if (!formData.email) {
+      newErrors.email = 'This field is empty';
+    } else if (!formData.email.includes('@') || !formData.email.includes('.')) {
+      newErrors.email = 'Please enter a valid email address';
+    }
     return newErrors;
   };
 
