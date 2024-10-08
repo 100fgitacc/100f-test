@@ -91,7 +91,7 @@
 .button{
   max-width: 225px;
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   position: relative;
   display: block;
   cursor: pointer;
@@ -115,11 +115,11 @@
   height: 17px;
 }
 .note{
-  max-width: 397px;
+  max-width: 330px;
   margin: 0 auto;
   line-height: 135%;
   opacity: 0.65;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .schedule-btn {
@@ -128,7 +128,7 @@
   padding: 15px;
   padding-left: 35px;
   margin-top: 25px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border-radius: 5px;
   background: rgb(5, 233, 240);
   font-size: 14px;
@@ -241,6 +241,7 @@
 .phases-cards-elem > p {
   font-family: 'Wadik', sans-serif;
   font-size: 14px;
+  font-weight: bold;
 }
 .become-section{
   display: flex;

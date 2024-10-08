@@ -113,7 +113,7 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
         <div className='content'>
           <section className={styles['first-screen-card']}>
             <div className={styles['first-screen-card-container']}>
-              <CoinsPlugin />
+              {/* <CoinsPlugin /> */}
               <div className={styles.inner}>
                 <Link href="/blog" className={styles.subtitle}>
                   Blog

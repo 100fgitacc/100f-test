@@ -10,7 +10,11 @@ const Contacts = ({ contacts }) => {
     const newErrors = {};
     if (!formData.name) newErrors.name = 'This field is empty';
     if (!formData.company) newErrors.company = 'This field is empty';
-    if (!formData.email) newErrors.email = 'This field is empty';
+    if (!formData.email) {
+      newErrors.email = 'This field is empty';
+    } else if (!formData.email.includes('@') || !formData.email.includes('.')) {
+      newErrors.email = 'Please enter a valid email address';
+    }
     if (!formData.tel) newErrors.tel = 'This field is empty';
     if (!formData.request) newErrors.request = 'This field is empty';
     return newErrors;
@@ -40,7 +44,7 @@ const Contacts = ({ contacts }) => {
 
       const result = await res.json();
       if (result.success) {
-        setStatus('Email sent successfully!');
+        setStatus('Your request was successfully sent!');
         formRef.current.reset(); 
         setTimeout(() => {
           setStatus('');

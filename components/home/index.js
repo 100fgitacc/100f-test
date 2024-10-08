@@ -28,7 +28,7 @@ const Home = () => {
                 <div className={styles.inner}>
                     <Image className={styles.logo} src='/assets/img/footer-logo.png' width={86} height={25}/>
                     <h1 className={styles["main-title"]}>Unified crypto platform</h1>
-                    <p className={styles.subtitle}>connecting qualified Projects with educated audience</p>
+                    <p className={styles.subtitle}>connecting qualified Projects with an educated audience</p>
                     <div className={styles.cards}>
                         <div className={styles['card-elem']}>
                             <p className={styles['card-text']}>
@@ -165,7 +165,7 @@ const Home = () => {
                         <ul className={styles['roadmap-list']}>
                             <li className={styles['roadmap-list-item']}>
                                 <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
-                                <p>Pilot MVP Function 1</p>
+                                <p>Prototype Function 1</p>
                             </li>
                             <li className={styles['roadmap-list-item']}>
                                 <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
@@ -173,15 +173,15 @@ const Home = () => {
                             </li>
                             <li className={styles['roadmap-list-item']}>
                                 <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
-                                <p>Pilot MVP Function 2</p>
+                                <p>Prototype Function 2</p>
                             </li>
                             <li className={styles['roadmap-list-item']}>
                                 <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
-                                <p>Pilot MVP Function 3</p>
+                                <p>Prototype Function 3</p>
                             </li>
                             <li className={styles['roadmap-list-item']}>
                                 <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
-                                <p>Pilot MVP Function 4</p>
+                                <p>Prototype Function 4</p>
                             </li>
                             <li className={styles['roadmap-list-item']}>
                                 <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>

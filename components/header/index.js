@@ -64,7 +64,7 @@ const BurgerMenu = () => {
   return (
     <div className={`${styles['header-adaptive']} ${isScrolled ? styles.scrolled : ''} ${isOpen ? styles.open : ''} ${isMobile ? styles.mobile : ''}`}>
       <Link href="/" className={styles['main-logo']}>
-        <Image src="/assets/img/footer-logo.png" alt="logo" width={60} height={17}/>
+        <Image src="/assets/img/footer-logo.png" alt="logo" width={75} height={21}/>
       </Link>
       <button onClick={toggleMenu} className={`${styles['hamburger-menu']} ${isOpen ? styles.open : ''}`}>
         <span></span>

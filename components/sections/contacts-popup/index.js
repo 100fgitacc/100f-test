@@ -39,7 +39,7 @@ const Contacts = ({ contacts }) => {
 
       const result = await res.json();
       if (result.success) {
-        setStatus('Email sent successfully!');
+        setStatus('Your request was successfully sent!');
         formRef.current.reset(); 
         setTimeout(() => {
           setStatus('');

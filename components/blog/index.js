@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './index.module.css';
-import Footer from '../footer';
+import Footer from '../footer-new';
 import CoinsPlugin from '../coinsPlugin';
 import BlogCard from '../blogCard';
 import Filter from '../filter';
@@ -50,7 +50,7 @@ const Blog = ({data}) => {
     <>
       <section className={styles['first-screen-card']}>
           <div className={styles['first-screen-card-container']}>
-              <CoinsPlugin/>
+              {/* <CoinsPlugin/> */}
               <div className={styles.inner}>
                   <h1 className="main-title">BLOG</h1>
                   <p className={styles.subtitle}>Product updates, partnerships, and announcements from CoinMarketCap and our contributors</p>
