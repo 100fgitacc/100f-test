@@ -77,10 +77,10 @@
 .banner-item:nth-child(5) {
     background-image: url('/assets/img/btn5.png');
 }
-.banner-item:hover {
+/* .banner-item:hover {
     transform: scale(1.05);
     opacity: 1;
-}
+} */
 /* .banner-item__private, .banner-item__investround {
     max-width: 200px;
     height: 160px;

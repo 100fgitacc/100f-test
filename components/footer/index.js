@@ -10,7 +10,7 @@ const Footer = () => {
           <div className={styles['footer-logo']}>
               <Image src="/assets/img/footer-logo.png" alt="logo" width={75} height={23} />
           </div>
-          <p>One crypto space where qualified projects <br/> and educated audience meet</p>
+          <p>A Unified crypto platform connecting qualified projects with an educated audience</p>
         
       </div>
       <div>

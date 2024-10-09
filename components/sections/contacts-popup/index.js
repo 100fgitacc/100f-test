@@ -2,11 +2,13 @@ import React, { useState, useRef  } from 'react';
 import styles from './index.module.css';
 import Image from 'next/image';
 import Swal from 'sweetalert2';
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
 const Contacts = ({ contacts }) => {
   const [status, setStatus] = useState('');
   const [errors, setErrors] = useState({});
   const formRef = useRef(null);
-
+  const [phone, setPhone] = useState('');
   const validateForm = (formData) => {
     const newErrors = {};
     if (!formData.name) newErrors.name = 'This field is empty';
@@ -15,14 +17,21 @@ const Contacts = ({ contacts }) => {
     } else if (!formData.email.includes('@') || !formData.email.includes('.')) {
       newErrors.email = 'Please enter a valid email address';
     }
-    if (!formData.tel) newErrors.tel = 'This field is empty';
-    return newErrors;
+    const phoneDigits = phone.replace(/\D/g, ''); 
+    
+    if (!phone) {
+      newErrors.tel = 'This field is empty';
+    } else if (phoneDigits.length < 10 || phoneDigits.length > 15) {
+       newErrors.tel = 'Please enter a valid phone';
+    }
+    return newErrors; 
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const formData = new FormData(e.target);
+    formData.append('tel', phone);
     const data = Object.fromEntries(formData.entries());
     const newErrors = validateForm(data);
     if (Object.keys(newErrors).length > 0) {
@@ -31,7 +40,6 @@ const Contacts = ({ contacts }) => {
     } else {
       setErrors({});
     }
-
     try {
       const res = await fetch('/api/send-email', {
         method: 'POST',
@@ -75,7 +83,12 @@ const Contacts = ({ contacts }) => {
             </div>
           
             <div className={styles['form-group']}>
-              <input type="text" id="tel" name="tel" placeholder="Your Phone" required />
+              <PhoneInput
+                country={'us'}
+                value={phone}
+                onChange={phone => setPhone(phone)}
+                required
+              />
               <div className={`${styles['error-message']} ${errors.tel ? styles.active : ''}`}>{errors.tel}</div>
             </div>
             <div className={styles['form-group']}>
@@ -83,7 +96,7 @@ const Contacts = ({ contacts }) => {
               <div className={`${styles['error-message']} ${errors.email ? styles.active : ''}`}>{errors.email}</div>
             </div>
             <div className={styles['button-cont']}>
-              <button id="submitBtn" type="submit" className={styles['mailing-form-btn']}>Let&apos;s talk!</button>
+              <button id="submitBtn" type="submit" className={styles['mailing-form-btn']}>Become An Early Adopter</button>
               {status && <p>{status}</p>}
             </div>
           </form>

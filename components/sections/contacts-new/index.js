@@ -1,7 +1,22 @@
 import React, { useState, useRef  } from 'react';
 import styles from './index.module.css';
 import Image from 'next/image';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
+import PopupSuccess from '/components/sections/popup-success';
+const MySwal = withReactContent(Swal);
 const Contacts = ({ contacts }) => {
+
+
+  const showPopup = () => {
+    MySwal.fire({
+        html: <PopupSuccess />,  
+        showConfirmButton: false, 
+        showCloseButton: true,  
+        backdrop: true, 
+      });
+  };
+
   const [status, setStatus] = useState('');
   const [errors, setErrors] = useState({});
   const formRef = useRef(null);
@@ -19,7 +34,6 @@ const Contacts = ({ contacts }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
     const newErrors = validateForm(data);
@@ -41,11 +55,9 @@ const Contacts = ({ contacts }) => {
 
       const result = await res.json();
       if (result.success) {
-        setStatus('Your request was successfully sent!');
         formRef.current.reset(); 
-        setTimeout(() => {
-          setStatus('');
-        }, 1500);
+        setStatus('');
+        showPopup();
       } else {
         setStatus(`Failed to send email: ${result.error}`);
       }
@@ -77,7 +89,7 @@ const Contacts = ({ contacts }) => {
             <div className={`${styles['error-message']} ${errors.email ? styles.active : ''}`}>{errors.email}</div>
           </div>
           <div className={styles['button-cont']}>
-            <button id="submitBtn" type="submit" className={styles['mailing-form-btn']}>Let&apos;s talk!</button>
+            <button id="submitBtn" type="submit" className={styles['mailing-form-btn']}>Become An Early Adopter</button>
             {status && <p>{status}</p>}
           </div>
         </form>

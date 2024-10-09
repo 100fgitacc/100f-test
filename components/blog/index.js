@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './index.module.css';
-import Footer from '../footer-new';
+import Footer from '../footer';
 import CoinsPlugin from '../coinsPlugin';
 import BlogCard from '../blogCard';
 import Filter from '../filter';

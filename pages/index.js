@@ -11,8 +11,8 @@ const HomePage = () => {
   return(
     <>
       <Head>
-        <title>100F | One crypto space where qualified projects and educated audience meet</title>
-        <meta name="description" content="100F is the ultimate platform where crypto projects and educated investors meet. Join our public and private audiences, and explore our educational platform and marketing expertise." />
+        <title>100 Franklins • A Unified Crypto Platform Connecting Qualified Projects With An Educated Audience </title>
+        <meta name="description" content="100 Franklins • A Unified Crypto Platform Connecting Qualified Projects With An Educated Audience " />
         <meta name="keywords" content="crypto, investors, education, marketing, audience, projects, cryptocurrency, 100F" />
         <meta name="author" content="100F" />
         <link rel="icon" href="/assets/img/favicon.ico" />

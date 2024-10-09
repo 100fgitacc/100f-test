@@ -45,6 +45,86 @@ const Slider = () => {
             height={225}
           />
         </SwiperSlide>
+        <SwiperSlide className={styles['slide-wrapper']}>
+          <Image
+            src='/assets/img/new-slide4.png'
+            alt="project-item"
+            width={386}
+            height={225}
+          />
+        </SwiperSlide>
+        <SwiperSlide className={styles['slide-wrapper']}>
+          <Image
+            src='/assets/img/new-slide5.png'
+            alt="project-item"
+            width={386}
+            height={225}
+          />
+        </SwiperSlide>
+        <SwiperSlide className={styles['slide-wrapper']}>
+          <Image
+            src='/assets/img/new-slide6.png'
+            alt="project-item"
+            width={386}
+            height={225}
+          />
+        </SwiperSlide>
+        <SwiperSlide className={styles['slide-wrapper']}>
+          <Image
+            src='/assets/img/new-slide7.png'
+            alt="project-item"
+            width={386}
+            height={225}
+          />
+        </SwiperSlide>
+        <SwiperSlide className={styles['slide-wrapper']}>
+          <Image
+            src='/assets/img/new-slide8.png'
+            alt="project-item"
+            width={386}
+            height={225}
+          />
+        </SwiperSlide>
+        <SwiperSlide className={styles['slide-wrapper']}>
+          <Image
+            src='/assets/img/new-slide9.png'
+            alt="project-item"
+            width={386}
+            height={225}
+          />
+        </SwiperSlide>
+        <SwiperSlide className={styles['slide-wrapper']}>
+          <Image
+            src='/assets/img/new-slide10.png'
+            alt="project-item"
+            width={386}
+            height={225}
+          />
+        </SwiperSlide>
+        <SwiperSlide className={styles['slide-wrapper']}>
+          <Image
+            src='/assets/img/new-slide11.png'
+            alt="project-item"
+            width={386}
+            height={225}
+          />
+        </SwiperSlide>
+        <SwiperSlide className={styles['slide-wrapper']}>
+          <Image
+            src='/assets/img/new-slide12.png'
+            alt="project-item"
+            width={386}
+            height={225}
+          />
+        </SwiperSlide>
+        <SwiperSlide className={styles['slide-wrapper']}>
+          <Image
+            src='/assets/img/new-slide13.png'
+            alt="project-item"
+            width={386}
+            height={225}
+          />
+        </SwiperSlide>
       </Swiper>
     );
   };

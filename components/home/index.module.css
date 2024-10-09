@@ -115,7 +115,7 @@
   height: 17px;
 }
 .note{
-  max-width: 330px;
+  max-width: 315px;
   margin: 0 auto;
   line-height: 135%;
   opacity: 0.65;
@@ -1033,7 +1033,7 @@
   }
   .note{
     margin-bottom: 50px;
-    max-width: 260px;
+    max-width: 230px;
   }
   .first-screen-card-container{
     background-image: url('/assets/img/Frame5464-new-m.png');

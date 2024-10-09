@@ -100,7 +100,7 @@ const Investments = () => {
                 <div className={styles['first-screen-card-container']}>
                     <CoinsPlugin/>
                     <div className={styles.inner}>
-                    <h1 className="main-title"><span className='title-span'>Unified crypto platform </span>connecting qualified projected with educated audience</h1>
+                    <h1 className="main-title"><span className='title-span'>A Unified crypto platform </span>connecting qualified projected with educated audience</h1>
                         <div className={styles.advantages}>
                             <div className={styles['advantages-goal-list']}>
                             <div className={styles['advantages-goal-list-item']}>

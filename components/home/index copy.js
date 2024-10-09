@@ -10,7 +10,7 @@ const Home = () => {
         <div className={styles['first-srceen-card-container']}>
             <div className={styles.inner}>
                 <Image className={styles.logo} src='/assets/img/footer-logo.png' width={86} height={25}/>
-                <h1 className={styles["main-title"]}>Unified crypto platform</h1>
+                <h1 className={styles["main-title"]}>A Unified crypto platform</h1>
                 <p className={styles.subtitle}>connecting qualified Projects with educated audience</p>
                 <div className={styles.cards}>
                     <div className={styles['card-elem']}>

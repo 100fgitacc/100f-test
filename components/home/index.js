@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Element } from 'react-scroll';
 import styles from './index.module.css';
-import Footer from '../footer-new';
+import Footer from '../footer';
 import Image from 'next/image';
 import BecomeSlider from '/components/sections/becomeSlider'
 import Contacts from '../sections/contacts-new';
@@ -27,7 +27,7 @@ const Home = () => {
             <div className={styles['first-screen-card-container']}>
                 <div className={styles.inner}>
                     <Image className={styles.logo} src='/assets/img/footer-logo.png' width={86} height={25}/>
-                    <h1 className={styles["main-title"]}>Unified crypto platform</h1>
+                    <h1 className={styles["main-title"]}>A Unified crypto platform</h1>
                     <p className={styles.subtitle}>connecting qualified Projects with an educated audience</p>
                     <div className={styles.cards}>
                         <div className={styles['card-elem']}>
@@ -67,10 +67,10 @@ const Home = () => {
                         <p>Investors Onboarding</p>
                     </div>
                     <div className={styles['phases-cards-elem']}>
-                        <p>Matching <br/>& Activities</p>
+                        <p>Matching <br/>&Activities</p>
                     </div>
                     <div className={styles['phases-cards-elem']}>
-                        <p>Analytics <br/>& Reporting</p>
+                        <p>Analytics <br/>&Reporting</p>
                     </div>
                 </div>
                 <div className={styles['become-section']}>
