@@ -25,7 +25,7 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
     return matches && matches[1] ? matches[1] : null;
   };
   const imageUrl = extractImageUrl(content.rendered);
-
+  
   useEffect(() => {
     const updatePostViews = async () => {
       try {
@@ -160,7 +160,7 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
             </div>
             {authorInfo && (
               <div className={styles['post-creator']}>
-                <Image width={96} height={96} src={authorInfo.avatar_urls['96']} alt='author img' />
+                <Image width={96} height={96} src={authorInfo.avatar_urls['256']} alt='author img' />
                 <div className={styles['author-info']}>
                   <p>{authorInfo.name}</p>
                   <p>{authorInfo.description}</p>
