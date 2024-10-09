@@ -2,6 +2,9 @@
 .first-screen-card{
   border-radius: 15px;
 }
+.mockup{
+  object-fit: contain;
+}
 .first-screen-card-container{
   position: relative;
   border-radius: 15px;
@@ -87,7 +90,9 @@
   font-weight: bold;
 }
 
-
+.ampersand{
+  margin-right: 3px;
+}
 .button{
   max-width: 225px;
   margin: 0 auto;
@@ -804,6 +809,9 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .mockup{
+    margin-bottom: 30px;
+  }
   .phases-cards{
     margin-bottom: 0;
   }
@@ -941,7 +949,8 @@
   }
   .secondary-title-mobile{
     display: block;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
+    margin-top: 25px;
   }
 
   .become-section{

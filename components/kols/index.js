@@ -13,7 +13,7 @@ const Kols = () => {
         <div className={styles['first-screen-card__container']}>
             <CoinsPlugin/>
           <div className={styles.inner}>
-          <h1 className="main-title"><span className='title-span'>A Unified crypto platform </span>connecting qualified projected with educated audience</h1>
+          <h1 className="main-title"><span className='title-span'>The unified crypto platform </span>connecting qualified projected with educated audience</h1>
               <p className={styles.subtitle}>By collaborating with crypto projects, we provide them with powerful promotion based on strong marketing and native traffic from KOLs</p>
               <div className={styles.advantages} >
                   <div className={styles['advantages-list']}>

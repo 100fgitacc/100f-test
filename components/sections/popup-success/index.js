@@ -9,8 +9,7 @@ const PopupSuccess = () => {
     <div className={styles['popup-container']}>
       <Image className={styles.image} src="/assets/img/mail.png" width={135} height={120}/>
       <h2 className={styles.heading}>SUCCESSFUL SUBMISSION!</h2>
-      <p className={styles.desc}>You have been successfully added 
-      to the early adopters’ database!
+      <p className={styles.desc}>Thank you for reaching out. We’ll contact you shortly
       </p>
       <a onClick={() => Swal.close()} className={styles['popup-close-btn']}>Thanks!</a>
   </div>

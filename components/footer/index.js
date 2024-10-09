@@ -10,15 +10,15 @@ const Footer = () => {
           <div className={styles['footer-logo']}>
               <Image src="/assets/img/footer-logo.png" alt="logo" width={75} height={23} />
           </div>
-          <p>A Unified crypto platform connecting qualified projects with an educated audience</p>
+          <p>The unified crypto platform connecting qualified projects with an educated audience</p>
         
       </div>
-      <div>
+      {/* <div>
           <a className={`${styles['footer-button']} ${styles['footer-button-adaptive']}`} href="mailto:info@100f.com">Email us</a>
           <Link href="/policy" className={`${styles['docs']} ${styles['docs-policy']}`}>Terms and Privacy Policy</Link>
           <Link href="/disclaimer"className={`${styles['docs']} ${styles['docs-disclaimer']}`}>Disclaimer </Link>
         
-      </div>
+      </div> */}
       <div>
           <a className={styles['footer-button']} href="mailto:info@100f.com">Email us</a>
           <p className={styles.copyright}>2024 © 100 Franklins</p>

@@ -30,6 +30,19 @@
     border-radius: 15px;
     color: #fff;
 }
+.form-inner-end{
+    overflow: hidden;
+    padding-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-image: url('/assets/img/POPUP.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    color: #fff;
+    padding-left: 41px;
+}
 .mailing-form {
     max-width: 450px;
     width: 100%;
@@ -117,6 +130,30 @@
     font-size: 12px;
     font-weight: 100;
     margin-left: 15px;
+}
+.heading{
+    text-align: left;
+    margin-top: 87px;
+    font-size: 20px !important;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.desc{
+    text-align: left;
+    font-size: 16px !important;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 100;
+    color: #fff;
+}
+.popup-close-btn{
+    max-width: 96px;
+    display: block;
+    cursor: pointer;
+    padding: 10px 10px 10px 33px;
+    border-radius: 5px;
+    background: #FFD900;
+    margin-top: 15px;
 }
 @media screen and (max-width: 991px) {
     .fix-content{

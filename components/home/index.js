@@ -27,7 +27,7 @@ const Home = () => {
             <div className={styles['first-screen-card-container']}>
                 <div className={styles.inner}>
                     <Image className={styles.logo} src='/assets/img/footer-logo.png' width={86} height={25}/>
-                    <h1 className={styles["main-title"]}>A Unified crypto platform</h1>
+                    <h1 className={styles["main-title"]}>The unified crypto platform</h1>
                     <p className={styles.subtitle}>connecting qualified Projects with an educated audience</p>
                     <div className={styles.cards}>
                         <div className={styles['card-elem']}>
@@ -67,10 +67,10 @@ const Home = () => {
                         <p>Investors Onboarding</p>
                     </div>
                     <div className={styles['phases-cards-elem']}>
-                        <p>Matching <br/>&Activities</p>
+                        <p>Matching <br/><span className={styles.ampersand}>&</span>Activities</p>
                     </div>
                     <div className={styles['phases-cards-elem']}>
-                        <p>Analytics <br/>&Reporting</p>
+                        <p>Analytics <br/><span className={styles.ampersand}>&</span>Reporting</p>
                     </div>
                 </div>
                 <div className={styles['become-section']}>
@@ -121,7 +121,8 @@ const Home = () => {
                             Request a pitch session to discuss investment opportunities
                         </p>
                     </div>
-                    <BecomeSlider/>
+                    {/* <BecomeSlider/> */}
+                    <Image className={styles.mockup} src='/assets/img/mockup.png' width={430} height={282}/>
                     <h2 className={`${styles['secondary-title-mobile']}`}>
                         Who Will We Become?
                     </h2>
@@ -227,10 +228,6 @@ const Home = () => {
                             </li>
                             <li className={styles['roadmap-list-item']}>
                                 <Image src='/assets/img/icons/blue-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
-                                <p>MRR $12,000+</p>
-                            </li>
-                            <li className={styles['roadmap-list-item']}>
-                                <Image src='/assets/img/icons/blue-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
                                 <p>MVP Platform Release</p>
                             </li>
                             <li className={styles['roadmap-list-item']}>
@@ -296,7 +293,7 @@ const Home = () => {
                             </li>
                             <li className={styles['roadmap-list-item']}>
                                 <Image src='/assets/img/icons/blue-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
-                                <p>MRR $1,300,000+</p>
+                                <p>MRR $670,000+</p>
                             </li>
                         </ul>
                     </div>
@@ -347,7 +344,7 @@ const Home = () => {
                     <Image src='/assets/img/icopro4.png' width={44} height={44}/>
                     <div className={styles.desc}>
                         <h3 className={styles['third-title']}>Short-Term</h3>
-                        <p>One-time projects use one-time investors</p>
+                        <p>Typical projects rely on one-time investors</p>
                     </div>
                 </div>
             </div>

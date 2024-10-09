@@ -34,6 +34,8 @@ const Contacts = ({ contacts }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    showPopup();
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
     const newErrors = validateForm(data);
@@ -44,27 +46,26 @@ const Contacts = ({ contacts }) => {
       setErrors({});
     }
 
-    try {
-      const res = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
+    // try {
+    //   const res = await fetch('/api/send-email', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify(data),
+    //   });
 
-      const result = await res.json();
-      if (result.success) {
-        formRef.current.reset(); 
-        setStatus('');
-        showPopup();
-      } else {
-        setStatus(`Failed to send email: ${result.error}`);
-      }
-    } catch (error) {
-      setStatus(`Failed to send email: ${error.message}`);
-      console.error('Error sending email:', error);
-    }
+    //   const result = await res.json();
+    //   if (result.success) {
+    //     formRef.current.reset(); 
+    //     setStatus('');
+    //   } else {
+    //     setStatus(`Failed to send email: ${result.error}`);
+    //   }
+    // } catch (error) {
+    //   setStatus(`Failed to send email: ${error.message}`);
+    //   console.error('Error sending email:', error);
+    // }
   };
 
   return (

@@ -13,7 +13,7 @@ const Footer = () => {
         
       </div>
       <div>
-          <p className={styles.copyright}>A Unified crypto platform connecting qualified projects with an educated audience</p>
+          <p className={styles.copyright}>The unified crypto platform connecting qualified projects with an educated audience</p>
       </div>
     </footer>
   );
