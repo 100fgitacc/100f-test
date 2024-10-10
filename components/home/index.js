@@ -23,6 +23,22 @@ const Home = () => {
 
   return (
     <>
+        {/* <section className={styles.test}>
+            <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 10 10 H 150 A 40 40 0 0 1 190 50 V 190" 
+                        fill="transparent" 
+                        stroke="red" 
+                        stroke-width="2"
+                        stroke-dasharray="360"
+                        stroke-dashoffset="360">
+                    <animate attributeName="stroke-dashoffset" 
+                            from="360" 
+                            to="0" 
+                            dur="2s" 
+                            fill="freeze" />
+                </path>
+            </svg>
+        </section> */}
         <section className={styles['first-screen-card']}>
             <div className={styles['first-screen-card-container']}>
                 <div className={styles.inner}>
