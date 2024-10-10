@@ -202,6 +202,10 @@ input::placeholder {
   overflow: hidden;
   min-width: 685px;
 }
+.my-swal-popup{
+  min-width:unset !important;
+  width: 450px;
+}
 .swal2-close{
   font-size: 1.5em;
   margin-top: 7px;

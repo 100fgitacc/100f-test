@@ -31,6 +31,9 @@
   font-family: 'Wadik',serif;
   font-size: 14px;
 }
+.first-screen-card .subtitle{
+  font-size: 15px;
+}
 .cards{
   max-width: 828px;
   margin: 35px auto;
@@ -39,7 +42,7 @@
 }
 .card-elem{
   position: relative;
-  padding: 68px 145px 17px 28px;
+  padding: 60px 145px 25px 28px;
   background-color: #181A40;
   border-radius: 10px;
   overflow: hidden;
@@ -212,6 +215,14 @@
   position: relative;
   margin-left: 37px;
 }
+.phases-inner .secondary-title,
+.phases-inner .secondary-title-mobile{
+  color: #23ffbe;
+}
+.become-section-desc .secondary-title,
+.phases-inner .secondary-title-mobile:last-child{
+  color: #ffd900;
+}
 .secondary-title{
   margin-bottom: 35px;
 }
@@ -249,6 +260,7 @@
   font-weight: bold;
 }
 .become-section{
+  max-width: 820px;
   display: flex;
   justify-content: space-between;
 }
@@ -697,6 +709,8 @@
 }
 .solved-problem-item-wrapper > .solved-problem-item{
   height: 86px;
+  max-width: 415px;
+  width: 100%;
 }
 .solved-problem-item-wrapper:before{
   content: '';
@@ -721,13 +735,12 @@
   height: 71px;
 }
 .solved-problem-item-last{
-  max-width: 395px;
+  max-width: 415px;
+  width: 100%;
   margin: 0 auto;
   padding-right: 0;
 }
-.solved-problem-item-last .third-title{
-  font-size: 18px;
-}
+
 .secondary-title-mobile{
   display: none;
 }

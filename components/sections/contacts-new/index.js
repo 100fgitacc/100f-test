@@ -14,6 +14,9 @@ const Contacts = ({ contacts }) => {
         showConfirmButton: false, 
         showCloseButton: true,  
         backdrop: true, 
+        customClass: {
+          popup: 'my-swal-popup',
+        },
       });
   };
 

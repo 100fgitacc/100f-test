@@ -32,12 +32,12 @@ const Home = () => {
                     <div className={styles.cards}>
                         <div className={styles['card-elem']}>
                             <p className={styles['card-text']}>
-                                <span>Innovative projects </span>attract educated investors and an engaged audience
+                                <span>Qualified projects </span> attract investments from a crypto audience focused on long-term growth over short-term speculation
                             </p>
                         </div>
                         <div className={styles['card-elem']}>
                             <p className={styles['card-text']}>
-                                <span>Crypto enthusiasts </span>contribute and earn with crypto projects
+                                <span>Educated crypto audience </span>contributes to projects and earns alongside them in the long-term
                             </p>
                         </div>
                     </div>
