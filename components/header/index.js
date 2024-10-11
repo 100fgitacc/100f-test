@@ -113,9 +113,9 @@ const BurgerMenu = () => {
               <p className={styles['banner-note']}>Release coming soon</p>
               <p className={styles['banner-title']}>Sales funnel building platform</p>
           </div> */}
-          <a href="https://100f.com/kols" target="_blank" className={`${styles['banner-item']}`}></a>
-          <a href="https://100f.com/early-stage" target="_blank" className={`${styles['banner-item']}`}></a>
-          <a href="https://100f.com/crypto-nodes" target="_blank" className={`${styles['banner-item']}`}></a>
+          <a className={`${styles['banner-item']}`}></a>
+          <a className={`${styles['banner-item']}`}></a>
+          <a  className={`${styles['banner-item']}`}></a>
           <a className={`${styles['banner-item']}`}></a>
           <a className={`${styles['banner-item']}`}></a>
         </div>
