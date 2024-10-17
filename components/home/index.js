@@ -150,12 +150,12 @@ const Home = () => {
             <div className={styles.inner}>
                 <h2 className={styles["main-title"]}>Platform Waiting List</h2>
                 <div className={styles.cards}>
-                    <div className={styles['card-elem']}>
+                    {/* <div className={styles['card-elem']}>
                         <p className={styles['card-text']}>
                             Investors
                         </p>
                         <p className={styles['card-counter']}>13,382</p>
-                    </div>
+                    </div> */}
                     <div className={styles['card-elem']}>
                         <p className={styles['card-text']}>
                             Crypto Enthusiasts
