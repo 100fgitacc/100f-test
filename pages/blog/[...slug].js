@@ -160,7 +160,7 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
             </div>
             {authorInfo && (
               <div className={styles['post-creator']}>
-                <Image width={96} height={96} src='/assets/img/IMG_8956.png' alt='author img' />
+                <Image width={96} height={96} src='/assets/img/eye.png' alt='author img' />
                 <div className={styles['author-info']}>
                   <p>{authorInfo.name}</p>
                   <p>{authorInfo.description}</p>
