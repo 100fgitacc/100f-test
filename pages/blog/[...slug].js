@@ -158,11 +158,9 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
               <Image width={20} height={20} src='/assets/img/icons/eye.png' alt='like icon' />
               <p>{views} people viewed this article</p>
             </div>
-            <Image width={96} height={96} src='/assets/img/IMG_8956.png' alt='author img' /> 
             {authorInfo && (
               <div className={styles['post-creator']}>
-                <Image width={96} height={96} src='/assets/img/IMG_8956.png' alt='author img' /> 
-                {/* <Image width={96} height={96} src='/assets/img/IMG_8956.png' alt='author img' /> */}
+                <Image width={96} height={96} src='/assets/img/IMG_8956.png' alt='author img' />
                 <div className={styles['author-info']}>
                   <p>{authorInfo.name}</p>
                   <p>{authorInfo.description}</p>
