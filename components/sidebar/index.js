@@ -36,11 +36,11 @@ const Sidebar = () => {
             <p className={`${styles['page-button']} ${isActive('/early-stage') ? styles.active : ''} ${styles['investments-btn']}`}>Early-Stage</p>
           </Link>
         </li> */}
-        {/* <li className={styles['sidebar-menu__item']}>
+        <li className={styles['sidebar-menu__item']}>
           <Link href="/blog">
             <p className={`${styles['page-button']} ${isActive('/blog') ? styles.active : ''} ${styles['blog-btn']}`}>Blog</p>
           </Link>
-        </li> */}
+        </li>
         {/* <li className={styles['sidebar-menu__item']}>
           <Link href="/contacts">
             <p className={`${styles['page-button']} ${isActive('/contacts') ? styles.active : ''} ${styles['contact-btn']}`}>Contact Us</p>
