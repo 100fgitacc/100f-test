@@ -359,7 +359,7 @@ const Home = () => {
                 <div className={`${styles['solved-problem-item']} ${styles['solved-problem-item-last']}`}>
                     <Image src='/assets/img/icopro4.png' width={44} height={44}/>
                     <div className={styles.desc}>
-                        <h3 className={styles['third-title']}>Short-Term</h3>
+                        <h3 className={styles['third-title']}>Short-Term Speculation</h3>
                         <p>Typical projects rely on one-time investors</p>
                     </div>
                 </div>
