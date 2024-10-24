@@ -16,6 +16,8 @@ const HomePage = () => {
         <meta name="keywords" content="crypto, investors, education, marketing, audience, projects, cryptocurrency, 100F" />
         <meta name="author" content="100F" />
         <link rel="icon" href="/assets/img/favicon.ico" />
+        <meta property="og:image" content='/public/assets/img/social_img.png' />
+        <meta property="twitter:image" content='/public/assets/img/social_img.png' />
       </Head>
       <Header/>
       <Sidebar/>
