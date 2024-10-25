@@ -12,7 +12,7 @@ const HomePage = () => {
     <>
       <Head>
         <title>100 Franklins • The Unified Crypto Platform Connecting Qualified Projects With An Educated Audience </title>
-        <meta name="description" content="100 Franklins • The Unified Crypto Platform Connecting Qualified Projects With An Educated Audience " />
+        <meta name="description" content="Solving the most significant issue hindering the growth of the crypto market – short-term speculation" />
         <meta name="keywords" content="crypto, investors, education, marketing, audience, projects, cryptocurrency, 100F" />
         <meta name="author" content="100F" />
         <link rel="icon" href="/assets/img/favicon.ico" />
