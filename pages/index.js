@@ -19,6 +19,8 @@ const HomePage = () => {
         <meta property="og:image" content='https://100f.com/assets/img/social_img.png' />
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:image" content="https://100f.com/assets/img/social_img.png"></meta>
+        <meta name="description" property="og:description" content="Solving the most significant issue hindering the growth of the crypto market – short-term speculation">
+        <meta name="title" property="og:title" content="100 Franklins • The Unified Crypto Platform Connecting Qualified Projects With An Educated Audience">
       </Head>
       <Header/>
       <Sidebar/>
