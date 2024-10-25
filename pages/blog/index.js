@@ -17,9 +17,6 @@ const BlogPage = ({ blogData }) => {
           <meta name="keywords" content="crypto blog, CoinMarketCap, product updates, partnerships, announcements, cryptocurrency news, investment articles" />
           <meta name="author" content="100F" />
           <link rel="icon" href="/assets/img/favicon.ico" />
-
-          <meta property="og:image" content='https://100f.com/assets/img/author.png' />
-          <meta property="twitter:image" content='https://100f.com//assets/img/author.png' />
       </Head>
       <Header/>
       <Sidebar/>

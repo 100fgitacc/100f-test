@@ -17,7 +17,7 @@ const HomePage = () => {
         <meta name="author" content="100F" />
         <link rel="icon" href="/assets/img/favicon.ico" />
         <meta property="og:image" content='https://100f.com/assets/img/social_img.png' />
-        <meta property="twitter:image" content='https://100f.com//assets/img/social_img.png' />
+        <meta property="twitter:image" content='https://100f.com/assets/img/social_img.png' />
       </Head>
       <Header/>
       <Sidebar/>
