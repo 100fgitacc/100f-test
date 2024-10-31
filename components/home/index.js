@@ -332,35 +332,29 @@ const Home = () => {
                     <span> Do We Solve?</span>
                 </h2>
                 <div className={styles['solved-problem-item-first']}>
-                   <Image src='/assets/img/icopro1.png' width={57} height={51}/>
+                   <Image src='/assets/img/icopro7.png' width={57} height={57}/>
                    <div className={styles.desc}>
-                    <h3 className={styles['third-title']}>Problem</h3>
-                        <p>
-                        The majority views the Web3 market as a speculative opportunity for quick profits rather than a viable long-term investment tool
-                        </p>
+                    <h3 className={styles['third-title']}>Short-Term Speculation</h3>
                    </div>
                 </div>
                 <div className={styles['solved-problem-item-wrapper']}>
                     <div className={styles['solved-problem-item']}>
-                        <Image src='/assets/img/icopro2.png' width={43} height={45}/>
+                        <Image src='/assets/img/icopro6.png' width={41} height={41}/>
                         <div className={styles.desc}>
-                            <h3 className={styles['third-title']}>Web3 Projects</h3>
-                            <p>Early-stage investors are often overlooked</p>
+                            <h3 className={styles['third-title']}>One-Time Investors</h3>
                         </div>
                     </div>
                     <div className={styles['solved-problem-item']}>
-                        <Image src='/assets/img/icopro3.png' width={49} height={49}/>
+                        <Image src='/assets/img/icopro5.png' width={41} height={41}/>
                         <div className={styles.desc}>
-                            <h3 className={styles['third-title']}>Web3 Investors</h3>
-                            <p>Encounter challenges in early-stage investments</p>
+                            <h3 className={styles['third-title']}>Low Entry Barrier</h3>
                         </div>
                     </div>
-                </div>
-                <div className={`${styles['solved-problem-item']} ${styles['solved-problem-item-last']}`}>
-                    <Image src='/assets/img/icopro4.png' width={44} height={44}/>
-                    <div className={styles.desc}>
-                        <h3 className={styles['third-title']}>Short-Term Speculation</h3>
-                        <p>Typical projects rely on one-time investors</p>
+                    <div className={styles['solved-problem-item']}>
+                        <Image src='/assets/img/icopro8.png' width={41} height={41}/>
+                        <div className={styles.desc}>
+                            <h3 className={styles['third-title']}>Fragmented Founders</h3>
+                        </div>
                     </div>
                 </div>
             </div>

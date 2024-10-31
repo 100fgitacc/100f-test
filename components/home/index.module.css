@@ -610,8 +610,8 @@
   margin-bottom: 90px;
 }
 .solved-problem .inner{
-  max-width: 934px;
-  margin: 0;
+  max-width: 850px;
+  margin: 0 auto;
 }
 .solved-problem .main-title{
   max-width: 837px;
@@ -631,9 +631,7 @@
   background: #23214D;
   border-radius: 0px 10px 10px 0px;
 }
-.solved-problem-item-wrapper > .solved-problem-item:nth-child(2) img{
-  transform: rotate(-30deg);
-}
+
 .solved-problem-item:nth-child(2){
   padding-right: 20px;
 }
@@ -641,7 +639,8 @@
   margin-top: 35px;
   margin-bottom: 76px;
 }
-.solved-problem-item:first-child{
+.solved-problem-item:nth-child(1),
+.solved-problem-item:nth-child(2){
   padding-right: 50px;
   margin-right: 15px;
 }
@@ -649,12 +648,12 @@
   content: '';
   background-image: url('/assets/img/first-neon.png');
   position: absolute;
-  top: -37px;
-  left: -28px;
+  top: -32px;
+  left: -25px;
   background-repeat: no-repeat;
   background-size: contain;
   width: 78px;
-  height: 170%;
+  height: 167%;
 }
 .solved-problem-item-first:before{
   content: '';
@@ -701,7 +700,6 @@
 }
 .solved-problem-item-wrapper{
   position: relative;
-  max-width: 850px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -709,7 +707,7 @@
 }
 .solved-problem-item-wrapper > .solved-problem-item{
   height: 86px;
-  max-width: 415px;
+  max-width: 274px;
   width: 100%;
 }
 .solved-problem-item-wrapper:before{
@@ -717,23 +715,13 @@
   position: absolute;
   top: -76px;
   left: 12%;
-  background-image: url('/assets/img/arrows1.png');
+  background-image: url('/assets/img/arrows3.png');
   background-repeat: no-repeat;
   background-size: contain;
   width: 635px;
   height: 76px;
 }
-.solved-problem-item-wrapper::after{
-  content: '';
-  position: absolute;
-  bottom: 0px;
-  left: 32%;
-  background-image: url('/assets/img/arrows2.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 300px;
-  height: 71px;
-}
+
 .solved-problem-item-last{
   max-width: 415px;
   width: 100%;
@@ -758,7 +746,9 @@
 .platform-roadmap .note-mobile{
   display: none;
 }
-
+.solved-problem-item-wrapper .third-title{
+  color: #FD494C;
+}
 @media screen and (max-width: 1200px) {
   .roadmap-item:nth-child(2) .roadmap-icon-step{
     margin-top: 0px;
@@ -822,6 +812,9 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .solved-problem-item-wrapper .third-title{
+    font-size: 16px;
+  }
   .mockup{
     margin-bottom: 30px;
   }
@@ -1137,8 +1130,8 @@
     padding-left: 15px;
   }
   .solved-problem-item-first:after {
-    top: -45px;
-    left: -32px;
+    top: -28px;
+    left: -20px;
     width: 97px;
     height: 168%;
 }
@@ -1147,24 +1140,39 @@
 }
 
 .solved-problem-item-wrapper::before{
-  
   left: 26%;
-  width: 222px;
-  height: 57px;
-  background-image: url('/assets/img/arrows1-m.png');
+  width: 279px;
+  height: 58px;
+  background-image: url('/assets/img/arrows3-m.png');
 }
-.solved-problem-item-wrapper::after{
-  left: 25%;
-  width: 240px;
-  height: 40px;
-  background-image: url('/assets/img/arrows2-m.png');
+.solved-problem-item-wrapper img{
+  width: 41px;
+  height: 41px;
 }
-.solved-problem-item:first-child{
-  margin: 0;
-  margin-bottom: 6px;
+.solved-problem-item-wrapper .solved-problem-item{
+  height: 61px !important;
+}
+.solved-problem-item-wrapper .solved-problem-item:first-child img{
+  width: 30px;
+  height: 32px;
+  
+}
+.solved-problem-item-wrapper .solved-problem-item:last-child img{
+  width: 33px;
+  height: 35px;
+  
 }
 .solved-problem-item{
-  
+  align-items: center !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  margin: 0 !important;
+  margin-bottom: 6px !important;
+  height: auto !important;
+  max-width: unset !important;
+}
+
+.solved-problem-item{
   align-items: flex-start;
   margin-bottom: 40px;
 }
@@ -1191,6 +1199,18 @@
   max-width: 355px;
   width: 100%;
 }
+.solved-problem-item:after{
+  top: -24px;
+  left: -16px;
+}
+.solved-problem-item-first{
+  align-items: center;
+  padding-top: 18px;
+    padding-bottom: 16px;
+}
+.solved-problem-item-wrapper .third-title{
+  margin-bottom: 0;
+}
 }
 @media screen and (max-width: 520px) {
   .solved-problem-item-wrapper::before{
@@ -1202,7 +1222,7 @@
 }
 @media screen and (max-width: 450px) {
   .solved-problem-item-wrapper::before{
-    left: 20%;
+    left: 10%;
   }
   .solved-problem-item-wrapper::after{
     left: 19%;
