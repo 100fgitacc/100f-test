@@ -177,12 +177,12 @@ const Home = () => {
                 <div className={styles['roadmap-container']}>
                     <div className={styles['roadmap-item']}>
                         <Image src='/assets/img/step1.png' width={40} height={40} className={styles['roadmap-icon-step']}/>
-                        <p className={styles['roadmap-subtitle']}>Q3 2023-Q3 2024</p>
+                        <p className={styles['roadmap-subtitle']}>Q1-Q3 2024</p>
                         <p className={styles['roadmap-title']}>BOOTSTRAPPING</p>
                         <ul className={styles['roadmap-list']}>
                             <li className={styles['roadmap-list-item']}>
                                 <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
-                                <p>Prototype Function 1</p>
+                                <p>Prototype: Module 1, 2, 3</p>
                             </li>
                             <li className={styles['roadmap-list-item']}>
                                 <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
@@ -190,35 +190,43 @@ const Home = () => {
                             </li>
                             <li className={styles['roadmap-list-item']}>
                                 <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
-                                <p>Prototype Function 2</p>
+                                <p>Marketing & Sales System</p>
                             </li>
                             <li className={styles['roadmap-list-item']}>
                                 <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
-                                <p>Prototype Function 3</p>
+                                <p>Validated Platform <br/>Concept ($340,000+ <br/>in revenue)</p>
                             </li>
                             <li className={styles['roadmap-list-item']}>
                                 <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
-                                <p>Prototype Function 4</p>
-                            </li>
-                            <li className={styles['roadmap-list-item']}>
-                                <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
-                                <p>Validating Platform Concept</p>
+                                <p>Built a 27,000+ <br/>Waitlist Using <br/>Partner Assets</p>
                             </li>
                         </ul>
                     </div>
                     <div className={styles['roadmap-item']}>
                         <ul className={styles['roadmap-list']}>
                             <li className={styles['roadmap-list-item']}>
-                                <Image src='/assets/img/icons/yellow-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
-                                <p>MVPs design & development<br/> of a Platform</p>
+                                <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
+                                <p>Developed the design <br/>for an MVP platform</p>
+                            </li>
+                            <li className={styles['roadmap-list-item']}>
+                                <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
+                                <p>Clickable<br/> Prototype<br/> of the Platfrom</p>
+                            </li>
+                            <li className={styles['roadmap-list-item']}>
+                                <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
+                                <p>Business Model</p>
+                            </li>
+                            <li className={styles['roadmap-list-item']}>
+                                <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
+                                <p>3-Year Financial <br/>Model</p>
+                            </li>
+                            <li className={styles['roadmap-list-item']}>
+                                <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
+                                <p>3-Year Product <br/>Backlog</p>
                             </li>
                             <li className={styles['roadmap-list-item']}>
                                 <Image src='/assets/img/icons/yellow-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
-                                <p>Clickable Prototype<br/> of the Platfrom</p>
-                            </li>
-                            <li className={styles['roadmap-list-item']}>
-                                <Image src='/assets/img/icons/yellow-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
-                                <p>PreSeed Investment<br/> Round</p>
+                                <p>PreSeed <br/>Investment <br/>Round</p>
                             </li>
                         </ul>
                         <div>
@@ -241,6 +249,10 @@ const Home = () => {
                             <li className={styles['roadmap-list-item']}>
                                 <Image src='/assets/img/icons/blue-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
                                 <p>Start of Client Acquisition</p>
+                            </li>
+                            <li className={styles['roadmap-list-item']}>
+                                <Image src='/assets/img/icons/blue-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
+                                <p>MRR $12,000+</p>
                             </li>
                             <li className={styles['roadmap-list-item']}>
                                 <Image src='/assets/img/icons/blue-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
@@ -309,7 +321,7 @@ const Home = () => {
                             </li>
                             <li className={styles['roadmap-list-item']}>
                                 <Image src='/assets/img/icons/blue-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
-                                <p>MRR $670,000+</p>
+                                <p>MRR $1,300,000+</p>
                             </li>
                         </ul>
                     </div>
