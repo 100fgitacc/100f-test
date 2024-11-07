@@ -462,12 +462,7 @@
   left: 6px;
   width: 1px;
   height: 112%;
-  background: linear-gradient(
-    90deg, 
-    #23FFBE 0%, 
-    #23FFBE 79%, 
-    #FFE450 100%
-  );
+  background: linear-gradient(90deg, rgba(35,255,190,1) 21%, rgba(255,228,80,1) 100%);
 }
 .roadmap-item:nth-child(3) .roadmap-list-item::before{
   content: '';
@@ -1021,6 +1016,15 @@
   }
   .logo{
     display: none;
+  }
+  .roadmap-item:nth-child(2) ul .roadmap-list-item:nth-child(3)::before {
+  background: linear-gradient(90deg, rgba(35,255,190,1) 57%, rgba(255,228,80,1) 100%);
+  }
+  .roadmap-item:nth-child(2) ul .roadmap-list-item:nth-child(4)::before {
+background: linear-gradient(90deg, rgba(35,255,190,1) 0%, rgba(255,228,80,1) 55%);
+  }
+  .roadmap-item:nth-child(2) ul .roadmap-list-item:nth-child(5)::before {
+   background: linear-gradient(90deg, rgba(35,255,190,1) 0%, rgba(255,228,80,1) 9%);
   }
 }
 @media screen and (max-width: 868px) {
