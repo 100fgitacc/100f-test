@@ -292,6 +292,24 @@
 .blog-inner h5{
   font-size: 12px;
 }
+.blog-list{
+  position: relative;
+  color: #05E9F0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.blog-list::before {
+  content: '•';
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 4px;
+  left: -15px;
+  width: 12px;
+  height: 12px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
 @media screen and (max-width: 991px) {
   
 }
