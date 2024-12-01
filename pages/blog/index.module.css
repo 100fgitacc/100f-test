@@ -156,11 +156,11 @@
   margin-bottom: 70px;
 }
 .blog-paragraph{
-  max-width: 825px;
   width: 100%;
   margin: 15px 0px;
-  line-height: 24px;
+  line-height: 125%;
 }
+
 
 .blog-link{
   display: inline-block;

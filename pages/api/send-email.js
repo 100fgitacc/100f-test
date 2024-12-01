@@ -16,7 +16,7 @@ export default async function handler(req, res) {
     if (name && email && tel) {
       mailOptions = {
         from: '100Fcom_Pitch <info@100f.com>',
-        to: 'kir.ulanov@100f.com, admin@100f.com',
+        to: 'kir.ulanov@100f.com, admin@100f.com, info@100f.com',
         subject: `100F.com Request for Pitch`,
         text: `
           Name: ${name}
@@ -27,7 +27,7 @@ export default async function handler(req, res) {
     } else {
       mailOptions = {
         from: '100Fcom_EarlyAdopter <info@100f.com>',
-        to: 'kir.ulanov@100f.com, admin@100f.com',
+        to: 'kir.ulanov@100f.com, admin@100f.com, info@100f.com',
         subject: `100F.com Request for Early Adoption`,
         text: `
           Name: ${name}
