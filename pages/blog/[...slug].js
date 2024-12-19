@@ -53,11 +53,9 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
   useEffect(() => {
     const tempDiv = document.createElement('div');
     tempDiv.innerHTML = content.rendered;
-  
+
     let firstImgRemoved = false;
     const paragraphs = tempDiv.querySelectorAll('p');
-  
-    // Удаляем первое изображение
     for (let i = 0; i < paragraphs.length; i++) {
       const images = paragraphs[i].querySelectorAll('img');
       if (images.length > 0 && !firstImgRemoved) {
@@ -66,25 +64,18 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
         break;
       }
     }
-  
-    // Обрабатываем параграфы
+
     paragraphs.forEach(paragraph => {
       const images = paragraph.querySelectorAll('img');
       images.forEach(image => {
         paragraph.parentNode.insertBefore(image, paragraph);
       });
-  
+
       if (paragraph.textContent.trim() === '' && paragraph.querySelectorAll('img').length === 0) {
         paragraph.remove();
       }
     });
-  
-    // Добавляем класс к спискам
-    const lists = tempDiv.querySelectorAll('li');
-    lists.forEach(list => {
-      list.classList.add(styles['blog-list']);
-    });
-  
+
     setCleanedContent(tempDiv.innerHTML);
   }, [content]);
 
@@ -154,7 +145,8 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
                 <h3 className={styles['blog-heading']}>TABLE OF CONTENTS</h3>
                 <ul>
                   {toc.map(item => (
-                  <li key={item.id} >
+                  <li key={item.id}>
+                    {console.log(item.headingClass)} {/* Временно выводим в консоль */}
                     <a className={`${styles['blog-nav-item']} ${styles[item.headingClass]}`} href={`#${item.id}`}>{item.text}</a>
                   </li>
                   ))}
@@ -168,7 +160,7 @@ const BlogPostPage = ({ post, relatedPosts, toc, views, authorInfo, token }) => 
             </div>
             {authorInfo && (
               <div className={styles['post-creator']}>
-                <Image width={96} height={96} src='/assets/img/author.jpg' alt='author img' />
+                <Image width={96} height={96} src={authorInfo.avatar_urls['96']} alt='author img' />
                 <div className={styles['author-info']}>
                   <p>{authorInfo.name}</p>
                   <p>{authorInfo.description}</p>

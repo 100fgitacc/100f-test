@@ -4,6 +4,10 @@ import { useRouter } from 'next/router';
 import styles from './index.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import PopupWaitlist from '/components/sections/waitlist-popup';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
+const MySwal = withReactContent(Swal);
 const BurgerMenu = () => {
 
   const router = useRouter();
@@ -61,6 +65,17 @@ const BurgerMenu = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+
+  const showPopup = () => {
+    MySwal.fire({
+        html: <PopupWaitlist />,  
+        showConfirmButton: false, 
+        showCloseButton: true,  
+        backdrop: true, 
+      });
+  };
+
   return (
     <div className={`${styles['header-adaptive']} ${isScrolled ? styles.scrolled : ''} ${isOpen ? styles.open : ''} ${isMobile ? styles.mobile : ''}`}>
       <Link href="/" className={styles['main-logo']}>
@@ -78,6 +93,11 @@ const BurgerMenu = () => {
       >
         <ul className={styles['sidebar-menu']}>
           <li className={styles['sidebar-menu__item']}>
+            <button onClick={showPopup} className={`${styles['page-button']} ${styles['waitlist-btn']}`}>
+              Join the Waitlist
+            </button>
+          </li>
+          <li className={styles['sidebar-menu__item']}>
             <Link href="/" className={`${styles['page-button']} ${isActive('/') ? styles.active : ''} ${styles['home-btn']}`}>
               Home
             </Link>
@@ -92,11 +112,11 @@ const BurgerMenu = () => {
               <p className={`${styles['page-button']} ${isActive('/early-stage') ? styles.active : ''} ${styles['investments-btn']}`}>Early-Stage</p>
             </Link>
           </li> */}
-          <li className={styles['sidebar-menu__item']}>
+          {/* <li className={styles['sidebar-menu__item']}>
             <Link href="/blog">
               <p className={`${styles['page-button']} ${isActive('/blog') ? styles.active : ''} ${styles['blog-btn']}`}>Blog</p>
             </Link>
-          </li>
+          </li> */}
           {/* <li className={styles['sidebar-menu__item']}>
             <Link href="/contacts">
               <p className={`${styles['page-button']} ${isActive('/contacts') ? styles.active : ''} ${styles['contact-btn']}`}>Contact Us</p>
@@ -113,9 +133,11 @@ const BurgerMenu = () => {
               <p className={styles['banner-note']}>Release coming soon</p>
               <p className={styles['banner-title']}>Sales funnel building platform</p>
           </div> */}
+          <a href='https://x.com/crypto100f' target='_blank' className={`${styles['banner-item']}`}></a>
+          <a href='https://www.linkedin.com/company/100f' target='_blank' className={`${styles['banner-item']}`}></a>
           <a className={`${styles['banner-item']}`}></a>
           <a className={`${styles['banner-item']}`}></a>
-          <a  className={`${styles['banner-item']}`}></a>
+          <a className={`${styles['banner-item']}`}></a>
           <a className={`${styles['banner-item']}`}></a>
           <a className={`${styles['banner-item']}`}></a>
         </div>

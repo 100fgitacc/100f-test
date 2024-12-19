@@ -1,9 +1,9 @@
 
 .main-title {
-    font-size: 32px;
-    margin-top: 30px;
-    max-width: 430px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-top: 20px;
+    max-width: 587px;
+    margin-bottom: 15px;
     text-transform: none;
     color: #FFD900;
 }
@@ -14,6 +14,8 @@
     font-size: 14px;
 }
 .form-inner {
+    position: relative;
+    overflow: hidden;
     margin-top: 35px;
     margin-bottom: 35px;
     padding: 25px 35px;
@@ -28,11 +30,13 @@
     border-radius: 10px;
 }
 .mailing-form {
-    max-width: 450px;
+    max-width: 587px;
     width: 100%;
 }
-.contacts-content {
-    position: relative;
+.form-inner img{
+    position: absolute;
+    right: 30px;
+    bottom: -25px;
 }
 .form-group {
     margin-bottom: 10px;
@@ -64,7 +68,7 @@
     border-radius: 5px;
     font-size: 14px;
     font-weight: 400;
-    background: #F8E74E;
+    background: #05E9F0;
     color: #000;
     margin-bottom: 60px;
 }
@@ -115,7 +119,75 @@
 .button-cont p {
     margin-left: 15px;
 }
+.note{
+    position: absolute;
+    font-family: "Wadik", sans-serif;
+    font-size: 15px;
+    top: 30px;
+    right: -20px;
+    padding: 10px 15px;
+    padding-right: 40px;
+    color: #000000;
+    background-color: #FFF04B;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgb(255 240 75);
+}
+.note.mobile{
+    display: none;
+}
 
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    padding-left: 17px;
+    border-radius: 5px;
+    color: #fff;
+    background: #2D2986;
+    appearance: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 100;
+  }
+  
+  .form-group select:focus {
+    border-color:  #2018b6;
+    outline: none;
+  }
+  
+  .form-group select option {
+    cursor: pointer;
+    padding: 10px;
+
+  }
+  
+  .form-group select::after {
+    content: ' ▼';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .error-message {
+    font-size: 12px;
+    color: red;
+    visibility: hidden;
+  }
+  
+  .error-message.active {
+    visibility: visible;
+  }
+
+@media screen and (max-width: 1100px) {
+    .main-title{
+        max-width: 440px;
+    }
+    .form-inner img{
+        right: -65px;
+    }
+}
 @media screen and (max-width: 991px) {
     .fix-content{
         height: 240px;
@@ -140,9 +212,15 @@
     .contacts-content__title {
         display: none;
     }
+    .mailing-form {
+        padding-top: 75px;
+        padding-bottom: 250px;
+    }
 }
 @media screen and (max-width: 576px) {
     .mailing-form {
+        padding-bottom: 0;
+        padding-top: 35px;
         max-width: unset;
     }
     .fix-img{
@@ -151,9 +229,9 @@
     }
     .form-inner {
         padding: 50px 15px 0px 24px;
+        height: 725px;
         margin-top: 0;
         background-image: url('/assets/img/contact-bg-new-m.png');
-        background-position-y: -63px;
     }
     .contacts-content__img {
         margin: 0;
@@ -163,10 +241,20 @@
     }
     .main-title{
         margin-top: 0;
-        margin-bottom: 10px;
+        max-width: 240px;
+        margin-bottom: 15px;
         font-size: 22px;
     }
-    .mailing-form-btn{
-        margin-bottom: 25px;
+    .note{
+        display: none;
+    }
+    .note.mobile{
+        display: block;
+        font-size: 12px;
+    }
+    .form-inner img{
+        right: 15px;
+        width: 315px;
+        height: 275px;
     }
 }

@@ -166,18 +166,24 @@
   height: 84px;
 }
 .banner-item:nth-child(1) {
-  background-image: url('/assets/img/btn1.png');
+  background-image: url('/assets/img/btn6.png');
 }
 .banner-item:nth-child(2) {
-  background-image: url('/assets/img/btn2.png');
+  background-image: url('/assets/img/btn7.png');
 }
 .banner-item:nth-child(3) {
-  background-image: url('/assets/img/btn3.png');
+  background-image: url('/assets/img/btn1.png');
 }
 .banner-item:nth-child(4) {
-  background-image: url('/assets/img/btn4.png');
+  background-image: url('/assets/img/btn2.png');
 }
 .banner-item:nth-child(5) {
+  background-image: url('/assets/img/btn3.png');
+}
+.banner-item:nth-child(6) {
+  background-image: url('/assets/img/btn4.png');
+}
+.banner-item:nth-child(7) {
   background-image: url('/assets/img/btn5.png');
 }
 .banner-note {
@@ -337,6 +343,28 @@
     background: #000000e3;
     z-index: 98;
   }
+
+  .sidebar-menu__item:first-child{
+    margin-bottom: 50px;
+    font-size: 14.89px;
+    font-weight: 100;
+  }
+  .waitlist-btn:hover{
+    color: #000;
+    background-color: #05E9F0;
+  }
+  .waitlist-btn::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 5px;
+    width: 17px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('/assets/img/icons/Person.png');
+}
+
 
 @media screen and (max-width: 576px) {
   .main-logo {

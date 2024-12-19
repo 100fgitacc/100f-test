@@ -71,4 +71,12 @@
 .swiper-button-next:after,
 .swiper-button-prev:after{
     font-size: 10px;
+} 
+
+
+@media screen and (max-width: 1100px) {
+
 }
+
+
+

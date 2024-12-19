@@ -53,7 +53,7 @@ const Blog = ({data}) => {
               {/* <CoinsPlugin/> */}
               <div className={styles.inner}>
                   <h1 className="main-title">BLOG</h1>
-                  <p className={styles.subtitle}>Welcome to the 100F Blog! Your go-to resource for insights, trends, and updates in the crypto world. Here, we share in-depth articles on the latest developments in cryptocurrency, blockchain technology, and the challenges facing the market. Our goal is to provide valuable knowledge for both investors and projects, while showcasing how 100F is paving the way for more sustainable, long-term growth in the Web3 space</p>
+                  <p className={styles.subtitle}>Product updates, partnerships, and announcements from CoinMarketCap and our contributors</p>
               </div>
           </div>
       </section>
