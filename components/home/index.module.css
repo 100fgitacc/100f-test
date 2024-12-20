@@ -758,10 +758,13 @@ max-width: 193px;
   margin-right: 5px;
   margin-left: 5px;
 }
+.paid-content {
+  padding: 25px 30px 25px 25px;
+}
 .sales-system-titlem,
 .paid-title{
-  font-size: 18px;
-  margin-bottom: 15px;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 .paid-title{
   margin-bottom: 0;
@@ -2575,9 +2578,7 @@ margin-bottom: 20px;
   .sales-system-item h5{
     font-size: 14px;
   }
-  .paid-content{
-    display: none;
-  }
+  
   .paid-content.mobile{
     display: block;
     padding: 20px;
@@ -2591,10 +2592,12 @@ margin-bottom: 20px;
   .paid-logos img:nth-child(1){
     margin-right: 17px;
     width: 63px;
+    margin-right: 10px;
   }
   .paid-logos img:nth-child(2){
     margin-right: 17px;
     width: 80px;
+    margin-right: 10px;
   }
   .paid-logos img:nth-child(3){
     width: 68px;
@@ -2606,6 +2609,8 @@ margin-bottom: 20px;
   .record-content p{
     margin: 0;
     margin-bottom: 10px;
+    width: 100%;
+    justify-content: space-between;
   }
   .record-content p:first-child {
     margin-bottom: 20px;
@@ -2617,11 +2622,11 @@ margin-bottom: 20px;
   }
   .record-content{
     margin-top: 25px;
-    width: 284px;
-    height: 209px;
     padding: 30px 0;
     background-image: url('/assets/img/gss.png');
     z-index: 5;
+    height: 130%;
+    
   }
 
 
