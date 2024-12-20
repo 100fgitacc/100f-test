@@ -989,9 +989,9 @@ const Home = () => {
         </svg>
 
           <Element name="invest" className={styles.content}>
-           
+          <span className={styles['section-count']}>1</span>
             <div className={styles['card-section']}>
-            <span className={styles['section-count']}>1</span>
+            
               <h2 className={styles['secondary-title']}>Cold Audience Lead Generation System</h2>
               <h4 className={styles['four-title']}>Traffic Generation System – Developed and Validated on $30,000 Budget</h4>
               <h3 className={styles['third-title']}>Sales System</h3>
@@ -1033,7 +1033,7 @@ const Home = () => {
               <div className={styles['record-content']}>
                 <div>
                   <p className={styles.title}>
-                    Current Track Record:
+                    Current Track Record
                   </p>
                   <p>
                     CAC
