@@ -777,7 +777,7 @@ max-width: 193px;
 }
 .paid-content{
   margin-top: 30px;
-  padding: 25px 30px 25px 40px;
+  padding: 25px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
