@@ -27,6 +27,7 @@
     text-align: right;
     font-size: 14px;
     max-width: 317px;
+    text-transform: capitalize;
 }
 
 @media screen and (max-width: 991px) {

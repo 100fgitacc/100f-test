@@ -484,7 +484,7 @@ margin-right: 25px;
   text-align: center;
 }
 .exeptional-solution .subtitle{
-  max-width: 640px;
+  max-width: 535px;
   margin: 25px auto;
 }
 
@@ -524,12 +524,11 @@ margin-right: 25px;
 
 .exeptional-solution .card-section:nth-of-type(2){
   padding-top: 15px;
-  padding-bottom: 50px;
 }
 .buisness-model-wrapper{
   max-width: 850px;
   margin: 0 auto;
-  margin-right: 80px;
+  margin-right: 108px;
   margin-left: 30px;
   margin-bottom: 70px;
   position: relative;
@@ -674,6 +673,7 @@ max-width: 193px;
 .consumers .card-section:nth-of-type(1) .secondary-title{
   max-width: 470px;
   margin: 0 auto;
+  margin-bottom: 25px;
 }
 
 .consumers .card-section:nth-of-type(1) .four-title{
@@ -763,7 +763,7 @@ max-width: 193px;
 }
 .sales-system-titlem,
 .paid-title{
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 .paid-title{
@@ -969,6 +969,7 @@ max-width: 193px;
   justify-content: space-between;
   padding: 0;
   margin-top: 40px;
+  font-size: 15px;
 }
 .exeptional-solution .card-section:nth-of-type(3) .card-list-item::before{
   background-image: none;
@@ -1193,8 +1194,8 @@ max-width: 193px;
 }
 .collaborations-images img{
   object-fit: contain;
-  margin-right: 15px;
-  margin-bottom: 25px;
+  margin-right: 10px;
+  margin-bottom: 15px;
 }
 .consumers .card-section:nth-of-type(4){
   background-color: transparent;
@@ -1369,6 +1370,10 @@ margin-bottom: 20px;
 }
 .third-title:last-of-type{
   margin-bottom: 25px;
+}
+.exeptional-solution .card-section:nth-of-type(2) .third-title{
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 .consumers .single-card:last-of-type{
   margin-top: 25px;
@@ -1850,6 +1855,16 @@ margin-bottom: 20px;
 
 @media screen and (max-width: 1100px) {
   
+  .buisness-model-wrapper{
+    max-width: 540px;
+    margin-left: 0;
+  }
+  .chart-desc{
+    font-size: 12px;
+  }
+  .exeptional-solution .card-section:nth-of-type(2) .third-title{
+    font-size: 20px;
+  }
   .exeptional-solution .card-section:nth-of-type(3) .card{
     height: 265px;
   }
@@ -2065,6 +2080,7 @@ margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1000px) {
+ 
   .roadmap-item:nth-child(3) .line > svg{
     right: -35px;
   }
@@ -2127,7 +2143,9 @@ margin-bottom: 20px;
 }
 @media screen and (max-width: 991px) {
 
-
+  .exeptional-solution .card-section:nth-of-type(2){
+    padding-bottom: 50px;
+  }
   .sales-system{
     flex-direction: column;
   }
@@ -2647,9 +2665,7 @@ margin-bottom: 20px;
     border-radius: 10px;
     top: 55px;
   }
-  .exeptional-solution .card-section:nth-of-type(2){
-    padding-right: 50px;
-  }
+  
   .buisness-model-chart-container svg{
     margin-right: 75px;
   }

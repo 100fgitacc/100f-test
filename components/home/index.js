@@ -442,7 +442,7 @@ const Home = () => {
                 </div>
                 <div className={styles['market-item']}>
                   <p>
-                  Direct access to top exchanges and launchpads <span>(ByBit, KuCoin, Gate, Bitget, MEXc, BingX, OKX, DAO Maker, Zelwin)</span>
+                  Direct access to exchange and launchpad executives <span>(ByBit, KuCoin, Gate, Bitget, MEXc, BingX, OKX, DAO Maker, Zelwin)</span>
                   </p>
                   <div className={styles['item-projects-list']}>
                       <div className={styles['animation-container']}>
@@ -640,7 +640,7 @@ const Home = () => {
               </linearGradient>
               </defs>
             </svg>
-              <h3 className={styles['third-title']}><span>THE SOLUTION:</span> UNIFIED WEB 3.0 PLATFORM</h3>
+              <h3 className={styles['third-title']}><span>THE SOLUTION:</span> UNIFIED WEB3.0 PLATFORM</h3>
               <p className={styles.subtitle}>100 Franklins connects qualified projects with a educated audience, creating conditions for sustainable development and long-term profits</p>
               <div className={styles.cards}>
                 <div className={styles.card}>
@@ -993,8 +993,6 @@ const Home = () => {
             <div className={styles['card-section']}>
             
               <h2 className={styles['secondary-title']}>Cold Audience Lead Generation System</h2>
-              <h4 className={styles['four-title']}>Traffic Generation System – Developed and Validated on $30,000 Budget</h4>
-              <h3 className={styles['third-title']}>Sales System</h3>
               <div className={styles['sales-system']}>
                 <div className={styles['sales-system-item']}>
                   <h5 className={styles['sales-system-title']}>Auto webinar funnel</h5>
@@ -1044,7 +1042,7 @@ const Home = () => {
                   <p>
                     LTV
                     <span>
-                      $1450
+                      $1,450
                     </span>
                   </p>
                 </div>
@@ -1080,7 +1078,7 @@ const Home = () => {
                 </div>
                 <div className={styles.card}>
                 <span className={styles['card-note']}>PROJECTS</span>
-                  <p className={styles['card-title']}>Direct Access<br/>To Top Exchanges <br/>And Launchpads
+                  <p className={styles['card-title']}>Direct access <br/>to exchange<br/> and launchpad  executives
                 </p>
                   <ul className={styles['card-list']}>
                     <li className={styles['card-list-item']}>
@@ -1161,7 +1159,7 @@ const Home = () => {
                         14+ years in entrepreneurship, digital marketing, online education & 6+ years of expertise in Web3 marketing
                         </p>
                         <p>Former Founder & CEO of Marketing Gamers – built from scratch over 12 years into a 7-figure digital marketing holding with expertise in 100+ niches and 10,000+ clients</p>
-                        <p>Author of the book &#39;Client Generator&#39;, a winner of the Book Oscar</p>
+                        <p>Author of the book &#39;Client Generator&#39;,<br/> a winner of the Book Oscar</p>
                       </div>
                     </div>
                     <div className={styles['team-group-item']}>
@@ -1176,7 +1174,7 @@ const Home = () => {
                         12+ years expertise in Crypto & Ed-Tech
                         </p>
                         <p>Architect of an app for crypto bots and automated sales funnels, leveraging expertise from Marketing Gamers, whose products served over 100,000 users</p>
-                        <p>Founded & scaled e-commerce/edu businesses with focus on automation & int&#39;l expansion</p>
+                        <p>Founded & scaled e-commerce/edu businesses with focus on automation <br/> & int&#39;l expansion</p>
                       </div>
                     </div>
                   </div>
