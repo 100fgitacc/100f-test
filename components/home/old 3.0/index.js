@@ -434,7 +434,7 @@ const Home = () => {
                 </div>
                 <div className={styles['market-item']}>
                   <p>
-                  Partnerships with 1’000+ crypto communities & crypto influencers with a combined audience of over 1 billion followers
+                  Partnerships with 1,000+ crypto communities & crypto influencers with a combined audience of over 1 billion followers
                   </p>
                   <div className={styles['market-item-images']}>
                     <Image className={styles['market-items-img']} src='/assets/img/icons/facebook.png' width={32} height={32}/>
@@ -975,7 +975,7 @@ const Home = () => {
                     <p className={styles['numbers-title']}>1B+ <span>Crypto Audience</span></p>
                     <ul className={styles['card-list']}>
                       <li className={styles['card-list-item']}>
-                      Through 1’000+ crypto influencers & communities
+                      Through 1,000+ crypto influencers & communities
                       </li>
                     </ul>
                   </div>

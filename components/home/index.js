@@ -150,38 +150,89 @@ const Home = () => {
   };
 
 
+  const [resizePopup, setResizePopup] = useState(false);
+
+  const handleResizePopup = () => {
+    setResizePopup(prev => !prev);
+  };
+const [isMobile, setIsMobile] = useState(false);
+const handleResize = () => {
+  if (window.innerWidth <= 768) {
+    setIsMobile(true);
+  } else {
+    setIsMobile(false);
+  }
+};
+useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    handleResize();
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <>
-      <div id='add' className={`${styles.add} ${showAdd ? styles.show : ''}`}>
-        <button onClick={(e)=>handleRemoveItem(e, 'add-popup')} className={styles['remove-btn']}></button>
-       <div className={styles['add-desc']}>
-        <h3 className={styles['add-title']}>INSIGHTS FROM VENTURE EXPERTS</h3>
-        <button className={styles['show-add-btn']} onClick={()=>handleShowPopup()}>See what the industry legend says about us</button>
-        <div className={styles['add-logos']}>
-          <Image src='/assets/img/sony.png' alt='sony' width={48} height={8}/>
-          <Image src='/assets/img/microsoft.png'   alt='microsoft' width={63} height={13}/>
-          <Image src='/assets/img/nintendo.png'   alt='nintendo' width={61} height={15}/>
-          <Image src='/assets/img/verizon1.png'   alt='verizon' width={58} height={12}/>
-          <Image src='/assets/img/sanyo.png'  alt='sanyo'  width={58} height={12}/>
-          <Image src='/assets/img/ebay.png' alt='ebay' width={46} height={19}/>
-          <Image src='/assets/img/sega.png'  alt='sega'  width={38} height={15}/>
-          <Image src='/assets/img/mazda.png'  alt='mazda'  width={20} height={15}/>
-          <Image src='/assets/img/mitsubishi.png'  alt='mitsubishi'  width={20} height={17}/>
-          <Image src='/assets/img/symantec.png'  alt='symantec'  width={61} height={12}/>
-          <Image src='/assets/img/hitachi.png'  alt='hitachi'  width={68} height={21}/>
+     
+        {!resizePopup ? (
+        <div id='add' className={`${styles.add} ${showAdd ? styles.show : ''}`}>
+          <button onClick={handleResizePopup} className={styles['remove-btn']}></button>
+          <div className={styles['add-desc']}>
+            <h3 className={styles['add-title']}>INSIGHTS FROM VENTURE EXPERTS</h3>
+            <button className={styles['show-add-btn']} onClick={()=>handleShowPopup()}>See what the industry legend says about us</button>
+            <div className={styles['add-logos']}>
+              <Image src='/assets/img/sony.png' alt='sony' width={48} height={8}/>
+              <Image src='/assets/img/microsoft.png'   alt='microsoft' width={63} height={13}/>
+              <Image src='/assets/img/nintendo.png'   alt='nintendo' width={61} height={15}/>
+              <Image src='/assets/img/verizon1.png'   alt='verizon' width={58} height={12}/>
+              <Image src='/assets/img/sanyo.png'  alt='sanyo'  width={58} height={12}/>
+              <Image src='/assets/img/ebay.png' alt='ebay' width={46} height={19}/>
+              <Image src='/assets/img/sega.png'  alt='sega'  width={38} height={15}/>
+              <Image src='/assets/img/mazda.png'  alt='mazda'  width={20} height={15}/>
+              <Image src='/assets/img/mitsubishi.png'  alt='mitsubishi'  width={20} height={17}/>
+              <Image src='/assets/img/symantec.png'  alt='symantec'  width={61} height={12}/>
+              <Image src='/assets/img/hitachi.png'  alt='hitachi'  width={68} height={21}/>
+            </div>
+          </div>
+          <Image className={styles['add-preview'] } onClick={()=>handleShowPopup()} src='/assets/img/Preview.png' width={153} height={87}/>
         </div>
-       </div>
-       <Image className={styles['add-preview'] } onClick={()=>handleShowPopup()} src='/assets/img/Preview.png' width={153} height={87}/>
-      </div>
+        ) : (
+          <div id='add' className={`${styles.add} ${showAdd ? styles.show : ''} ${resizePopup ? styles.resize : ''}`} >
+            <div className={styles['add-preview']} onClick={handleResizePopup} >
+              <Image  src='/assets/img/cirlcle-popup.png' width={65} height={65} unoptimized={true} />
+            </div>
+            <div className={styles['add-desc']}>
+              <h3 className={styles['add-title']}>INSIGHTS FROM VENTURE EXPERTS</h3>
+            </div>
+            
+          </div>
+        )}
+         
+
+
+
+
+
+
+
+
+
+
+
+
       <motion.section
         className={styles["first-screen-card"]}
       >
         <div id='cardHeader' className={`${styles['first-screen-card-header']} ${isSticky ? styles.sticky : ''}`}>
           <p>Discover strategies with 100X-growth potential: <Link to="invest"  offset={-270} smooth={true} duration={700}>See our metrics below</Link></p>
-           {isSticky && ( <button onClick={(e)=>handleRemoveItem(e, 'card-header')} className={styles['remove-btn']}></button>)}
+           {/* {isSticky && ( <button onClick={(e)=>handleRemoveItem(e, 'card-header')} className={styles['remove-btn']}></button>)} */}
 
         </div>
+
+        {/* <div id='sectionOverlay' className={`${styles['section-overlay']}`}></div> */}
+
+
+
         <Image className={`${styles['logo']} ${isSticky ? styles.sticky : ''}`}src='/assets/img/footer-logo.png' width={75} height={21}/>
         <div className={styles.content}>
             <div className={styles['left-side']}>
@@ -484,7 +535,7 @@ const Home = () => {
                 </div>
                 <div className={styles['market-item']}>
                   <p>
-                  Partnerships with 1’000+ crypto communities & crypto influencers with a combined audience of over 1 billion followers
+                  Partnerships with 1’000+ crypto communities & crypto influencers with a combined audience of over 60M+ unique subscribers
                   </p>
                   <div className={styles['market-item-images']}>
                     <Image className={styles['market-items-img']} src='/assets/img/icons/facebook.png' width={32} height={32}/>
@@ -674,6 +725,7 @@ const Home = () => {
               </div>
             </div>
             <div className={styles['card-section']}>
+            <h3 className={styles['third-title']}>Business Model </h3>
                 <svg className={styles['section-line']} xmlns="http://www.w3.org/2000/svg" width="2" height="75" viewBox="0 0 2 75" fill="none">
                 <path d="M1 0L1 75" stroke="url(#paint0_linear_1_1541)" stroke-width="2" stroke-dasharray="2 2"/>
                 <defs>
@@ -685,7 +737,7 @@ const Home = () => {
               </svg>
               
               <div className={styles['buisness-model-wrapper']}>
-                <h3 className={styles['third-title']}>Business Model</h3>
+               
                 <div className={styles['buisness-model-chart-container']}>
                   <svg className={styles['chart-image']} xmlns="http://www.w3.org/2000/svg" width="449" height="449" viewBox="0 0 449 449" fill="none">
                     <path d="M295.091 370.71C322.671 356.504 345.575 334.656 361.065 307.776C376.555 280.897 383.976 250.125 382.44 219.14L221.138 227.138L295.091 370.71Z" fill="#FFF04B"/>
@@ -710,14 +762,24 @@ const Home = () => {
                     </svg>
                   </div>
                   <div className={`${styles['chart-desc']}`}>
-                      <p> Marketplace Revenue
-                          Staking Fees
-                          Advertising Revenue
-                          Service Packages
-                      </p>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="263" height="125" viewBox="0 0 263 125" fill="none">
-                      <path d="M0.5 1H28.5L75.5 124H262.5" stroke="white"/>
+                     <div>
+
+                      <p>Marketplace Revenue</p>
+                      <p>Staking Fees</p>
+                      <p>Advertising Revenue</p>
+                      <p>Service Packages</p>
+
+                     </div>
+                     {isMobile ? (
+                      <svg xmlns="http://www.w3.org/2000/svg" width="184" height="128" viewBox="0 0 184 128" fill="none">
+                      <path d="M1 1L20.485 127H67.4431H184" stroke="white"/>
                       </svg>
+                     ) : (
+                      <svg xmlns="http://www.w3.org/2000/svg" width="388" height="87" viewBox="0 0 388 87" fill="none">
+                      <path d="M387.5 0.500244H356L317 86.0029H0" stroke="white"/>
+                      </svg>
+                     )}
+                     
                   </div>
                 </div>
               </div>
@@ -1036,13 +1098,13 @@ const Home = () => {
                   <p>
                     CAC
                     <span>
-                      $430
+                      $660
                     </span>
                   </p>
                   <p>
                     LTV
                     <span>
-                      $1,450
+                      $1,600
                     </span>
                   </p>
                 </div>
@@ -1060,10 +1122,10 @@ const Home = () => {
                 <div className={styles.card}>
                   <span className={styles['card-note']}>USERS</span>
                   <div>
-                    <p className={styles['numbers-title']}>1B+ <span>Crypto Audience</span></p>
+                    <p className={styles['numbers-title']}>60M+ <span>UNIQUE SUBSCRIBERS</span></p>
                     <ul className={styles['card-list']}>
                       <li className={styles['card-list-item']}>
-                      Through 1’000+ crypto influencers & communities
+                      Through 1,000+ crypto influencers & communities
                       </li>
                     </ul>
                   </div>
@@ -1095,30 +1157,23 @@ const Home = () => {
               <path d="M2 1L1 71" stroke="#FFDF2C" stroke-width="2" stroke-dasharray="2 2"/>
               </svg>
                 <div className={styles['cards-unicorn']}>
-                <div className={styles.card}>
-                  <ul className={styles['card-list']}>
-                    <li className={styles['card-list-item']}>
-                      Conferences
-                    </li>
-                    <li className={styles['card-list-item']}>
-                    Interviews
-                    </li>
-                    <li className={styles['card-list-item']}>
-                    Media Coverage
-                    </li>
-                  </ul>
-                </div>
-                <div className={styles.card}>
+                  <div className={styles.card}>
+                    <Image  src='/assets/img/card01.png' width={194} height={100} unoptimized={true}/>
+                    <Image  src='/assets/img/card02.png' width={194} height={100} unoptimized={true}/>
+                    <Image  src='/assets/img/card03.png' width={194} height={100} unoptimized={true}/>
+                    <Image  src='/assets/img/card04.png' width={194} height={100} unoptimized={true}/>
+                  </div>
+                  <div className={styles.card}>
                   <h3 className={styles['card-title']}>COLLABORATIONS</h3>
                   <div className={styles['collaborations-images']}>
-                    <Image  src='/assets/img/Bybit.png' width={72} height={28}/>
-                    <Image  src='/assets/img/gate.png' width={121} height={34}/>
-                    <Image  src='/assets/img/biget.png' width={91} height={29}/>
-                    <Image  src='/assets/img/mexc.png' width={110} height={22}/>
-                    <Image  src='/assets/img/okk.png' width={80} height={22}/>
-                    <Image  src='/assets/img/Bingxlogo1.png' width={96} height={28}/>
-                    <Image  src='/assets/img/DAOMake2.png' width={157} height={41}/>
-                    <Image  src='/assets/img/KuCoin-logo2.png' width={120} height={22}/>
+                    <Image  src='/assets/img/Bybit.png' width={72} height={28} unoptimized={true}/>
+                    <Image  src='/assets/img/gate.png' width={121} height={34} unoptimized={true}/>
+                    <Image  src='/assets/img/biget.png' width={91} height={29} unoptimized={true}/>
+                    <Image  src='/assets/img/mexc.png' width={110} height={22} unoptimized={true}/>
+                    <Image  src='/assets/img/okk.png' width={80} height={22} unoptimized={true}/>
+                    <Image  src='/assets/img/Bingxlogo1.png' width={96} height={28} unoptimized={true}/>
+                    <Image  src='/assets/img/DAOMake2.png' width={157} height={41} unoptimized={true}/>
+                    <Image  src='/assets/img/KuCoin-logo2.png' width={120} height={22} unoptimized={true}/>
                   </div>
                 </div>
               </div>
@@ -1203,18 +1258,8 @@ const Home = () => {
                         <p className={styles['member-title']}>Igor Jalenco, <br/>CBDO</p>
                       </div>
                     </div>
-                    <p className={styles['member-desc']}>10+ years in EdTech BD</p>
+                    <p className={styles['member-desc']}>13+ years in EdTech BD</p>
                   
-                  </div>
-                  <div className={styles['team-group-item']}>
-                    <div className={styles['member-desc']}>
-                      <Image className={styles['member-img']} src='/assets/img/vadim.png' width={86} height={78}/>
-                      <div>
-                        <p className={styles['member-title']}>Vadim Golubtsov, COO</p>
-                      </div>
-                      
-                    </div>
-                    <p className={styles['member-desc']}>16+ years in IT Management</p>
                   </div>
                 </div>
               </div>
@@ -1297,7 +1342,7 @@ const Home = () => {
                     <div className={styles['roadmap-container']}>
                         <div className={styles['roadmap-item']}>
                             <Image src='/assets/img/step1.png' width={40} height={40} className={styles['roadmap-icon-step']}/>
-                            <p className={styles['roadmap-subtitle']}>Q3 2023-Q3 2024</p>
+                            <p className={styles['roadmap-subtitle']}>Q3 2023-Q4 2024</p>
                             <p className={styles['roadmap-title']}>BOOTSTRAPPING</p>
                             <ul className={styles['roadmap-list']}>
                                 <li className={styles['roadmap-list-item']}>
@@ -1365,7 +1410,7 @@ const Home = () => {
                             </ul>
                             <div>
                                 <Image src='/assets/img/step2.png' width={40} height={40} className={styles['roadmap-icon-step']}/>
-                                <p className={styles['roadmap-subtitle']}>Q4 2024</p>
+                                <p className={styles['roadmap-subtitle']}>Q4 2025</p>
                                 <p className={styles['roadmap-title']}>PRESEED</p>
                             </div>
                             <Element name="svgElement" className={styles.line}>
@@ -1417,7 +1462,7 @@ const Home = () => {
                                 </path>
                                 </svg>
                             </Element>
-                            <p className={styles['roadmap-subtitle']}>Q1-Q2 2025</p>
+                            <p className={styles['roadmap-subtitle']}>Q1-Q3 2025</p>
                             <p className={styles['roadmap-title']}>Onboarding</p>
                             <ul className={styles['roadmap-list']}>
                                 <li className={styles['roadmap-list-item']}>
@@ -1588,11 +1633,11 @@ const Home = () => {
                   <p className={styles['numbers-title']}>=</p>
                   <p className={styles['numbers-title']}><em className={styles['text-gradient']}>UNICORN </em><span>Status</span></p>
                 </div>
-                <p className={styles.subtitle}>Just 0.005% conversion from our existing audience base</p>
+                <p className={styles.subtitle}>Just 0.1% conversion from the subscribers of our partners’ assets</p>
               </div>
               <ul className={styles['advantages-list']}>
                 <li className={styles['advantages-list-item']}>
-                  Access to 1B+ Audience
+                  Access to 60M+ Subscribers
                 </li>
                 <li className={styles['advantages-list-item']}>
                   Expert Team

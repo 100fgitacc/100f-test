@@ -21,7 +21,7 @@
     #1A27CA 100%);
   text-align: center;
   font-size: 14px;
-  z-index: 100;
+  z-index: 98;
   border-radius: 15px 15px 0 0;
   position: sticky;
   top: 0;
@@ -169,7 +169,7 @@
   background-size: contain;
   width: 42px;
   height: 42px;
-  z-index: 3;
+  z-index: 11;
   box-shadow: 0 -1px 20px 10px #ff605440;
   border-radius: 50%;
 }
@@ -233,7 +233,7 @@
 }
 .global-problem .main-title{
   position: absolute;
-  z-index: 3;
+  z-index: 11;
   top: -25px;
   left: 50%; 
   transform: translateX(-50%);
@@ -249,7 +249,7 @@
   padding-top: 55px;
   max-width: unset;
   position: relative;
-  z-index: 2;
+  z-index: 11;
 }
 .global-problem .subtitle{
   text-align: center;
@@ -526,17 +526,28 @@ margin-right: 25px;
   padding-top: 15px;
 }
 .buisness-model-wrapper{
-  max-width: 850px;
+  max-width: 730px;
   margin: 0 auto;
-  margin-right: 108px;
-  margin-left: 30px;
-  margin-bottom: 70px;
+  padding-top: 10px;
+  padding-bottom: 40px;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
-
+.exeptional-solution .card-section:nth-of-type(2){
+  position: relative;
+  padding-top: 2px;
+}
+.exeptional-solution .card-section:nth-of-type(2) .third-title{
+  position: absolute;
+  top: -5px;
+  right: 0;
+  left: 0;
+  margin-top: 0 !important;
+  font-size: 74px;
+  color: #323074;
+}
 .buisness-model-chart-container{
   position: relative;
 }
@@ -556,36 +567,72 @@ margin-right: 25px;
 }
 .chart-desc:nth-of-type(1){
   top: 28%;
-  left: 75%;
+  left: 80%;
   transform: translateX(-28%);
   transform: translateY(-75%);
 }
 .chart-desc:nth-of-type(2){
+  max-width: 230px;
+  width: 100%;
   top: 65%;
   left: 80%;
   transform: translateX(-65%);
   transform: translateY(-80%);
 }
+.chart-desc:nth-of-type(2) p:after {
+  background-image: url('/assets/img/icons/fee.png') !important;
+}
+.chart-desc:nth-of-type(1) p:after {
+  background-image: url('/assets/img/icons/dashboard.png') !important;
+}
 .chart-desc:nth-of-type(2) p {
   position: absolute;
   top: 15px;
-  left: 25px;
+  left: 70px;
+}
+.chart-desc:nth-of-type(2) svg{
+  margin-right: 35px;
 }
 
 .chart-desc:nth-of-type(3){
-  top: 87%;
-  left: 57%;
+  top: 80%;
+  left: 38%;
   transform: translateX(-87%);
-  transform: translateY(-35%);
 }
-.chart-desc:nth-of-type(3) p {
-  max-width: 165px;
+.chart-desc:nth-of-type(3) > div {
   text-align: left;
   position: absolute;
-  bottom: 5px;
-  left: 80px;
+  bottom: 15px;
+  left: 35px;
 }
-
+.chart-desc:nth-of-type(1) p,
+.chart-desc:nth-of-type(3) p{
+  position: relative;
+  margin-bottom: 7px;
+}
+.chart-desc:nth-of-type(1) p::after,
+.chart-desc:nth-of-type(2) p::after,
+.chart-desc:nth-of-type(3) p::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -30px;
+  width: 22px;
+  height: 22px;
+  background-image: url('/assets/img/icons/market.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.chart-desc:nth-of-type(3) p:nth-child(2):after {
+   background-image: url('/assets/img/icons/staking.png');
+}
+.chart-desc:nth-of-type(3) p:nth-child(3):after {
+   background-image: url('/assets/img/icons/adversting.png');
+}
+.chart-desc:nth-of-type(3) p:nth-child(4):after {
+   background-image: url('/assets/img/icons/service.png');
+}
 
 .exeptional-solution  .card-section{
   position: relative;
@@ -1185,9 +1232,10 @@ max-width: 193px;
   align-items: stretch;
   justify-content: space-between;
 }
+
 .collaborations-images{
   max-width: 335px !important;
-  margin-top: 30px;
+  margin-top: 15px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -1214,7 +1262,7 @@ max-width: 193px;
   max-width: 430px;
   width: 100%;
   padding: 25px 43px;
-  padding-bottom: 35px;
+  padding-bottom: 0px;
   background-image: url('/assets/img/card2364.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -1222,6 +1270,17 @@ max-width: 193px;
   background-color: unset;
   border: unset;
   display: block;
+}
+.consumers .cards-unicorn .card:first-child{
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
+  gap: 8px; 
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+}
+.consumers .cards-unicorn .card:first-child > div{
+  margin-bottom: 4px;
 }
 .consumers .cards-unicorn .card:first-child{
   margin-right: 12px;
@@ -1692,6 +1751,48 @@ margin-bottom: 20px;
 .add-title{
   font-size: 20px;
 }
+.resize{
+  flex-direction: column;
+  padding: 15px;
+}
+.resize .add-title{
+  font-size: 13px;
+  margin: 0 auto;
+  max-width: 160px;
+  text-align: center;
+}
+.resize .add-preview{
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: 67px;
+  height: 67px;
+}
+.resize .add-preview::before{
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: 1px;
+  background-image: url('/assets/img/circle-text.png');
+  width: 67px;
+  height: 67px;
+  background-position: center;
+  background-size: contain;
+  animation: rotate 30s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
 .show-add-btn{
   margin-top: 12px;
   margin-bottom: 27px;
@@ -1760,7 +1861,22 @@ margin-bottom: 20px;
   display: none;
 }
 
+.section-overlay{
+  position: fixed;
+  right: 0;
+  z-index: 10;
+  background: #0c0c2a;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+}
+
+
 @media screen and (max-width: 1260px) {
+  .consumers .cards-unicorn .card:first-child{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
   .consumers .card-section:nth-of-type(5) .section-line{
     display: none;
   }
@@ -1817,6 +1933,9 @@ margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1200px) {
+  .exeptional-solution .card-section:nth-of-type(2) .third-title{
+    font-size: 56px;
+  }
   .exeptional-solution .card-section:nth-of-type(3) .card{
     height: 300px;
   }
@@ -1854,16 +1973,15 @@ margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1100px) {
-  
-  .buisness-model-wrapper{
-    max-width: 540px;
-    margin-left: 0;
+  .chart-desc:nth-of-type(2) p {
+    top: 15px;
   }
+ 
   .chart-desc{
     font-size: 12px;
   }
-  .exeptional-solution .card-section:nth-of-type(2) .third-title{
-    font-size: 20px;
+  .chart-desc:nth-of-type(3){
+    left: 48%;
   }
   .exeptional-solution .card-section:nth-of-type(3) .card{
     height: 265px;
@@ -2142,7 +2260,12 @@ margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 991px) {
-
+  .exeptional-solution .card-section:nth-of-type(2) .third-title{
+    font-size: 38px;
+  }
+  .consumers .cards-unicorn .card:first-child{
+   padding: 15px 20px;
+  }
   .exeptional-solution .card-section:nth-of-type(2){
     padding-bottom: 50px;
   }
@@ -2182,7 +2305,6 @@ margin-bottom: 20px;
   }
   .chart-desc{
     font-size: 12px;
-    max-width: 90px;
     text-align: left;
   }
   .chart-desc:nth-of-type(1){
@@ -2195,8 +2317,9 @@ margin-bottom: 20px;
     height: 30px;
   }
   .chart-desc:nth-of-type(2){
+    width: 180px;
     top: 67%;
-    left: 86%;
+    left: 70%;
     transform: translateY(-78%);
   }
   .chart-desc:nth-of-type(2) svg{
@@ -2204,30 +2327,27 @@ margin-bottom: 20px;
     height: 25px;
   }
   .chart-desc:nth-of-type(3){
-    top: 88%;
-    left: 81%;
-    transform: translateY(-35%);
+    left: 42%;
   }
   .chart-desc:nth-of-type(3) svg{
-    width: 162px;
+    width: 250px;
     height: 84px;
   }
+
   .chart-desc:nth-of-type(2) p {
-    top: -9px;
+    top: -15px;
+    left: 95px;
   }
   .chart-desc:nth-of-type(3) p {
     left: -25px;
   }
-  .buisness-model-chart-container .logo{
-    width: 45px;
-    height: 13px;
-  }
+ 
   .buisness-model-wrapper{
     max-width: 400px;
   }
   .buisness-model-chart-container svg{
-    width: 250px;
-    height: 250px;
+    width: 450px;
+    height: 450px;
   }
   .exeptional-solution  .card-section:nth-of-type(1) .section-line{
     display: none;
@@ -2267,6 +2387,10 @@ margin-bottom: 20px;
   .item-projects-list{
     margin-bottom: 10px;
     margin-top: 0;
+  }
+  .chart-desc:nth-of-type(1) p,
+  .chart-desc:nth-of-type(3) p{
+    margin-bottom: 11px;
   }
   .team-group:nth-child(2) > .team-group-item{
     width: 100%;
@@ -2508,9 +2632,7 @@ margin-bottom: 20px;
   .exeptional-solution .card-section:nth-of-type(3) .card:last-child .card-header{
     top: 6px;
   }
-  .logo{
-    display: none;
-  }
+ 
   .first-screen-card{
     margin-top: 0;
   }
@@ -2586,6 +2708,14 @@ margin-bottom: 20px;
 }
 
 @media screen and (max-width: 576px) {
+  .exeptional-solution .card-section:nth-of-type(2) .third-title{
+    font-size: 24px;
+    margin-top: 10px !important;  
+  }
+  .buisness-model-chart-container svg{
+    width: 250px;
+    height: 250px;
+  }
   .consumers .card-section{
     padding-top: 50px;
   }
@@ -2646,9 +2776,20 @@ margin-bottom: 20px;
     height: 130%;
     
   }
+  .chart-desc:nth-of-type(3){
+    top: 89%;
+    left: 83%;
+  }
 
-
-
+  .chart-desc:nth-of-type(3) > div {
+    text-align: left;
+    position: absolute;
+    bottom: 36px;
+    left: 40px;
+  }
+  .chart-desc:nth-of-type(3){
+    left: 105%;
+  }
 
   .consumers .content .section-count,
   .consumers .card-section .section-count{
@@ -2666,9 +2807,7 @@ margin-bottom: 20px;
     top: 55px;
   }
   
-  .buisness-model-chart-container svg{
-    margin-right: 75px;
-  }
+  
 
   .chart-desc:nth-of-type(1) p {
     position: absolute;
@@ -2686,10 +2825,18 @@ margin-bottom: 20px;
     max-width: 129px;
   }
   .chart-desc:nth-of-type(3) svg{
-    width: 145px;
+    width: 178px;
+    height: 135px;
+    transform: scaleX(-1);
+  }
+  .chart-desc:nth-of-type(3) p {
+    top: 33px;
+    left: 0;
+    max-width: 129px;
   }
   .chart-desc:nth-of-type(3){
-    top: 89%;
+    top: 78%;
+    left: 50%;
   }
   .consumers .subtitle {
     max-width: 220px;
@@ -2951,6 +3098,33 @@ margin-bottom: 20px;
     display: block;
     
     margin-top: 0;
+  }
+  .buisness-model-chart-container .logo{
+
+  }
+  .chart-desc:nth-of-type(1) svg{
+    width: 75px;
+  }
+  .chart-desc:nth-of-type(1){
+    top: 31%;
+  }
+  
+  .chart-desc:nth-of-type(1) p {
+    left: 14px;
+  }
+
+  .chart-desc:nth-of-type(2){
+    top: 83%;
+    left: 55%;
+  }
+  .buisness-model-chart-container .logo{
+    width: 50px;
+    height: 15px;
+    top: 49%;
+    left: 39%;
+  }
+  .chart-desc:nth-of-type(2) p {
+    left: 80px;
   }
 }
 @media screen and (max-width: 480px) {

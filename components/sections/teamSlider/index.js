@@ -106,13 +106,7 @@ const TeamSlider = () => {
               PhD in Economics, 17+ years expertise in Finance & Economics, Former founder of 2 international businesses, Investor-analyst, having evaluated hundreds of projects valued between $1 million and $500 million, resulting in over $60 million in successful investments</p>
             </div>
           </SwiperSlide>
-          <SwiperSlide className={styles['team-group-item']}>
-          <Image className={styles['member-img']} src='/assets/img/vadim.png' width={150} height={136}/>
-                      <p className={styles['member-title']}>Vadim Golubtsov, COO</p>
-                      <div className={styles['member-desc']}>
-                        <p>16+ years of expertise in IT, with experience architecting and leading high-performance teams to build IT solutions for enterprises and SMBs across MarTech, EdTech, FinTech, HR, and Web3 in the USA and internationally. Formerly with Hewlett-Packard, certified HP Instructor, IT Service Manager, ITIL Expert</p>
-                      </div>
-          </SwiperSlide>
+         
           <SwiperSlide className={styles['team-group-item']}> 
           <Image className={styles['member-img']} src='/assets/img/igor.png' width={150} height={136}/>
                     <div>

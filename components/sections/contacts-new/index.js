@@ -87,8 +87,8 @@ const Contacts = ({ contacts }) => {
   return (
     <section className={styles.contacts}>
       <div className={styles['form-inner']}>
-        <span className={`${styles.note}`}>Minimum 100X <br/>On Investment</span>
-        <span className={`${styles.note} ${styles.mobile}`}>Minimum 100X On Investment</span>
+        <span className={`${styles.note}`}>Minimum 100X <br/>On Investment <br/><em>Returns are not a guaranteed</em></span>
+        <span className={`${styles.note} ${styles.mobile}`}>Minimum 100X On Investment <br/><em>Returns are not a guaranteed</em></span>
         <form ref={formRef} className={styles['mailing-form']} method="post" autoComplete="off" noValidate="noValidate" onSubmit={handleSubmit}>
           {!contacts && (
             <>
