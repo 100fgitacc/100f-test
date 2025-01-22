@@ -1058,17 +1058,13 @@ useEffect(() => {
               <div className={styles['sales-system']}>
                 <div className={styles['sales-system-item']}>
                   <h5 className={styles['sales-system-title']}>Auto webinar funnel</h5>
-                  <Image src='/assets/img/AutowebMiro.png' width={229} height={400}   sizes="(max-width: 768px) 50vw, 229px"  priority={false} 
-  quality={70} />
-                  <Image src='/assets/img/Bandle.png' width={229} height={167}   sizes="(max-width: 768px) 50vw, 229px"  priority={false} 
-  quality={70} />
+                  <Image src='/assets/img/AutowebMiro.png' width={229} height={400} unoptimized={true}/>
+                  <Image src='/assets/img/Bandle.png' width={229} height={167}  unoptimized={true}/>
                 </div>
                 <div className={styles['sales-system-item']}>
                   <h5 className={styles['sales-system-title']}>Curator-based funnel</h5>
-                  <Image src='/assets/img/AutowebMiro1.png' width={229} height={285}   sizes="(max-width: 768px) 50vw, 229px"  priority={false} 
-  quality={70} />
-                  <Image src='/assets/img/Bandle2.png' width={229} height={124}   sizes="(max-width: 768px) 50vw, 229px"  priority={false} 
-  quality={70} />
+                  <Image src='/assets/img/AutowebMiro1.png' width={229} height={285}  unoptimized={true}/>
+                  <Image src='/assets/img/Bandle2.png' width={229} height={124}    unoptimized={true}/>
                 </div>
                 <div className={styles['sales-system-item']}>
                   <h5 className={styles['sales-system-title']}>Video sales funnel</h5>

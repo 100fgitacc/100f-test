@@ -1753,7 +1753,9 @@ margin-bottom: 20px;
 }
 .resize{
   flex-direction: column;
-  padding: 15px;
+  padding: 15px;transform: scale(0.6);
+  bottom: -20px;
+  right: -20px;
 }
 .resize .add-title{
   font-size: 13px;
