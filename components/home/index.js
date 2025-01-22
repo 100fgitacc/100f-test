@@ -770,7 +770,6 @@ useEffect(() => {
                       <p>Service Packages</p>
 
                      </div>
-                     {/* <div>1</div> */}
                      {isMobile ? (
                       <svg xmlns="http://www.w3.org/2000/svg" width="184" height="128" viewBox="0 0 184 128" fill="none">
                       <path d="M1 1L20.485 127H67.4431H184" stroke="white"/>
@@ -1411,7 +1410,7 @@ useEffect(() => {
                             </ul>
                             <div>
                                 <Image src='/assets/img/step2.png' width={40} height={40} className={styles['roadmap-icon-step']}/>
-                                <p className={styles['roadmap-subtitle']}>Q4 2025</p>
+                                <p className={styles['roadmap-subtitle']}>Q1 2025</p>
                                 <p className={styles['roadmap-title']}>PRESEED</p>
                             </div>
                             <Element name="svgElement" className={styles.line}>

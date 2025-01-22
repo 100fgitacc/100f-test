@@ -135,11 +135,11 @@ const BurgerMenu = () => {
           </div> */}
           <a href='https://x.com/crypto100f' target='_blank' className={`${styles['banner-item']}`}></a>
           <a href='https://www.linkedin.com/company/100f' target='_blank' className={`${styles['banner-item']}`}></a>
+          {/* <a className={`${styles['banner-item']}`}></a>
+          <a className={`${styles['banner-item']}`}></a> */}
+          {/* <a className={`${styles['banner-item']}`}></a>
           <a className={`${styles['banner-item']}`}></a>
-          <a className={`${styles['banner-item']}`}></a>
-          <a className={`${styles['banner-item']}`}></a>
-          <a className={`${styles['banner-item']}`}></a>
-          <a className={`${styles['banner-item']}`}></a>
+          <a className={`${styles['banner-item']}`}></a> */}
         </div>
       </motion.nav>
     </div>
