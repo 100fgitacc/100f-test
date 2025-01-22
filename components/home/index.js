@@ -1058,7 +1058,7 @@ useEffect(() => {
               <div className={styles['sales-system']}>
                 <div className={styles['sales-system-item']}>
                   <h5 className={styles['sales-system-title']}>Auto webinar funnel</h5>
-                  {isMobile ? (<Image src='/assets/img/AutowebMiro.png' width={229} height={400} />) : (<Image src='/assets/img/banner4' width={229} height={285} />)}
+                  {isMobile ? (<Image src='/assets/img' width={229} height={400} />) : (<Image src='/assets/img/banner4' width={229} height={285} />)}
                   <Image src='/assets/img/Bandle.png' width={229} height={167}  />
                 </div>
                 <div className={styles['sales-system-item']}>
