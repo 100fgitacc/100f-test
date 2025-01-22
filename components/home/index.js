@@ -1398,13 +1398,14 @@ useEffect(() => {
                         </div>
                         <div className={styles['roadmap-item']}>
                             <ul className={styles['roadmap-list']}>
+                               
                                 <li className={styles['roadmap-list-item']}>
-                                    <Image src='/assets/img/icons/yellow-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
-                                    <p>MVPs design & development<br/> of a Platform</p>
+                                    <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
+                                    <p>Clickable Prototype<br/> of the Platfrom</p>
                                 </li>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/yellow-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
-                                    <p>Clickable Prototype<br/> of the Platfrom</p>
+                                    <p>MVPs design & development<br/> of a Platform</p>
                                 </li>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/yellow-img.png' className={styles['roadmap-icon']} width={7} height={7}/>

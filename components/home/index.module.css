@@ -1651,8 +1651,14 @@ margin-bottom: 20px;
   position: relative;
   z-index: 9;
 }
-.roadmap-item:nth-child(2)  .roadmap-icon{
+.roadmap-item:nth-child(2) .roadmap-list-item:first-child .roadmap-icon{
   margin-top: 5px;
+  width: 13px;
+  height: 13px;
+  right: 3px;
+}
+.roadmap-item:nth-child(2) .roadmap-list-item:first-child::before{
+  background-color: #23FFBE !important;
 }
 .roadmap-list-item:nth-child(2)  .roadmap-icon{
   margin-top: 3px;
@@ -2830,8 +2836,17 @@ margin-bottom: 20px;
     top: 55px;
   }
   
-  
-
+  .chart-desc:nth-of-type(1) p::after,
+  .chart-desc:nth-of-type(2) p::after{
+    bottom: 6px;
+  }
+  .chart-desc:nth-of-type(1) p::after,
+  .chart-desc:nth-of-type(2) p::after,
+  .chart-desc:nth-of-type(3) p::after {
+    width: 15px;
+    height: 15px;
+    left: -23px;
+  }
   .chart-desc:nth-of-type(1) p {
     position: absolute;
     left: -60px;
