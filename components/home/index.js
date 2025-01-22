@@ -252,10 +252,10 @@ useEffect(() => {
         >
         <span className={styles['section-marker']}></span>
           <svg className={styles['marker-line']} xmlns="http://www.w3.org/2000/svg" width="2" height="105" viewBox="0 0 2 105" fill="none">
-          <line x1="1" y1="4.37114e-08" x2="0.999995" y2="105" stroke="#FF6054" stroke-width="2" stroke-dasharray="2 2"/>
+          <line x1="1" y1="4.37114e-08" x2="0.999995" y2="105" stroke="#FF6054" strokeWidth="2" strokeDasharray="2 2"/>
           </svg>
           <svg className={styles['central-marker-line']} xmlns="http://www.w3.org/2000/svg" width="2" height="522" viewBox="0 0 2 522" fill="none">
-            <path d="M1 0.5L1 317.5M0.999995 522L0.999995 471" stroke="url(#paint0_linear_1_1538)" stroke-width="2" stroke-dasharray="2 2"/>
+            <path d="M1 0.5L1 317.5M0.999995 522L0.999995 471" stroke="url(#paint0_linear_1_1538)" strokeWidth="2" strokeDasharray="2 2"/>
             <defs>
             <linearGradient id="paint0_linear_1_1538" x1="0.999986" y1="0.5" x2="1.00001" y2="541.5" gradientUnits="userSpaceOnUse">
             <stop stop-color="#FF6054"/>
@@ -552,7 +552,7 @@ useEffect(() => {
           </div>
         </div>
         <svg  className={styles['marker-line']} xmlns="http://www.w3.org/2000/svg" width="2" height="105" viewBox="0 0 2 105"  fill="none">
-          <line x1="1" y1="4.37114e-08" x2="0.999995" y2="105" stroke="url(#paint0_linear_1741_1916)" stroke-width="2" stroke-dasharray="2 2"/>
+          <line x1="1" y1="4.37114e-08" x2="0.999995" y2="105" stroke="url(#paint0_linear_1741_1916)" strokeWidth="2" strokeDasharray="2 2"/>
           <defs>
           <linearGradient id="paint0_linear_1741_1916" x1="-0.5" y1="-2.18557e-08" x2="-0.500005" y2="105" gradientUnits="userSpaceOnUse">
           <stop stop-color="#23FFBE"/>
@@ -568,7 +568,7 @@ useEffect(() => {
       <span className={styles['section-marker']}></span>
       <span className={styles['section-line1']}></span>
         <svg  className={styles['marker-line']} xmlns="http://www.w3.org/2000/svg" width="2" height="105" viewBox="0 0 2 105" fill="none">
-        <line x1="1" y1="4.37114e-08" x2="0.999995" y2="105" stroke="#23FFBE" stroke-width="2" stroke-dasharray="2 2"/>
+        <line x1="1" y1="4.37114e-08" x2="0.999995" y2="105" stroke="#23FFBE" strokeWidth="2" strokeDasharray="2 2"/>
         </svg>
         <h1 className={styles['main-title']}>EXCEPTIONAL SOLUTION</h1>
         <div  className={styles['exeptional-solution-wrapper']}>
@@ -683,7 +683,7 @@ useEffect(() => {
             <strong>We&#39;ve validated this by creating a manual prototype that generated $340K+ revenue in less than 12 months</strong>
             <div className={styles['card-section']}> 
               <svg  className={styles['section-line']} xmlns="http://www.w3.org/2000/svg" width="2" height="54" viewBox="0 0 2 54" fill="none">
-              <path d="M1 0L1 54" stroke="url(#paint0_linear_1_1539)" stroke-width="2" stroke-dasharray="2 2"/>
+              <path d="M1 0L1 54" stroke="url(#paint0_linear_1_1539)" strokeWidth="2" strokeDasharray="2 2"/>
               <defs>
               <linearGradient id="paint0_linear_1_1539" x1="0.999997" y1="22.4458" x2="1.00001" y2="374.421" gradientUnits="userSpaceOnUse">
               <stop stop-color="#23FFBE"/>
@@ -727,7 +727,7 @@ useEffect(() => {
             <div className={styles['card-section']}>
             <h3 className={styles['third-title']}>Business Model </h3>
                 <svg className={styles['section-line']} xmlns="http://www.w3.org/2000/svg" width="2" height="75" viewBox="0 0 2 75" fill="none">
-                <path d="M1 0L1 75" stroke="url(#paint0_linear_1_1541)" stroke-width="2" stroke-dasharray="2 2"/>
+                <path d="M1 0L1 75" stroke="url(#paint0_linear_1_1541)" strokeWidth="2" strokeDasharray="2 2"/>
                 <defs>
                 <linearGradient id="paint0_linear_1_1541" x1="0.999995" y1="31.1747" x2="1.00002" y2="520.03" gradientUnits="userSpaceOnUse">
                 <stop stop-color="#23FFBE"/>
@@ -786,7 +786,7 @@ useEffect(() => {
             </div>
             <div className={styles['card-section']}>
               <svg className={styles['section-line']} xmlns="http://www.w3.org/2000/svg" width="2" height="75" viewBox="0 0 2 75" fill="none">
-<path d="M1 0L1 75" stroke="url(#paint0_linear_1_1541)" stroke-width="2" stroke-dasharray="2 2"/>
+<path d="M1 0L1 75" stroke="url(#paint0_linear_1_1541)" strokeWidth="2" strokeDasharray="2 2"/>
 <defs>
 <linearGradient id="paint0_linear_1_1541" x1="0.999995" y1="31.1747" x2="1.00002" y2="520.03" gradientUnits="userSpaceOnUse">
 <stop stop-color="#23FFBE"/>
@@ -844,7 +844,7 @@ useEffect(() => {
       >
         <span className={styles['section-marker']}></span>
         <svg className={styles['marker-line']} xmlns="http://www.w3.org/2000/svg" width="2" height="164" viewBox="0 0 2 164" fill="none">
-                <path d="M0.999889 0L0.999993 164" stroke="url(#paint0_linear_1741_2458)" stroke-width="2" stroke-dasharray="2 2"/>
+                <path d="M0.999889 0L0.999993 164" stroke="url(#paint0_linear_1741_2458)" strokeWidth="2" strokeDasharray="2 2"/>
                 <defs>
                 <linearGradient id="paint0_linear_1741_2458" x1="-0.5" y1="-2.18547e-08" x2="-0.500005" y2="105" gradientUnits="userSpaceOnUse">
                 <stop stop-color="#23FFBE"/>
@@ -1055,16 +1055,16 @@ useEffect(() => {
             <div className={styles['card-section']}>
             
               <h2 className={styles['secondary-title']}>Cold Audience Lead Generation System</h2>
-              <div className={styles['sales-system']}>
+              {/* <div className={styles['sales-system']}>
                 <div className={styles['sales-system-item']}>
                   <h5 className={styles['sales-system-title']}>Auto webinar funnel</h5>
-                  <Image src='/assets/img/AutowebMiro.png' width={229} height={400} unoptimized={true}/>
-                  <Image src='/assets/img/Bandle.png' width={229} height={167}  unoptimized={true}/>
+                  <Image src='/assets/img/AutowebMiro.png' width={229} height={400} />
+                  <Image src='/assets/img/Bandle.png' width={229} height={167}  />
                 </div>
                 <div className={styles['sales-system-item']}>
                   <h5 className={styles['sales-system-title']}>Curator-based funnel</h5>
-                  <Image src='/assets/img/AutowebMiro1.png' width={229} height={285}  unoptimized={true}/>
-                  <Image src='/assets/img/Bandle2.png' width={229} height={124}    unoptimized={true}/>
+                  <Image src='/assets/img/AutowebMiro1.png' width={229} height={285}  />
+                  <Image src='/assets/img/Bandle2.png' width={229} height={124}    />
                 </div>
                 <div className={styles['sales-system-item']}>
                   <h5 className={styles['sales-system-title']}>Video sales funnel</h5>
@@ -1081,7 +1081,7 @@ useEffect(() => {
                     sizes="(max-width: 768px) 100vw, 229px" 
                   />
                 </div>
-              </div>
+              </div> */}
               <div className={`${styles['paid-content']}`}>
                 <h5 className={styles['paid-title']}>Paid Advertising</h5>
                 <div className={styles['paid-logos']}>
@@ -1115,7 +1115,7 @@ useEffect(() => {
               <span className={styles['section-count']}>2</span>
             <h2 className={styles['secondary-title']}>WARM AUDIENCE BASE</h2>
             <svg  className={styles["section-line"]} xmlns="http://www.w3.org/2000/svg" width="3" height="72" viewBox="0 0 3 72" fill="none">
-              <path d="M2 1L1 71" stroke="#FFDF2C" stroke-width="2" stroke-dasharray="2 2"/>
+              <path d="M2 1L1 71" stroke="#FFDF2C" strokeWidth="2" strokeDasharray="2 2"/>
               </svg>
             <p className={styles.subtitle}>We already have access to our target audience</p>
               <div className={styles.cards}>
@@ -1154,7 +1154,7 @@ useEffect(() => {
             <span className={styles['section-count']}>3</span>
               <h3 className={styles['third-title']}>Growth Channels</h3>
               <svg  className={styles["section-line"]} xmlns="http://www.w3.org/2000/svg" width="3" height="72" viewBox="0 0 3 72" fill="none">
-              <path d="M2 1L1 71" stroke="#FFDF2C" stroke-width="2" stroke-dasharray="2 2"/>
+              <path d="M2 1L1 71" stroke="#FFDF2C" strokeWidth="2" strokeDasharray="2 2"/>
               </svg>
                 <div className={styles['cards-unicorn']}>
                   <div className={styles.card}>
@@ -1181,7 +1181,7 @@ useEffect(() => {
             <div className={styles['card-section']}>
               <h3 className={styles['third-title']}>MULTIPLYING <span className={styles['text-gradient']}>UNICORN</span> STATUS</h3>
               <svg  className={styles["section-line"]} xmlns="http://www.w3.org/2000/svg" width="3" height="72" viewBox="0 0 3 72" fill="none">
-              <path d="M2 1L1 71" stroke="#FFDF2C" stroke-width="2" stroke-dasharray="2 2"/>
+              <path d="M2 1L1 71" stroke="#FFDF2C" strokeWidth="2" strokeDasharray="2 2"/>
               </svg>
               <Image className={`${styles.chart} ${styles.mobile}`} src='/assets/img/chart-m.png' width={326} height={224}/>
               <Image className={styles.chart} src='/assets/img/chart.png' width={575} height={250}/>
@@ -1195,7 +1195,7 @@ useEffect(() => {
             <div className={styles['card-section']}>
               <h3 className={styles['third-title']}>Unstoppable 100F team</h3>
               <svg  className={styles["section-line"]} xmlns="http://www.w3.org/2000/svg" width="3" height="72" viewBox="0 0 3 72" fill="none">
-              <path d="M2 1L1 71" stroke="#FFDF2C" stroke-width="2" stroke-dasharray="2 2"/>
+              <path d="M2 1L1 71" stroke="#FFDF2C" strokeWidth="2" strokeDasharray="2 2"/>
               </svg>
               <div>
                 <div className={styles['team-group']}>
@@ -1514,7 +1514,7 @@ useEffect(() => {
                           <Element name="svgElement" className={styles.line}>
                                 <svg  xmlns="http://www.w3.org/2000/svg">
                                 <path 
-                                  d="M0.968689 174.646H101.105C116.455 174.646 128.898 162.202 128.898 146.853V113.747V12.3842C128.898 6.96671 133.29 2.57495 138.707 2.57495H145.655" stroke="#38C9FE" stroke-width="3.26975"
+                                  d="M0.968689 174.646H101.105C116.455 174.646 128.898 162.202 128.898 146.853V113.747V12.3842C128.898 6.96671 133.29 2.57495 138.707 2.57495H145.655" stroke="#38C9FE" strokeWidth="3.26975"
                                     fill="transparent"
                                     strokeDasharray="300"
                                     strokeDashoffset="300"
@@ -1542,7 +1542,7 @@ useEffect(() => {
                             <Element name="svgElement" className={styles.line}>
                                 <svg  xmlns="http://www.w3.org/2000/svg">
                                 <path 
-                                  d="M0.5354 1.80109H16.0365C31.0752 1.80109 43.386 13.7632 43.8179 28.7957L44.4166 49.6309C44.7893 62.5989 55.4094 72.9183 68.3828 72.9183V72.9183" stroke="#37C9FE" stroke-width="3.26975"
+                                  d="M0.5354 1.80109H16.0365C31.0752 1.80109 43.386 13.7632 43.8179 28.7957L44.4166 49.6309C44.7893 62.5989 55.4094 72.9183 68.3828 72.9183V72.9183" stroke="#37C9FE" strokeWidth="3.26975"
                                     fill="transparent"
                                     strokeDasharray="300"
                                     strokeDashoffset="300"
