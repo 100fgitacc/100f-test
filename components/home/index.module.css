@@ -3074,6 +3074,16 @@ margin-bottom: 20px;
     border: none;
     overflow: hidden;
   }
+  .add.resize{
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+  .resize  .add-preview{
+    right: 0%;
+    top: inherit;
+  }
   .add-desc{
     max-width: unset;
     width: 100%;
