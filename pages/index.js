@@ -18,6 +18,7 @@ With A Knowledgeable Audience " />
         <meta name="keywords" content="crypto, investors, education, marketing, audience, projects, cryptocurrency, 100F" />
         <meta name="author" content="100F" />
         <link rel="icon" href="/assets/img/favicon.ico" />
+        <meta property="og:image" content='assets/img/social_img.png' />
       </Head>
       <Header/>
       <Sidebar/>
