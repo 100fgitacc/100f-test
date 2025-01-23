@@ -1101,7 +1101,7 @@ useEffect(() => {
                   <p>
                     CAC
                     <span>
-                      $660
+                      $550
                     </span>
                   </p>
                   <p>
