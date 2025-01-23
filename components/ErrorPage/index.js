@@ -1,14 +1,12 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import Footer from '../footer';
-import CoinsPlugin from '../coinsPlugin';
+import Footer from '../footer-new';
 const ErrorPage = () => {
   return (
       <div className='content'>
         <section className='error-page-section'>
           <div className="error-page">
-            <CoinsPlugin/>
             <div className='error-page-content'>
               <div>
                 <h1>Oops, the page doesn&apos;t exist</h1>
