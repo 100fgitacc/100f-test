@@ -1588,14 +1588,14 @@ margin-bottom: 20px;
   height: 100%;
   background-color: #23FFBE;
 }
-.roadmap-item:nth-child(2) .roadmap-list-item::before{
+.roadmap-item:nth-child(2) .roadmap-list-item:nth-child(2):before{
   content: '';
   position: absolute;
   bottom: -15px;
   left: 3px;
   width: 1px;
   height: 112%;
-  background-color: #fce02e;
+  background: linear-gradient(173deg, rgb(36 255 189) 45%, rgba(255, 227, 73, 1) 65%);
 }
 .roadmap-item:nth-child(3) .roadmap-list-item::before{
   content: '';
@@ -1659,9 +1659,13 @@ margin-bottom: 20px;
 }
 .roadmap-item:nth-child(2) .roadmap-list-item:first-child::before{
   background-color: #23FFBE !important;
+  left: 3px;
 }
-.roadmap-list-item:nth-child(2)  .roadmap-icon{
+.roadmap-item:nth-child(2) .roadmap-list-item:nth-child(2)  .roadmap-icon{
   margin-top: 3px;
+  width: 13px;
+  height: 13px;
+  right: 3px;
 }
 .roadmap-item{
   position: relative;

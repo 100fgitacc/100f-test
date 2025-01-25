@@ -171,6 +171,13 @@ useEffect(() => {
     };
   }, []);
 
+
+
+
+
+
+
+
   return (
     <>
      
@@ -207,19 +214,6 @@ useEffect(() => {
             
           </div>
         )}
-         
-
-
-
-
-
-
-
-
-
-
-
-
       <motion.section
         className={styles["first-screen-card"]}
       >
@@ -1404,7 +1398,7 @@ useEffect(() => {
                                     <p>Clickable Prototype<br/> of the Platfrom</p>
                                 </li>
                                 <li className={styles['roadmap-list-item']}>
-                                    <Image src='/assets/img/icons/yellow-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
+                                    <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
                                     <p>MVPs design & development<br/> of a Platform</p>
                                 </li>
                                 <li className={styles['roadmap-list-item']}>
