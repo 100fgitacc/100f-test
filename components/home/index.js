@@ -1185,8 +1185,8 @@ useEffect(() => {
               <p className={styles.subtitle}>Each new channel multiplies our reach & valuation</p>
               <div className={styles['charts-container']}>
                 <Image src='/assets/img/Group48095381.png' width={322} height={248}/>
-                <Image src='/assets/img/Group48095381-1.png' width={312} height={248}/>
                 <Image src='/assets/img/Group48095382.png' width={246} height={248}/>
+                <Image src='/assets/img/Group48095381-1.png' width={312} height={248}/>
               </div>
             </div>
             <div className={styles['card-section']}>
