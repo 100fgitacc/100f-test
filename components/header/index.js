@@ -98,12 +98,12 @@ const BurgerMenu = () => {
             </button>
           </li>
           <li className={styles['sidebar-menu__item']}>
-            <Link href="/" className={`${styles['page-button']} ${isActive('/') ? styles.active : ''} ${styles['whitepaper-access']}`}>
+            <Link href="/whitepaper" className={`${styles['page-button']} ${isActive('/') ? styles.active : ''} ${styles['whitepaper']}`}>
               Get Whitepaper Access
             </Link>
           </li>
           <li className={styles['sidebar-menu__item']}>
-            <Link href="/whitepaper-access" className={`${styles['page-button']} ${isActive('/whitepaper-access') ? styles.active : ''} ${styles['whitepaper']}`}>
+            <Link href="/whitepaper-access" className={`${styles['page-button']} ${isActive('/whitepaper-access') ? styles.active : ''} ${styles['w']}`}>
               GO TO Access Page
             </Link>
         </li>

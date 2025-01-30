@@ -34,9 +34,9 @@ const Whitepaper = () => {
               <Image src='/assets/img/microsoft.png'   alt='microsoft' width={63} height={13}/>
               <Image src='/assets/img/nintendo.png'   alt='nintendo' width={61} height={15}/>
               <Image src='/assets/img/verizon1.png'   alt='verizon' width={58} height={12}/>
-              <Image src='/assets/img/sanyo.png'  alt='sanyo'  width={58} height={12}/>
+              <Image src='/assets/img/sanyo.png'  alt='sanyo'  width={58} height={12} unoptimized={true}/>
               <Image src='/assets/img/ebay.png' alt='ebay' width={46} height={19}/>
-              <Image src='/assets/img/sega.png'  alt='sega'  width={38} height={15}/>
+              <Image src='/assets/img/sega.png'  alt='sega'  width={38} height={15} unoptimized={true}/>
               <Image src='/assets/img/mazda.png'  alt='mazda'  width={20} height={15}/>
               <Image src='/assets/img/mitsubishi.png'  alt='mitsubishi'  width={20} height={17}/>
               <Image src='/assets/img/symantec.png'  alt='symantec'  width={61} height={12}/>

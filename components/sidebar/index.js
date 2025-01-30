@@ -52,7 +52,7 @@ const Sidebar = () => {
             </Link>
         </li>
         <li className={styles['sidebar-menu__item']}>
-            <Link href="/whitepaper-access" className={`${styles['page-button']} ${isActive('/whitepaper-access') ? styles.active : ''} ${styles['whitepaper']}`}>
+            <Link href="/whitepaper-access" className={`${styles['page-button']} ${isActive('/whitepaper-access') ? styles.active : ''} ${styles['w']}`}>
               GO TO Access Page
             </Link>
         </li>
