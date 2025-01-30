@@ -167,7 +167,7 @@ const WhitepaperAccess = () => {
                   </li>
                   <li className={styles['whitepapper-card-list-item']}><span>Modeling the outcomes of activities using artificial intelligence</span>
                   </li>
-                  <li className={styles['whitepapper-card-list-item']}><span>Tools for advertising and analytics of the project's segmented audience.</span>
+                  <li className={styles['whitepapper-card-list-item']}><span>Tools for advertising and analytics of the project&apos;s segmented audience.</span>
                   </li>
                 </ul>
                 </li>
@@ -331,7 +331,7 @@ const WhitepaperAccess = () => {
                     </li>
                     <li className={styles['whitepapper-card-list-item']}><span>65% retention rate in beta tests.</span>
                     </li>
-                    <li className={styles['whitepapper-card-list-item']}><span>The user's LTV is $1,800 per year</span>
+                    <li className={styles['whitepapper-card-list-item']}><span>The user&apos;s LTV is $1,800 per year</span>
                     </li>
                     <li className={styles['whitepapper-card-list-item']}><span>Clear roadmap for modular platform development.</span>
                     </li>
