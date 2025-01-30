@@ -326,14 +326,14 @@ const WhitepaperAccess = () => {
                 </li>
                 <li className={styles['whitepapper-card-list-item']}><span>Tested Prototypes:</span>
                   <ul className={styles['whitepapper-card-list']}>
-                    <li className={styles['whitepapper-card-list-item']}><span>Average user acquisition cost (CAC): $550.
+                    <li className={styles['whitepapper-card-list-item']}><span>Average user acquisition cost (CAC): $550
                     </span>
                     </li>
                     <li className={styles['whitepapper-card-list-item']}><span>65% retention rate in beta tests.</span>
                     </li>
                     <li className={styles['whitepapper-card-list-item']}><span>The user&apos;s LTV is $1,800 per year</span>
                     </li>
-                    <li className={styles['whitepapper-card-list-item']}><span>Clear roadmap for modular platform development.</span>
+                    <li className={styles['whitepapper-card-list-item']}><span>Clear roadmap for modular platform development</span>
                     </li>
                   </ul>
                 </li>
