@@ -103,10 +103,10 @@ const BurgerMenu = () => {
             </Link>
           </li>
           <li className={styles['sidebar-menu__item']}>
-              <Link href="/whitepaper" className={`${styles['page-button']} ${isActive('/whitepaper') ? styles.active : ''} ${styles['whitepaper']}`}>
-                Get Whitepaper Access
-              </Link>
-          </li>
+            <Link href="/whitepaper-access" className={`${styles['page-button']} ${isActive('/whitepaper-access') ? styles.active : ''} ${styles['whitepaper']}`}>
+              GO TO Access Page
+            </Link>
+        </li>
           <li className={styles['sidebar-menu__item']}>
             <Link href="/" className={`${styles['page-button']} ${isActive('/') ? styles.active : ''} ${styles['home-btn']}`}>
               Home
