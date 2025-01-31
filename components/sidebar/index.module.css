@@ -49,7 +49,7 @@
     text-align: left;
     transition: all .3s ease;
 }
-.sidebar-menu__item:first-child{
+.sidebar-menu__item:nth-child(2){
     margin-bottom: 50px;
     font-size: 14.89px;
     font-weight: 100;
@@ -160,6 +160,28 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url('/assets/img/icons/Home_solid.png');
+}
+.whitepaper::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 5px;
+    width: 17px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('/assets/img/icons/access.png');
+}
+.active.whitepaper::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 5px;
+    width: 17px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('/assets/img/icons/access-b.png');
 }
 .waitlist-btn{
     padding-left: 25px;

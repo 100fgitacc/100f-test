@@ -1335,7 +1335,7 @@ useEffect(() => {
             <TeamSlider/>
             <div className={styles['platform-roadmap']}>
                 <div className={styles.inner}>
-                    <h2 className={styles["main-title"]}>100F Platform Roadmap</h2>
+                    <h2 className={styles["main-title"]}>100F Roadmap</h2>
                     <div className={styles['roadmap-container']}>
                         <div className={styles['roadmap-item']}>
                             <Image src='/assets/img/step1.png' width={40} height={40} className={styles['roadmap-icon-step']}/>
@@ -1344,7 +1344,11 @@ useEffect(() => {
                             <ul className={styles['roadmap-list']}>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
-                                    <p>Prototype Function 1</p>
+                                    <p>Pilot MVP Function</p>
+                                </li>
+                                <li className={styles['roadmap-list-item']}>
+                                    <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
+                                    <p>Client Acquisition System</p>
                                 </li>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
@@ -1352,47 +1356,59 @@ useEffect(() => {
                                 </li>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
-                                    <p>Prototype Function 2</p>
-                                </li>
-                                <li className={styles['roadmap-list-item']}>
-                                    <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
-                                    <p>Prototype Function 3</p>
-                                </li>
-                                <li className={styles['roadmap-list-item']}>
-                                    <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
-                                    <p>Prototype Function 4</p>
-                                </li>
-                                <li className={styles['roadmap-list-item']}>
-                                    <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
                                     <p>Validating Platform Concept</p>
+                                </li>
+                                <li className={styles['roadmap-list-item']}>
+                                    <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
+                                    <p>1000+ Crypto GOATs (60M+ followers)</p>
+                                </li>
+                                <li className={styles['roadmap-list-item']}>
+                                    <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
+                                    <p>Delaware C-Corp Incorporated</p>
+                                </li>
+                                <li className={styles['roadmap-list-item']}>
+                                    <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
+                                    <p>Startup Data Room</p>
+                                </li>
+                                <li className={styles['roadmap-list-item']}>
+                                    <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
+                                    <p>Risk Strategy</p>
+                                </li>
+                                <li className={styles['roadmap-list-item']}>
+                                    <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
+                                    <p>Advisory Board</p>
                                 </li>
                             </ul>
                             <Element name="svgElement" className={styles.line}>
-                                <svg ref={svgRef}  xmlns="http://www.w3.org/2000/svg">
+                              <svg ref={svgRef} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 302" fill="none">
                                 <path 
-                                    d="M0.9823 1.83105H126.05C141.4 1.83105 153.843 14.2744 153.843 29.624V133.847C153.843 142.877 161.163 150.196 170.192 150.196V150.196" 
-                                    stroke="#23FFBE" 
-                                    strokeWidth="3.26975"
-                                    fill="transparent"
-                                    strokeDasharray="300"
-                                    strokeDashoffset="300"
-                                    opacity={animationPlayed ? 1 : 0} 
+                                  d="M0.875 2H125.754C141.103 2 153.546 14.4433 153.546 29.7929V283.671C153.546 292.689 160.857 300 169.875 300V300" 
+                                  stroke="#23FFBE" 
+                                  strokeWidth="3.26975"
+                                  fill="transparent"
+                                  strokeDasharray="500"
+                                  strokeDashoffset="500"
+                                  opacity={animationPlayed ? 1 : 0} 
                                 >
-                                    <animate 
+                                  <animate 
                                     attributeName="stroke-dashoffset" 
-                                    from="300" 
+                                    from="500" 
                                     to="0" 
-                                    dur="4s" 
+                                    dur="5s" 
                                     fill="freeze" 
                                     id="lineAnimation"
-                                    />
+                                  />
                                 </path>
-                                </svg>
+                              </svg>
                             </Element>
                         </div>
                         <div className={styles['roadmap-item']}>
                             <ul className={styles['roadmap-list']}>
                                
+                                <li className={styles['roadmap-list-item']}>
+                                    <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
+                                    <p>3-Year Product Plan</p>
+                                </li>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
                                     <p>Clickable Prototype<br/> of the Platfrom</p>
@@ -1403,7 +1419,7 @@ useEffect(() => {
                                 </li>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/yellow-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
-                                    <p>PreSeed Investment<br/> Round</p>
+                                    <p>PreSeed Investment Round</p>
                                 </li>
                             </ul>
                             <div>
@@ -1497,7 +1513,7 @@ useEffect(() => {
                                 </li>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/blue-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
-                                    <p>Tier 2-3 Projects <br/> Acquisition & <br/>Onboarding 50+ Verified <br/>Crypto Projects</p>
+                                    <p>Tier 2-3 Projects <br/> Acquisition & <br/>Onboarding 20+ Verified <br/>Crypto Projects</p>
                                 </li>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/blue-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
@@ -1506,6 +1522,10 @@ useEffect(() => {
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/blue-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
                                     <p>MRR $130,000+</p>
+                                </li>
+                                <li className={styles['roadmap-list-item']}>
+                                    <Image src='/assets/img/icons/blue-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
+                                    <p>Seed Investment Round</p>
                                 </li>
                             </ul>
                           <div>
@@ -1536,32 +1556,6 @@ useEffect(() => {
                           </div>
                         </div>
                         <div className={styles['roadmap-item']}>
-                            <Image src='/assets/img/step5.png' width={40} height={40} className={styles['roadmap-icon-step']}/>
-                            <Element name="svgElement" className={styles.line}>
-                                <svg  xmlns="http://www.w3.org/2000/svg">
-                                <path 
-                                  d="M0.5354 1.80109H16.0365C31.0752 1.80109 43.386 13.7632 43.8179 28.7957L44.4166 49.6309C44.7893 62.5989 55.4094 72.9183 68.3828 72.9183V72.9183" stroke="#37C9FE" strokeWidth="3.26975"
-                                    fill="transparent"
-                                    strokeDasharray="300"
-                                    strokeDashoffset="300"
-                                    opacity={animationFivePlayed ? 1 : 0} 
-                                >
-                                    <animate 
-                                    attributeName="stroke-dashoffset" 
-                                    from="300" 
-                                    to="0" 
-                                    dur="4s" 
-                                    fill="freeze" 
-                                    begin="fourLineAnimation.end"
-                                    id="fiveLineAnimation"
-                                    />
-                                </path>
-                                </svg>
-                            </Element>
-                            <p className={styles['roadmap-subtitle']}>Q1 2026</p>
-                            <p className={styles['roadmap-title']}>SEED</p>
-                        </div>
-                        <div className={styles['roadmap-item']}>
                             <Image src='/assets/img/step6.png' width={40} height={40} className={styles['roadmap-icon-step']}/>
                             <p className={styles['roadmap-subtitle']}>Q1-Q4 2026</p>
                             <p className={styles['roadmap-title']}>PLATFORM 2.0</p>
@@ -1580,7 +1574,7 @@ useEffect(() => {
                                 </li>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/blue-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
-                                    <p>MRR $670,000+</p>
+                                    <p>MRR $1,300,000+</p>
                                 </li>
                             </ul>
                         </div>

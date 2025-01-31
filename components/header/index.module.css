@@ -215,6 +215,17 @@
     margin-top: 5px;
     font-size: 14px;
 }
+.whitepaper::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 5px;
+    width: 17px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('/assets/img/icons/access.png');
+}
 .home-btn::before {
     content: '';
     position: absolute;
@@ -225,6 +236,17 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url('/assets/img/icons/Home_solid.png');
+}
+.active.whitepaper::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 5px;
+    width: 17px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('/assets/img/icons/access-b.png');
 }
 .active.home-btn::before {
     content: '';
@@ -344,7 +366,7 @@
     z-index: 98;
   }
 
-  .sidebar-menu__item:first-child{
+  .sidebar-menu__item:nth-child(2){
     margin-bottom: 50px;
     font-size: 14.89px;
     font-weight: 100;
