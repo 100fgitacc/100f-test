@@ -90,7 +90,7 @@ const Home = () => {
                               }, 4400);
                           }, 3500);
                       }, 4100);
-                  }, 4000);
+                  }, 4500);
                   
               }
           }
@@ -107,7 +107,7 @@ const Home = () => {
   const removeBlackAndWhiteClass = () => {
       const roadmapItems = document.querySelectorAll(`.${styles['roadmap-item']}`);
       
-      const delays = [0, 3900, 8000, 11500, 15900, 17400]; // Задержки для каждого элемента
+      const delays = [0, 4000, 8000, 11500, 15900, 17400]; // Задержки для каждого элемента
   
       roadmapItems.forEach((item, index) => {
           const delay = delays[index];
@@ -1386,13 +1386,13 @@ useEffect(() => {
                                   stroke="#23FFBE" 
                                   strokeWidth="3.26975"
                                   fill="transparent"
-                                  strokeDasharray="500"
-                                  strokeDashoffset="500"
+                                  strokeDasharray="550"
+                                  strokeDashoffset="550"
                                   opacity={animationPlayed ? 1 : 0} 
                                 >
                                   <animate 
                                     attributeName="stroke-dashoffset" 
-                                    from="500" 
+                                    from="550" 
                                     to="0" 
                                     dur="5s" 
                                     fill="freeze" 
