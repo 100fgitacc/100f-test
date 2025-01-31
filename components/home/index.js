@@ -1428,29 +1428,34 @@ useEffect(() => {
                                 <p className={styles['roadmap-title']}>PRESEED</p>
                             </div>
                             <Element name="svgElement" className={styles.line}>
-                                <svg  xmlns="http://www.w3.org/2000/svg">
-                                <path 
-                                  d="M0.246597 196.605H58.6935C74.0431 196.605 86.4864 184.162 86.4864 168.812V129.984V11.8638C86.4864 6.44626 90.8781 2.0545 96.2956 2.0545H105.696" 
-                                    stroke="#FFD900" 
+                                <svg xmlns="http://www.w3.org/2000/svg">
+                                  <defs>
+                                    <linearGradient id="gradient1" x1="53.25" y1="2" x2="53.25" y2="263" gradientUnits="userSpaceOnUse">
+                                      <stop offset="0%" stopColor="#FFD903"/>
+                                      <stop offset="100%" stopColor="#52F796"/>
+                                    </linearGradient>
+                                  </defs>
+                                  <path 
+                                    d="M0.246597 196.605H58.6935C74.0431 196.605 86.4864 184.162 86.4864 168.812V129.984V11.8638C86.4864 6.44626 90.8781 2.0545 96.2956 2.0545H105.696" 
+                                    stroke="url(#gradient1)" 
                                     strokeWidth="3.26975"
                                     fill="transparent"
                                     strokeDasharray="300"
                                     strokeDashoffset="300"
                                     opacity={animationTwoPlayed ? 1 : 0} 
-                                >
+                                  >
                                     <animate 
-                                    attributeName="stroke-dashoffset" 
-                                    from="300" 
-                                    to="0" 
-                                    dur="4s" 
-                                    fill="freeze" 
-                                    begin="lineAnimation.end"
-                                    id="secondLineAnimation"
+                                      attributeName="stroke-dashoffset" 
+                                      from="300" 
+                                      to="0" 
+                                      dur="4s" 
+                                      fill="freeze" 
+                                      begin="lineAnimation.end"
+                                      id="secondLineAnimation"
                                     />
-                                </path>
+                                  </path>
                                 </svg>
-                            </Element>
-                            
+                              </Element>
                         </div>
                         <div className={styles['roadmap-item']}>
                             <Image src='/assets/img/step3.png' width={40} height={40} className={styles['roadmap-icon-step']}/>
