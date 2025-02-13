@@ -123,7 +123,7 @@
 .note{
     position: absolute;
     font-family: "Wadik", sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     top: 30px;
     right: -20px;
     padding: 10px 15px;
@@ -135,6 +135,9 @@
 }
 .note.mobile{
     display: none;
+}
+.note span{
+    font-size: 14px;
 }
 .note em{
     font-family: "Geologica", sans-serif;

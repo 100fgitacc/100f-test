@@ -101,21 +101,24 @@ const TeamSlider = () => {
               <Image  src='/assets/img/icons/linkedin.png' width={14} height={14}/>
               @apomelnikov
             </a>
-            <div className={styles['member-desc']}>
-              <p>
-              PhD in Economics, 17+ years expertise in Finance & Economics, Former founder of 2 international businesses, Investor-analyst, having evaluated hundreds of projects valued between $1 million and $500 million, resulting in over $60 million in successful investments</p>
-            </div>
+            <p className={styles['member-desc']}>
+              PhD in Economics, 17+ years expertise in Finance & Economics, Former founder of 2 international businesses, Investor-analyst, having evaluated hundreds of projects valued between $1 million and $500 million, resulting in over $60 million in successful investments
+            </p>
           </SwiperSlide>
          
           <SwiperSlide className={styles['team-group-item']}> 
-          <Image className={styles['member-img']} src='/assets/img/igor.png' width={150} height={136}/>
-                    <div>
-                      <p className={styles['member-title']}>Igor Jalenco, <br/>
-                      CBDO</p>
-                      <div className={styles['member-desc']}>
-                        <p>13+ years expertise in EdTech, Marketing & StartUps, managed corporate education programs for IT companies with 300+ employees valued at $500M+. Led growth of international EdTech business to 5 countries (UAE, KSA, Kazakhstan, Ukraine, Azerbaijan), reaching 14K+ students. As Project Lead, successfully launched and scaled digital projects MySoul.help and Smartexpert.net from scratch</p>
-                      </div>
-                    </div>
+            <Image className={styles['member-img']} src='/assets/img/igor.png' width={150} height={136}/>
+            <div>
+              <p className={styles['member-title']}>Igor Jalenco, <br/>
+              CBDO</p>
+              <a className={styles['member-link']} href='https://www.linkedin.com/in/ihorjalenco/' target='_blank'>
+                <Image  src='/assets/img/icons/linkedin.png' width={14} height={14}/>
+                @ihorjalenco
+              </a>
+              <p className={styles['member-desc']}>13+ years expertise in EdTech, Marketing & StartUps, managed corporate education programs
+              for IT companies with 300+ employees valued at $500M+. Led growth of international EdTech business to 5 countries (UAE, KSA, Kazakhstan, Ukraine, Azerbaijan), reaching 14K+ students. As Project Lead, successfully launched and scaled digital projects MySoul.help and Smartexpert.net from scratch</p>=
+            </div>
+            
           </SwiperSlide>
         </Swiper>
       </div>

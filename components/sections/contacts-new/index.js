@@ -87,12 +87,12 @@ const Contacts = ({ contacts }) => {
   return (
     <section className={styles.contacts}>
       <div className={styles['form-inner']}>
-        <span className={`${styles.note}`}>100X+ RETURNS <br/>POTENTIAL</span>
-        <span className={`${styles.note} ${styles.mobile}`}>100X+ RETURNS <br/>POTENTIAL</span>
+        <span className={`${styles.note}`}>CONSERVATIVE 40X+ <br/><span>RETURNS POTENTIAL</span></span>
+        {/* <span className={`${styles.note} ${styles.mobile}`}>100X+  <br/></span> */}
         <form ref={formRef} className={styles['mailing-form']} method="post" autoComplete="off" noValidate="noValidate" onSubmit={handleSubmit}>
           {!contacts && (
             <>
-              <h2 className={styles['main-title']}>DON’T MISS THE INVESTMENT OPPORTUNITY</h2>
+              <h2 className={styles['main-title']}>JUMP ON THIS INVESTMENT OPPORTUNITY</h2>
               {/* <p className={styles.subtitle}>
               Complete the form below to get early access to features, updates, and opportunities
               </p> */}

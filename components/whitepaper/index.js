@@ -1,33 +1,71 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect  } from 'react';
 import styles from './index.module.css';
 import Footer from '../footer-new';
 import Image from 'next/image';
 import Contacts from '../sections/contacts-whitepaper';
-
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
+import Link from 'next/link';
 
 const Whitepaper = () => {
+  const MySwal = withReactContent(Swal);
+  
+    const handleTextClick = (src) => {
+      MySwal.fire({
+        imageUrl: src,
+        imageAlt: 'Large Image',
+        showCloseButton: true,
+        showConfirmButton: false,
+        width: '10%',
+        heightAuto: true,
+      });
+    };
+
+
+
+  const [unlock, setUnlockAccess] = useState(null);
+
+  useEffect(() => {
+    const access = localStorage.getItem('access');
+    setUnlockAccess(access === 'true');
+  }, []);
+  
+  if (unlock === null) return null;
+
+    
   return (
     <>
       <section className={styles['first-screen-card']}>
         <div className={styles.wrapper}>
-            <Image className={styles.logo} src="/assets/img/footer-logo.png" alt="logo" width={66} height={19} />
+            <Image className={styles.logo} src="/assets/img/footer-logo.png" alt="logo" width={75} height={22} />
             <h1 className={styles['main-title']}>A Rising AMERICAN UNICORN In The Web3</h1>
             <p className={styles.subtitle}><span>Q1 2025:</span> Investment Round In Equity Is Open</p>
-            <div className={styles.content}>
+            <div className={`${styles.content} ${unlock ? styles.unlock: ''}`}>
               <div className={styles.preview}>
-                <h2 className={styles['secondary-title']}> Learn How to 100Х+ 
+                <h2 className={styles['secondary-title']}> Learn How to 40X+ 
                 Your Investment With U.S. Law Protection</h2>
-                <p className={styles.subtitle}>Get access for unlock</p>
+                {unlock ? (
+                  <>
+                    <p className={styles['subtitle-access']}>Congratulations! You have access to the whitepaper</p>
+                    <Link className={styles['btn-apply']} href='/whitepaper-access'>Go to Whitepaper list</Link>
+                  </>
+                ) : (
+                    <p className={styles.subtitle}>Get access for unlock</p>
+                )}
+                
               </div>
-              <Contacts/>
+              {!unlock && (
+                <Contacts/>
+              )}
+             
             </div>
         </div>
       </section>
       <section className={styles['advisor']}>
         <div className={styles.wrapper}>
-          <Image className={styles.text} src="/assets/img/advisor-text.png" alt="logo" width={280} height={430} />
+          <Image className={styles.text} src="/assets/img/advisor-text.png" alt="logo" width={280} height={430} onClick={() => handleTextClick('/assets/img/advisor-text.png')}/>
           <div className={styles['advisor-content']}>
-            <p className={styles.subtitle}>Read What An Advisor To Microsoft, Sony, Verizon Wireless, eBay, Yahoo, ETrade, Orange, And Nintendo Says About Us
+            <p className={styles.subtitle}>Read What An Advisor To Microsoft, Sony, T-Mobil, eBay, Yahoo, ETrade, Orange, And Nintendo Says About Us
             </p>
             <div className={styles['add-logos']}>
               <Image src='/assets/img/sony.png' alt='sony' width={48} height={8}/>

@@ -65,7 +65,8 @@
 .footer-button-adaptive{
     display: none;
 }
-.docs-policy::after {
+.docs-policy::after,
+.docs-terms::after {
     content: '';
     position: absolute;
     top: 0px;

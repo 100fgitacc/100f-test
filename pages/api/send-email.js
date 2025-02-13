@@ -5,7 +5,7 @@ export default async function handler(req, res) {
         return res.status(405).json({ message: "Method not allowed" });
     }
 
-    const { name, email, company, whatsApp, capacity } = req.body;
+    const { name, email, company, whatsApp, capacity, formType } = req.body;
 
     const clientId = process.env.SENDPULSE_CLIENT_ID;
     const clientSecret = process.env.SENDPULSE_CLIENT_SECRET;
@@ -56,6 +56,7 @@ export default async function handler(req, res) {
 
         let mailOptions;
         let sendpulseOptions;
+        const whitePaperId = process.env.SENDPULSE_ADDRESS_BOOK_ID_WHITEPAPER;
         const waitlistId = process.env.SENDPULSE_ADDRESS_BOOK_ID_WAITLIST;
         const formId = process.env.SENDPULSE_ADDRESS_BOOK_ID_FORM;
         if (name && email && capacity && whatsApp) {
@@ -83,7 +84,7 @@ export default async function handler(req, res) {
                 }],
             }),
             await addSubscriber(token,sendpulseOptions,formId);
-        } else {
+        }else if(formType !== 'whitelist') {
             mailOptions = {
                 from: "100Fcom_EarlyAdopter <info@100f.com>",
                 to: "kir.ulanov@100f.com, admin@100f.com, info@100f.com",
@@ -102,6 +103,25 @@ export default async function handler(req, res) {
                 }],
             }),
             await addSubscriber(token,sendpulseOptions,waitlistId);
+        }else{
+            mailOptions = {
+                from: "100Fcom_Whitepaper <info@100f.com>",
+                to: "kir.ulanov@100f.com, admin@100f.com, info@100f.com",
+                subject: `100F.com Request for Whitepaper Access`,
+                text: `
+                    Name: ${name}
+                    Email: ${email}
+                `,
+            };
+            sendpulseOptions = JSON.stringify({
+                emails: [{ 
+                    email, 
+                    variables: { 
+                        Имя: name
+                    } 
+                }],
+            }),
+            await addSubscriber(token,sendpulseOptions,whitePaperId);
         }
 
         await transporter.sendMail(mailOptions);

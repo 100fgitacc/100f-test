@@ -40,7 +40,7 @@
 }
 .subtitle span{
   font-style: normal;
-  background: linear-gradient(90deg, #994bff 31%, #23ffbe 103%, #ffdf2c 125%);
+  background: linear-gradient(90deg, rgba(35,255,190,1) 18%, rgba(255,223,44,1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -48,6 +48,9 @@
   position: relative;
   padding: 50px 25px;
   width: 100%;
+}
+.whitepapper-section:last-of-type{
+  padding: 25px;
 }
 .whitepapper-section:nth-child(3) .section-line,
 .whitepapper-section:nth-child(4) .section-line,
@@ -136,7 +139,7 @@
 }
 .whitepapper-card{
   width: 48%;
-  margin: 45px 0;
+  margin: 25px 0;
   padding: 25px 50px;
   background-color: #181a40;
   border-radius: 15px;
@@ -152,6 +155,13 @@
 }
 .whitepapper-card-list{
   margin-top: 25px;
+}
+.whitepapper-card-sublist{
+  margin: 15px 0;
+  padding-left: 15px;
+}
+.whitepapper-card-sublist .whitepapper-card-list-item:before{
+  content: '';
 }
 .whitepapper-card-list-item{
   margin-bottom: 5px;

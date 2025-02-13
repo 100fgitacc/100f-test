@@ -13,6 +13,7 @@ import AddPopup from '/components/sections/add-popup';
 
 import NewsPlugin from '/components/newsPlugin'
 import TeamSlider from '../sections/teamSlider';
+import Ecosystem from '../sections/ecosystem';
 
 
 const MySwal = withReactContent(Swal);
@@ -218,7 +219,7 @@ useEffect(() => {
         className={styles["first-screen-card"]}
       >
         <div id='cardHeader' className={`${styles['first-screen-card-header']} ${isSticky ? styles.sticky : ''}`}>
-          <p>Discover strategies with 100X-growth potential: <Link to="invest"  offset={-270} smooth={true} duration={700}>See our metrics below</Link></p>
+          <p>Discover strategies with 40X-growth potential: <Link to="invest"  offset={-270} smooth={true} duration={700}>See our metrics below</Link></p>
            {/* {isSticky && ( <button onClick={(e)=>handleRemoveItem(e, 'card-header')} className={styles['remove-btn']}></button>)} */}
 
         </div>
@@ -232,7 +233,7 @@ useEffect(() => {
             <div className={styles['left-side']}>
               <h1 className={styles["main-title"]}>100 Franklins&#39; Journey <br/>to <span className={styles['text-gradient']}>Unicorn Status</span>: Backed by Numbers,<br/> Not Promises</h1>
               <h1 className={`${styles["main-title"]} ${styles.mobile}`}>100 Franklins&#39; Journey <br/> to <span className={styles['text-gradient']}>Unicorn Status</span>: Backed by Numbers, Not Promises</h1>
-              <p className={styles.subtitle}>We are building a unified platform <br/>connecting qualified Web3 projects <br/>with a knowledgeable audience</p>
+              <p className={styles.subtitle}>Building the Next-Gen Crypto Launchpad for Long-Term Growth & Support </p>
               <Link to="contacts" smooth={true} duration={700} className={styles['schedule-btn']}>Schedule Demo</Link>
             </div>
             <Image className={`${styles['franklin-first-screen']}`}src='/assets/img/franklin.png' width={311} height={373}/>
@@ -685,39 +686,62 @@ useEffect(() => {
               </linearGradient>
               </defs>
             </svg>
-              <h3 className={styles['third-title']}><span>THE SOLUTION:</span> UNIFIED WEB3.0 PLATFORM</h3>
-              <p className={styles.subtitle}>100 Franklins connects qualified projects with a educated audience, creating conditions for sustainable development and long-term profits</p>
+              <h2 className={styles['secondary-title']}>THE SOLUTION</h2>
+              <p className={styles.newsubtitle}>In-demand Web3 solutions within a unified ecosystem</p>
+              <p className={styles.subtitle}>The 100 Franklins platform integrates an enhanced launchpad functionality and in-demand Web3 solutions into a unified ecosystem that operates as a single mechanism, providing projects with a comprehensive set of tools for sustainable growth and investors with long-term earning opportunities</p>
               <div className={styles.cards}>
-                <div className={styles.card}>
-                  <h3 className={styles['card-title']}>FOR PROJECT FOUNDERS</h3>
-                  <ul className={styles['card-list']}>
-                    <li className={styles['card-list-item']}>
-                      Attract dedicated, long-term  <br/>investors
-                    </li>
-                    <li className={styles['card-list-item']}>
-                      Ensure stable growth without <br/> post-listing dumps
-                    </li>
-                    <li className={styles['card-list-item']}>
-                      Build loyal investor base for sustainable development
-                    </li>
-                  </ul>
+                <div>
+                  <h3 className={styles['card-title']}>For Web3 Projects</h3>
+                  <div className={styles.card}>
+                    <ul className={styles['card-list']}>
+                      <li className={styles['card-list-item']}>
+                      Integrated Growth Ecosystem
+                      </li>
+                      <li className={styles['card-list-item']}>
+                      Access to High-Quality <br/> Investors
+                      </li>
+                      <li className={styles['card-list-item']}>
+                      Long-Term Support
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div className={styles.card}>
-                  <h3 className={styles['card-title']}>FOR INVESTORS</h3>
-                  <ul className={styles['card-list']}>
-                    <li className={styles['card-list-item']}>
-                      Access to verified, high-quality <br/> projects
-                    </li>
-                    <li className={styles['card-list-item']}>
-                      Reduced risk through thorough <br/> vetting
-                    </li>
-                    <li className={styles['card-list-item']}>
-                      Long-term profit opportunities
-                    </li>
-                  </ul>
+                <div>
+                  <h3 className={styles['card-title']}>For Investors</h3>
+                  <div className={styles.card}>
+                    <ul className={styles['card-list']}>
+                      <li className={styles['card-list-item']}>
+                      Reputation-Based Investor <br/>Rating System
+                      </li>
+                      <li className={styles['card-list-item']}>
+                      Vetted Investment  <br/> Opportunities
+                      </li>
+                      <li className={styles['card-list-item']}>
+                      Sustainable Returns
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  
+                    <h3 className={styles['card-title']}>For the Market</h3>
+                  <div className={styles.card}>
+                    <ul className={styles['card-list']}>
+                      <li className={styles['card-list-item']}>
+                      A Stable, Transparent <br/> Ecosystem
+                      </li>
+                      <li className={styles['card-list-item']}>
+                      Bridging Gaps 
+                      </li>
+                      <li className={styles['card-list-item']}>
+                      Promoting <br/>Long-Term Growth
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
+            <Ecosystem/>
             <div className={styles['card-section']}>
             <h3 className={styles['third-title']}>Business Model </h3>
                 <svg className={styles['section-line']} xmlns="http://www.w3.org/2000/svg" width="2" height="75" viewBox="0 0 2 75" fill="none">
@@ -1047,65 +1071,62 @@ useEffect(() => {
           <Element name="invest" className={styles.content}>
           <span className={styles['section-count']}>1</span>
             <div className={styles['card-section']}>
-            
-              <h2 className={styles['secondary-title']}>Cold Audience Lead Generation System</h2>
-              <div className={styles['sales-system']}>
-                <div className={styles['sales-system-item']}>
-                  <h5 className={styles['sales-system-title']}>Auto webinar funnel</h5>
-                  {!isMobile ? (<Image src='/assets/img/AutowebMiro.png' width={229} height={400} />) : (<Image src='/assets/img/Miro-m.png' width={229} height={285} />)}
-                  {!isMobile ? ( <Image src='/assets/img/Bandle.png' width={229} height={167}  />) : ( <Image src='/assets/img/Bandle-m.png' width={229} height={167}  />)}
+              
+                <h2 className={styles['secondary-title']}>Revenue in 60 Days – Monetization Starts NOW</h2>
+                <div className={styles.cards}>
+                  <div>
+                    <h3 className={styles['card-title']}>Month 1-4</h3>
+                    <div className={styles.card}>
+                      <h4 className={styles['card-subtitle']}>CIS Market Relaunch  and Revenue Growth</h4>
+                      <ul className={styles['card-list']}>
+                        <li className={styles['card-list-item']}>
+                          Restarting profitable channels ($340K+ revenue)
+                        </li>
+                        <li className={styles['card-list-item']}>
+                        Acquiring 300+ paying users via proven paid ad campaigns
+                        </li>
+                        <li className={styles['card-list-item']}>
+                        Expanding waitlist for Platform 1.0 to 100K
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className={styles['card-title']}>Month 4-8</h3>
+                    <div className={styles.card}>
+                      <h4 className={styles['card-subtitle']}>MVP Launch <br/> (CIS Market)</h4>
+                      <ul className={styles['card-list']}>
+                        <li className={styles['card-list-item']}>
+                        Onboarding 300+ clients
+                        </li>
+                        <li className={styles['card-list-item']}>
+                          Automating processes for growth
+                        </li>
+                        <li className={styles['card-list-item']}>
+                          Expanding waitlist for Platform 1.0 to 200K
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className={styles['card-title']}>Month 8-12</h3>
+                    <div className={styles.card}>
+                      <h4 className={styles['card-subtitle']}>Platform 1.0 <br/> and US Expansion</h4>
+                      <ul className={styles['card-list']}>
+                        <li className={styles['card-list-item']}>
+                          Entering US market
+                        </li>
+                        <li className={styles['card-list-item']}>
+                          Growing to 1,000+ paying users
+                        </li>
+                        <li className={styles['card-list-item']}>
+                          Strengthening Web3 partnerships
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                  
                 </div>
-                <div className={styles['sales-system-item']}>
-                  <h5 className={styles['sales-system-title']}>Curator-based funnel</h5>
-                  {!isMobile ? (<Image src='/assets/img/AutowebMiro1.png' width={229} height={285}  />) : (
-                    <Image src='/assets/img/Miro-m2.png' width={229} height={285}  />
-                  )}
-                  <Image src='/assets/img/Bandle2.png' width={229} height={124}    />
-                </div>
-                <div className={styles['sales-system-item']}>
-                  <h5 className={styles['sales-system-title']}>Video sales funnel</h5>
-                  <Image 
-                    src='/assets/img/AutowebMiro2.png' 
-                    width={229} 
-                    height={285} 
-                    sizes="(max-width: 768px) 100vw, 229px" 
-                  />
-                  <Image 
-                    src='/assets/img/Bandle3.png' 
-                    width={229} 
-                    height={124} 
-                    sizes="(max-width: 768px) 100vw, 229px" 
-                  />
-                </div>
-              </div>
-              <div className={`${styles['paid-content']}`}>
-                <h5 className={styles['paid-title']}>Paid Advertising</h5>
-                <div className={styles['paid-logos']}>
-                  <Image src="/assets/img/Google.png" alt="Google" width={117} height={39}/>
-                  <Image src="/assets/img/Facebook.png" alt="Facebook" width={153} height={27}/>
-                  <Image src="/assets/img/Instagram.png" alt="Instagram" width={128} height={43}/>
-                </div>
-              </div>
-              <div className={styles['record-content']}>
-                <div>
-                  <p className={styles.title}>
-                    Current Track Record
-                  </p>
-                  <p>
-                    CAC
-                    <span>
-                      $550
-                    </span>
-                  </p>
-                  <p>
-                    LTV
-                    <span>
-                      $1,600
-                    </span>
-                  </p>
-                </div>
-              </div>
             </div>
             
             <div className={styles['card-section']}> 
@@ -1245,18 +1266,21 @@ useEffect(() => {
                         </a>
                       </div>
                     </div>
-                    <p className={styles['member-desc']}>
-                    17+ years in Finance & Economics</p>
+                    <p className={styles['member-desc']}>PhD in Economics, 17+ years expertise in Finance & Economics, Former founder of 2 international businesses, Investor-analyst, having evaluated hundreds of projects valued between $1 million and $500 million, resulting in over $60 million in successful investments</p>
                   </div>
                   <div className={styles['team-group-item']}>
                     <div>
                       <Image className={styles['member-img']} src='/assets/img/igor.png' width={86} height={78}/>
                       <div>
                         <p className={styles['member-title']}>Igor Jalenco, <br/>CBDO</p>
+                        <a className={styles['member-link']} href='https://www.linkedin.com/in/ihorjalenco/' target='_blank'>
+                          <Image  src='/assets/img/icons/linkedin.png' width={14} height={14}/>
+                          @ihorjalenco
+                        </a>
                       </div>
                     </div>
-                    <p className={styles['member-desc']}>13+ years in EdTech BD</p>
-                  
+                    <p className={styles['member-desc']}>13+ years expertise in EdTech, Marketing & StartUps, managed corporate education programs
+                    for IT companies with 300+ employees valued at $500M+. Led growth of international EdTech business to 5 countries (UAE, KSA, Kazakhstan, Ukraine, Azerbaijan), reaching 14K+ students. As Project Lead, successfully launched and scaled digital projects MySoul.help and Smartexpert.net from scratch</p>
                   </div>
                 </div>
               </div>
@@ -1526,7 +1550,7 @@ useEffect(() => {
                                 </li>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/blue-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
-                                    <p>MRR $130,000+</p>
+                                    <p>MRR $50,000+</p>
                                 </li>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/blue-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
@@ -1571,15 +1595,15 @@ useEffect(() => {
                                 </li>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/blue-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
-                                    <p>10K+ Educated Users/investors</p>
+                                    <p>5K+ Educated Users/investors</p>
                                 </li>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/blue-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
-                                    <p>100+ Verified Crypto Projects</p>
+                                    <p>50+ Verified Crypto Projects</p>
                                 </li>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/blue-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
-                                    <p>MRR $1,300,000+</p>
+                                    <p>MRR $470,000+</p>
                                 </li>
                             </ul>
                         </div>
@@ -1614,7 +1638,7 @@ useEffect(() => {
                   </ul>
                 </div>
                 <div className={styles.card}>
-                  <p className={styles['numbers-title']}>100X <span>Return Potential</span></p>
+                  <p className={styles['numbers-title']}>40X <span>Return Potential</span></p>
                   <ul className={styles['card-list']}>
                     <li className={styles['card-list-item']}>
                     With conservative metrics 

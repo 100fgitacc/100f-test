@@ -21,6 +21,8 @@
   margin: 0 auto;
 }
 .main-title{
+  max-width: 580px;
+  margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 15px;
   font-size: 28px;
@@ -31,9 +33,20 @@
   max-width: 460px;
   margin: 0 auto;
 }
+.subtitle-access{
+  max-width: 230px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  background: linear-gradient(90deg, rgba(35, 255, 190, 1) 18%, rgba(255, 223, 44, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 auto;
+  margin-top: 10px;
+}
 .subtitle span{
   font-style: normal;
-  background: linear-gradient(90deg, #994bff 31%, #23ffbe 103%, #ffdf2c 125%);
+  background: linear-gradient(90deg, rgba(35,255,190,1) 18%, rgba(255,223,44,1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -44,6 +57,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .preview{
   max-width: 450px;
   width: 100%;
@@ -57,6 +71,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.unlock .preview{
+  margin: 0 auto;
+  padding: 25px;
 }
 .secondary-title{
   max-width: 360px;
@@ -94,8 +112,6 @@
 .advisor .wrapper{
   max-width: 740px;
   margin: 0 auto;
-  margin-left: auto;
-  margin-right: 0px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -103,6 +119,8 @@
 }
 .text{
   object-fit: contain;
+  cursor: pointer;
+  border-radius: 10px;
 }
 .advisor .advisor-content{
   max-width: 405px;
@@ -172,6 +190,31 @@
   width: 14px;
   height: 14px;
   margin-right: 5px;
+}
+.btn-apply{
+  position: relative;
+  max-width: 200px;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  padding: 10px 25px;
+  padding-right: 30px;
+  border-radius: 5px;
+  background-color: #05E9F0;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+.btn-apply::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: 9px;
+  width: 14px;
+  height: 14px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('/assets/img/icons/external-link.png');
 }
 @media screen and (max-width: 1200px) {
   .secondary-title{

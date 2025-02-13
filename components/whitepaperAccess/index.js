@@ -9,7 +9,7 @@ const WhitepaperAccess = () => {
     <>
       <section className={styles['first-screen-card']}>
         <div className={styles.wrapper}>
-            <Image className={styles.logo} src="/assets/img/footer-logo.png" alt="logo" width={57} height={17} />
+            <Image className={styles.logo} src="/assets/img/footer-logo.png" alt="logo" width={75} height={22} />
             <h1 className={styles['main-title']}>A Rising AMERICAN UNICORN In The Web3</h1>
             <p className={styles.subtitle}><span>Q1 2025:</span> Investment Round In Equity Is Open</p>
             <p className={styles.title}>White Paper for 100 Franklins, Inc.</p>
@@ -160,29 +160,25 @@ const WhitepaperAccess = () => {
               <ul className={styles['whitepapper-card-list']}>
                 <li className={styles['whitepapper-card-list-item']}><span>Tools to attract dedicated and educated investors.</span>
                 </li>
-                <li className={styles['whitepapper-card-list-item']}><span>A wide range of tools for engaging with your audience within a single ecosystem:</span>
-                <ul className={styles['whitepapper-card-list']}>
-                  <li className={styles['whitepapper-card-list-item']}><span>The ability to engage and interact with your audience throughout the entire lifecycle of the project.
+                <li className={styles['whitepapper-card-list-item']}><span>A wide range of tools for engaging with your audience within a single ecosystem:</span></li>
+                <ul className={styles['whitepapper-card-sublist']}>
+                  <li className={styles['whitepapper-card-list-item']}>I. <span>The ability to engage and interact with your audience throughout the entire lifecycle of the project.
                   </span>
                   </li>
-                  <li className={styles['whitepapper-card-list-item']}><span>Modeling the outcomes of activities using artificial intelligence</span>
+                  <li className={styles['whitepapper-card-list-item']}>II. <span>Modeling the outcomes of activities using artificial intelligence</span>
                   </li>
-                  <li className={styles['whitepapper-card-list-item']}><span>Tools for advertising and analytics of the project&apos;s segmented audience.</span>
+                  <li className={styles['whitepapper-card-list-item']}>III. <span>Tools for advertising and analytics of the project&apos;s segmented audience.</span>
                   </li>
                 </ul>
-                </li>
               </ul>
             </div>
             <div className={styles['whitepapper-card']}>
-              <h4 className={styles['card-title']}>For Investors:</h4>
+              <h4 className={styles['card-title']}>For the Market:</h4>
               <ul className={styles['whitepapper-card-list']}>
-                <li className={styles['whitepapper-card-list-item']}><span>Access to verified, high-quality projects.</span>
+                <li className={styles['whitepapper-card-list-item']}><span>A unified platform focused on long-term investment strategies, integrating all key Web3 tools within a single ecosystem.
+                </span>
                 </li>
-                <li className={styles['whitepapper-card-list-item']}><span>Various tools for earning in Web3.</span>
-                </li>
-                <li className={styles['whitepapper-card-list-item']}><span>Clear value of crypto project tokens.</span>
-                </li>
-                <li className={styles['whitepapper-card-list-item']}><span>Reduced risk and various benefits of long-term investing.</span>
+                <li className={styles['whitepapper-card-list-item']}><span>Analytics of crypto audiences and ready-made behavioral models of investors over a span of several years.</span>
                 </li>
               </ul>
             </div>
@@ -324,19 +320,17 @@ const WhitepaperAccess = () => {
                 </li>
                 <li className={styles['whitepapper-card-list-item']}><span>Established Partnerships:</span> Collaborations with ByBit, Gate, OKX, and more
                 </li>
-                <li className={styles['whitepapper-card-list-item']}><span>Tested Prototypes:</span>
-                  <ul className={styles['whitepapper-card-list']}>
-                    <li className={styles['whitepapper-card-list-item']}><span>Average user acquisition cost (CAC): $550
-                    </span>
+                <li className={styles['whitepapper-card-list-item']}><span>Tested Prototypes:</span></li>
+                  <ul className={styles['whitepapper-card-sublist']}>
+                    <li className={styles['whitepapper-card-list-item']}><span>I. </span>Average user acquisition cost (CAC): $550
                     </li>
-                    <li className={styles['whitepapper-card-list-item']}><span>65% retention rate in beta tests.</span>
+                    <li className={styles['whitepapper-card-list-item']}><span>II. </span>65% retention rate in beta tests. 
+                    </li> 
+                    <li className={styles['whitepapper-card-list-item']}><span>III. </span>The user&apos;s LTV is $1,800 per year
                     </li>
-                    <li className={styles['whitepapper-card-list-item']}><span>The user&apos;s LTV is $1,800 per year</span>
-                    </li>
-                    <li className={styles['whitepapper-card-list-item']}><span>Clear roadmap for modular platform development</span>
+                    <li className={styles['whitepapper-card-list-item']}><span>IV. </span>Clear roadmap for modular platform development
                     </li>
                   </ul>
-                </li>
               </ul>
           </div>
           <p className={styles.text}>To make 100 Franklins vision easier to understand, we developed a demo MVP version of the platform and its subsequent development to the 1st and 2nd versions
@@ -536,36 +530,33 @@ const WhitepaperAccess = () => {
           <div className={styles['whitepapper-card']}>
             <h4 className={styles['card-title']}>Financial Projections:</h4>
             <ul className={styles['whitepapper-card-list']}>
-              <li className={styles['whitepapper-card-list-item']}><span>Year 1:</span>
-                <ul className={styles['whitepapper-card-list']}>
-                  <li className={styles['whitepapper-card-list-item']}><span>Revenue: $0.7M with 970 paying users.</span>
+              <li className={styles['whitepapper-card-list-item']}><span>Year 1:</span></li> 
+              <ul className={styles['whitepapper-card-sublist']}>
+                <li className={styles['whitepapper-card-list-item']}><span>I. </span>Revenue: $0.7M with 970 paying users.
+                </li>
+                <li className={styles['whitepapper-card-list-item']}><span>II. </span>Expenses: Focused on CAC and regional expansions
+                </li>
+                <li className={styles['whitepapper-card-list-item']}><span>III. </span>Paid user growth: 975 users.
+                </li>
+              </ul>
+              <li className={styles['whitepapper-card-list-item']}><span>Year 2:</span></li>
+              <ul className={styles['whitepapper-card-sublist']}>
+                  <li className={styles['whitepapper-card-list-item']}><span>I. </span>Revenue: $6.8M with 5544 paying users.
                   </li>
-                  <li className={styles['whitepapper-card-list-item']}><span>Expenses: Focused on CAC and regional expansions</span>
+                  <li className={styles['whitepapper-card-list-item']}><span>II. </span>Expenses: Scale CAC and marketing to new regions.
                   </li>
-                  <li className={styles['whitepapper-card-list-item']}><span>Paid user growth: 975 users.</span>
-                  </li>
-                </ul>
-              </li>
-              <li className={styles['whitepapper-card-list-item']}><span>Year 2:</span>
-                <ul className={styles['whitepapper-card-list']}>
-                  <li className={styles['whitepapper-card-list-item']}><span>Revenue: $6.8M with 5544 paying users.</span>
-                  </li>
-                  <li className={styles['whitepapper-card-list-item']}><span>Expenses: Scale CAC and marketing to new regions.</span>
-                  </li>
-                  <li className={styles['whitepapper-card-list-item']}><span>Paid user growth: 5561 users.</span>
-                  </li>
-                </ul>
-              </li>
-              <li className={styles['whitepapper-card-list-item']}><span>Year 3:</span>
-                <ul className={styles['whitepapper-card-list']}>
-                  <li className={styles['whitepapper-card-list-item']}><span>Revenue: $22.8M with 8807 paying users.</span>
-                  </li>
-                  <li className={styles['whitepapper-card-list-item']}><span>Gross Profit Margin: 82%.</span>
-                  </li>
-                  <li className={styles['whitepapper-card-list-item']}><span>Paid user growth: 8814 users.</span>
+                  <li className={styles['whitepapper-card-list-item']}><span>III. </span>Paid user growth: 5561 users.
                   </li>
                 </ul>
-              </li>
+              <li className={styles['whitepapper-card-list-item']}><span>Year 3:</span></li>
+                <ul className={styles['whitepapper-card-sublist']}>
+                  <li className={styles['whitepapper-card-list-item']}><span>I. </span>Revenue: $22.8M with 8807 paying users.
+                  </li>
+                  <li className={styles['whitepapper-card-list-item']}><span>II. </span>Gross Profit Margin: 82%.
+                  </li>
+                  <li className={styles['whitepapper-card-list-item']}><span>III. </span>Paid user growth: 8814 users.
+                  </li>
+                </ul>
               
             </ul>
           </div>
@@ -618,13 +609,14 @@ const WhitepaperAccess = () => {
               <li className={styles['whitepapper-card-list-item']}><span>Solution: Prototype testing validated demand with a 65% retention rate, 211 clients with an LTV of $1,650 and a CAC of $550.</span>
               </li>
             </ul>
+          </div>
+          <div className={styles['whitepapper-card']}>
+            <h4 className={styles['card-title']}>Product Risks:</h4>
             <ul className={styles['whitepapper-card-list']}>
-              <li className={styles['whitepapper-card-list-item']}><span>Product Risks:</span>
-              </li>
               <li className={styles['whitepapper-card-list-item']}><span>Challenge: Technological challenges.</span>
               </li>
-              <li className={styles['whitepapper-card-list-item']}><span>Solution:</span>
-              Developed technical documentation and a modular roadmap. For an entire year, we tested the platform prototype to ensure its viability and demand. This process allowed us to gather valuable data, validate hypotheses, and identify key areas for improvement. Our platform is designed with a modular architecture, enabling the gradual addition of new features and components. This approach ensures flexibility, scalability, and the ability to quickly adapt to market demands.
+              <li className={styles['whitepapper-card-list-item']}><span>Solution: </span>
+               Developed technical documentation and a modular roadmap. For an entire year, we tested the platform prototype to ensure its viability and demand. This process allowed us to gather valuable data, validate hypotheses, and identify key areas for improvement. Our platform is designed with a modular architecture, enabling the gradual addition of new features and components. This approach ensures flexibility, scalability, and the ability to quickly adapt to market demands.
               </li>
             </ul>
           </div>
@@ -771,11 +763,22 @@ const WhitepaperAccess = () => {
             <ul className={styles['whitepapper-card-list']}>
               <li className={styles['whitepapper-card-list-item']}><span>Schedule a Call or Demo:</span>  Contact our investment team to set up a personalized call or video demonstration of our MVP. Experience firsthand how 100 Franklins is addressing critical market challenges. Email us at [insert email] or book a time through [insert scheduling link]
               </li>
+              <ul className={styles['whitepapper-card-sublist']}>
+                <li className={styles['whitepapper-card-list-item']}><span>I. </span>Minimum investment amount: $10,000 
+                </li>
+                <li className={styles['whitepapper-card-list-item']}><span>II. </span>Funding round details:Pre-Seed
+                
+                </li>
+                <li className={styles['whitepapper-card-list-item']}><span>III. </span>Company valuation and equity amount raised/offered: valuation $12,000,000, equity amount offered $1,700,000
+                </li>
+              </ul>
               <li className={styles['whitepapper-card-list-item']}><span> Act Before the Deadline:</span>  The pre-seed fundraising round will close on [insert date], and spaces are limited. Early participation ensures access to priority benefits and a first-mover advantage in this rapidly growing market.
               </li>
             </ul>
           </div>
           <p className={styles.text}>Don’t miss the chance to invest in a game-changing platform that combines innovation, scalability, and sustainable growth. Let’s build the future of Web3 together!
+          </p>
+          <p className={styles.text}>This document is updated as new information becomes available.
           </p>
         </div>
       </section>
@@ -788,6 +791,7 @@ const WhitepaperAccess = () => {
           </p>
           <p className={styles.text}>100 Franklins, Inc. disclaims all liability for any loss or damage, direct or indirect, arising from reliance on the content of this document. All forward-looking statements are subject to significant risks and uncertainties that could cause actual outcomes to differ materially from those anticipated.
           </p>
+          
          
         </div>
       </section>
