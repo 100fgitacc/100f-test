@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 .third-title{
-  font-size: 36px;
+  font-size: 30px;
   margin-bottom: 50px;
 }
 .container{
@@ -389,5 +389,8 @@
 .mail-elem::after{
   width: 250px;
   height: 250px;
+}
+.ecosystem{
+  margin-bottom: 40px;
 }
 }

@@ -47,7 +47,8 @@ export async function getStaticProps() {
   const token = await getValidToken();
 
   const allPosts = await getAllPosts(token);
-
+  console.log(allPosts);
+  
 
   const updatedPosts = allPosts.map(post => {
     const stats = readingTime(post.content.rendered);

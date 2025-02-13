@@ -116,7 +116,7 @@ const TeamSlider = () => {
                 @ihorjalenco
               </a>
               <p className={styles['member-desc']}>13+ years expertise in EdTech, Marketing & StartUps, managed corporate education programs
-              for IT companies with 300+ employees valued at $500M+. Led growth of international EdTech business to 5 countries (UAE, KSA, Kazakhstan, Ukraine, Azerbaijan), reaching 14K+ students. As Project Lead, successfully launched and scaled digital projects MySoul.help and Smartexpert.net from scratch</p>=
+              for IT companies with 300+ employees valued at $500M+. Led growth of international EdTech business to 5 countries (UAE, KSA, Kazakhstan, Ukraine, Azerbaijan), reaching 14K+ students</p>
             </div>
             
           </SwiperSlide>

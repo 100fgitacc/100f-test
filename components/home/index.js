@@ -69,12 +69,13 @@ const Home = () => {
     
   const handleScroll = () => {
       if (svgRef.current) {
+       
           const rect = svgRef.current.getBoundingClientRect();
           const windowHeight = window.innerHeight;
-  
+        
           // Проверяем, виден ли элемент и запущена ли анимация
           if (rect.top >= 0 && rect.bottom <= windowHeight && !animationPlayed) {
-            
+           
               const firstAnimation = svgRef.current.querySelector('#lineAnimation');
               
               if (svgRef.current) {
@@ -125,7 +126,7 @@ const Home = () => {
       window.addEventListener('scroll', handleScroll);
       
       if (animationPlayed) {
-      removeBlackAndWhiteClass();
+        removeBlackAndWhiteClass();
       }
 
       return () => {
@@ -231,12 +232,12 @@ useEffect(() => {
         <Image className={`${styles['logo']} ${isSticky ? styles.sticky : ''}`}src='/assets/img/footer-logo.png' width={75} height={21}/>
         <div className={styles.content}>
             <div className={styles['left-side']}>
-              <h1 className={styles["main-title"]}>100 Franklins&#39; Journey <br/>to <span className={styles['text-gradient']}>Unicorn Status</span>: Backed by Numbers,<br/> Not Promises</h1>
+              <h1 className={styles["main-title"]}>100 Franklins – The Next-Gen <span className={styles['text-gradient']}>Crypto Launchpad </span> <br/>for Long-Term  <br/>Growth & Support</h1>
               <h1 className={`${styles["main-title"]} ${styles.mobile}`}>100 Franklins&#39; Journey <br/> to <span className={styles['text-gradient']}>Unicorn Status</span>: Backed by Numbers, Not Promises</h1>
-              <p className={styles.subtitle}>Building the Next-Gen Crypto Launchpad for Long-Term Growth & Support </p>
+              <p className={styles.subtitle}>This Page Unveils Our Journey to Unicorn Status – Driven by Real Numbers, Not Empty Promises</p>
               <Link to="contacts" smooth={true} duration={700} className={styles['schedule-btn']}>Schedule Demo</Link>
             </div>
-            <Image className={`${styles['franklin-first-screen']}`}src='/assets/img/franklin.png' width={311} height={373}/>
+            <Image className={`${styles['franklin-first-screen']}`}src='/assets/img/main-images.png' width={347} height={285}/>
         </div>
         <NewsPlugin/>
       </motion.section>
@@ -530,7 +531,7 @@ useEffect(() => {
                 </div>
                 <div className={styles['market-item']}>
                   <p>
-                  Partnerships with 1’000+ crypto communities & crypto influencers with a combined audience of over 60M+ unique subscribers
+                  Partnerships with 1,000+ crypto communities & crypto influencers with a combined audience of over 60M+ unique subscribers
                   </p>
                   <div className={styles['market-item-images']}>
                     <Image className={styles['market-items-img']} src='/assets/img/icons/facebook.png' width={32} height={32}/>
@@ -1280,7 +1281,7 @@ useEffect(() => {
                       </div>
                     </div>
                     <p className={styles['member-desc']}>13+ years expertise in EdTech, Marketing & StartUps, managed corporate education programs
-                    for IT companies with 300+ employees valued at $500M+. Led growth of international EdTech business to 5 countries (UAE, KSA, Kazakhstan, Ukraine, Azerbaijan), reaching 14K+ students. As Project Lead, successfully launched and scaled digital projects MySoul.help and Smartexpert.net from scratch</p>
+                    for IT companies with 300+ employees valued at $500M+. Led growth of international EdTech business to 5 countries (UAE, KSA, Kazakhstan, Ukraine, Azerbaijan), reaching 14K+ students</p>
                   </div>
                 </div>
               </div>
@@ -1368,7 +1369,7 @@ useEffect(() => {
                             <ul className={styles['roadmap-list']}>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
-                                    <p>Pilot MVP Function</p>
+                                    <p>Community-Validated Service Model</p>
                                 </li>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={13} height={13}/>
@@ -1439,7 +1440,7 @@ useEffect(() => {
                                 </li>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/check-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
-                                    <p>MVPs design & development<br/> of a Platform</p>
+                                    <p>MVPs design <br/> & development <br/>of a Platform</p>
                                 </li>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/yellow-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
@@ -1510,7 +1511,7 @@ useEffect(() => {
                             <ul className={styles['roadmap-list']}>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/blue-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
-                                    <p>First 211 clients onboarded</p>
+                                    <p>First 300 clients onboarded</p>
                                 </li>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/blue-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
@@ -1542,7 +1543,7 @@ useEffect(() => {
                                 </li>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/blue-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
-                                    <p>Tier 2-3 Projects <br/> Acquisition & <br/>Onboarding 20+ Verified <br/>Crypto Projects</p>
+                                    <p>Tier 2-3 Projects <br/> Acquisition & <br/>Onboarding 20+ <br/> Verified Crypto <br/>Projects</p>
                                 </li>
                                 <li className={styles['roadmap-list-item']}>
                                     <Image src='/assets/img/icons/blue-img.png' className={styles['roadmap-icon']} width={7} height={7}/>
@@ -1648,7 +1649,7 @@ useEffect(() => {
               </div>
               <div className={styles['single-card']}>
                 <div className={styles['calculates']}>
-                  <p className={styles['numbers-title']}>50’000 <span>Users</span></p>
+                  <p className={styles['numbers-title']}>50,000 <span>Users</span></p>
                   <p className={styles['numbers-title']}>х</p>
                   <p className={styles['numbers-title']}>$220<span>Monthly</span></p>
                   <p className={styles['numbers-title']}>=</p>
