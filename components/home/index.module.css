@@ -933,18 +933,18 @@ max-width: 193px;
 .exeptional-solution .card-title{
   color: #FFDF2C;
   position: relative;
-  font-size: 14px;
-  max-width: 210px !important;
+  font-size: 13px;
+  max-width: 210px ;
   width: 100%;
   margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 15px;
 }
 .exeptional-solution .cards> div:nth-child(2) .card-title{
-  max-width: 160px !important;
+  max-width: 160px ;
 }
 .exeptional-solution .cards> div:nth-child(3) .card-title{
-  max-width: 180px !important;
+  max-width: 180px ;
 }
 .exeptional-solution .card-title::after{
   content: '';
