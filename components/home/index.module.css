@@ -1284,7 +1284,7 @@ max-width: 193px;
 .consumers .card-section:nth-of-type(1) .card-title{
   color: #FFDF2C;
   position: relative;
-  font-size: 21px;
+  font-size: 19px;
   max-width: 210px;
   margin: 0 auto;
   margin-top: 25px;
@@ -1300,7 +1300,7 @@ max-width: 193px;
 .consumers .card-section:nth-of-type(1) .card-title::after{
   content: '';
   position: absolute;
-  left: -15px;
+  left: 0px;
   top: 3px;
   width: 8px;
   height: 16px;
@@ -1310,9 +1310,27 @@ max-width: 193px;
   transform: rotate(90deg);
 }
 .consumers .card-section:nth-of-type(1) .cards > div:nth-child(2) .card-title::after{
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 3px;
+  width: 8px;
+  height: 16px;
+  background-image: url('/assets/img/icons/arrownew.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   transform: rotate(45deg);
 }
 .consumers .card-section:nth-of-type(1) .cards > div:nth-child(3) .card-title::after{
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 3px;
+  width: 8px;
+  height: 16px;
+  background-image: url('/assets/img/icons/arrownew.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   transform: rotate(0deg);
 }
 
