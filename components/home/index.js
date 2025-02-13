@@ -61,43 +61,43 @@ const Home = () => {
       }
   }
   const svgRef = useRef(null);
-  const [animationPlayed, setAnimationPlayed] = useState(false); 
-  const [animationTwoPlayed, setAnimationTwoPlayed] = useState(false); 
-  const [animationThreePlayed, setAnimationThreePlayed] = useState(false); 
-  const [animationFourPlayed, setAnimationFourPlayed] = useState(false); 
-  const [animationFivePlayed, setAnimationFivePlayed] = useState(false); 
+  const [animationPlayed, setAnimationPlayed] = useState(true); 
+  const [animationTwoPlayed, setAnimationTwoPlayed] = useState(true); 
+  const [animationThreePlayed, setAnimationThreePlayed] = useState(true); 
+  const [animationFourPlayed, setAnimationFourPlayed] = useState(true); 
+  const [animationFivePlayed, setAnimationFivePlayed] = useState(true); 
     
-  const handleScroll = () => {
-      if (svgRef.current) {
+  // const handleScroll = () => {
+  //     if (svgRef.current) {
        
-          const rect = svgRef.current.getBoundingClientRect();
-          const windowHeight = window.innerHeight;
+  //         const rect = svgRef.current.getBoundingClientRect();
+  //         const windowHeight = window.innerHeight;
         
-          // Проверяем, виден ли элемент и запущена ли анимация
-          if (rect.top >= 0 && rect.bottom <= windowHeight && !animationPlayed) {
+  //         // Проверяем, виден ли элемент и запущена ли анимация
+  //         if (rect.top >= 0 && rect.bottom <= windowHeight && !animationPlayed) {
            
-              const firstAnimation = svgRef.current.querySelector('#lineAnimation');
+  //             const firstAnimation = svgRef.current.querySelector('#lineAnimation');
               
-              if (svgRef.current) {
-                  firstAnimation.beginElement(); 
-                  setAnimationPlayed(true);
-                  setTimeout(() => {
-                      setAnimationTwoPlayed(true);
-                      setTimeout(() => {
-                          setAnimationThreePlayed(true);
-                          setTimeout(() => {
-                              setAnimationFourPlayed(true);
-                              setTimeout(() => {
-                                  setAnimationFivePlayed(true);
-                              }, 4400);
-                          }, 3500);
-                      }, 4100);
-                  }, 4500);
+  //             if (svgRef.current) {
+  //                 firstAnimation.beginElement(); 
+  //                 setAnimationPlayed(true);
+  //                 setTimeout(() => {
+  //                     setAnimationTwoPlayed(true);
+  //                     setTimeout(() => {
+  //                         setAnimationThreePlayed(true);
+  //                         setTimeout(() => {
+  //                             setAnimationFourPlayed(true);
+  //                             setTimeout(() => {
+  //                                 setAnimationFivePlayed(true);
+  //                             }, 4400);
+  //                         }, 3500);
+  //                     }, 4100);
+  //                 }, 4500);
                   
-              }
-          }
-      }
-  };
+  //             }
+  //         }
+  //     }
+  // };
 
   const addBlackAndWhiteClass = () => {
       const roadmapItems = document.querySelectorAll(`.${styles['roadmap-item']}`);
@@ -109,29 +109,30 @@ const Home = () => {
   const removeBlackAndWhiteClass = () => {
       const roadmapItems = document.querySelectorAll(`.${styles['roadmap-item']}`);
       
-      const delays = [0, 4000, 8000, 11500, 15900, 17400]; // Задержки для каждого элемента
+      // const delays = [0, 4000, 8000, 11500, 15900, 17400]; 
   
       roadmapItems.forEach((item, index) => {
-          const delay = delays[index];
+          // const delay = delays[index];
           setTimeout(() => {
               item.classList.remove(styles.blackAndWhite);
-          }, delay);
+          // }, delay);
+          }, 0);
       });
   };
 
   useEffect(() => {
       // Добавляем класс при загрузке страницы
-      addBlackAndWhiteClass();
+      // addBlackAndWhiteClass();
 
-      window.addEventListener('scroll', handleScroll);
+      // window.addEventListener('scroll', handleScroll);
       
-      if (animationPlayed) {
+      // if (animationPlayed) {
         removeBlackAndWhiteClass();
-      }
+      // }
 
-      return () => {
-      window.removeEventListener('scroll', handleScroll);
-      };
+      // return () => {
+      // window.removeEventListener('scroll', handleScroll);
+      // };
   }, [animationPlayed]); 
 
 
